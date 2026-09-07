@@ -25,115 +25,72 @@
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;0,7..72,700;1,7..72,400&amp;family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,600;0,6..12,700;1,6..12,400&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&amp;display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="assets/js/tailwind.config.js"></script>
+    <script src="assets/js/lucide.min.js"></script>
   </head>
   <body class="bg-surface font-body text-on-surface antialiased">
     <header
       class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(46,50,48,0.06)]"
     >
-      <div class="bg-surface-container-low text-xs text-on-surface-variant">
-        <div
-          class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 h-9 flex items-center justify-between gap-2"
-        >
-          <div
-            class="flex items-center gap-4 sm:gap-6 overflow-hidden text-ellipsis whitespace-nowrap min-w-0"
-          >
-            <a
-              href="https://maps.google.com/?q=Byszyce+167,+32-020+Wieliczka"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="flex items-center gap-1.5 truncate hover:text-primary transition-colors"
-            >
-              <span class="material-symbols-outlined text-[15px] text-primary shrink-0"
-                >location_on</span
-              ><span class="truncate">Byszyce 167, 32-020 Wieliczka</span></a
-            ><span class="hidden sm:flex items-center gap-1.5 shrink-0"
-              ><span class="material-symbols-outlined text-[15px] text-primary"
-                >schedule</span
-              >Pn–Pt: 07:00–17:00</span
-            ><span class="hidden md:flex items-center gap-1.5 shrink-0"
-              ><span class="material-symbols-outlined text-[15px] text-tertiary"
-                >star</span
-              >Ocena 5.0 ★★★★★ (23 opinie Google)</span
-            >
-          </div>
-          <div class="flex items-center gap-4 shrink-0">
-            <a
-              class="flex items-center gap-1 font-semibold text-on-surface hover:text-primary transition-colors whitespace-nowrap"
-              href="tel:+48515430240"
-              ><span class="material-symbols-outlined text-[15px] text-primary"
-                >call</span
-              ><span class="hidden xs:inline sm:inline">+48&nbsp;</span>515 430 240</a
-            >
-          </div>
-        </div>
-      </div>
       <div
         class="h-16 sm:h-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex items-center justify-between gap-2 sm:gap-4"
       >
-        <div class="flex items-center gap-2.5 sm:gap-3 min-w-0">
+        <div class="flex items-center gap-3 sm:gap-3.5 shrink-0">
           <img
             alt="Horyzont Geodezja Logo"
-            class="h-7 sm:h-8 w-auto object-contain shrink-0"
+            class="h-10 sm:h-12 w-auto object-contain shrink-0"
             src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHlLOI5kK2yw6lHCkk2cLqA6g5tlQJQSG-FPNu7idCm8fst7A4Qv5TBpK2TOD9wbOGGOjZ01g3E_kB5fsUqfFYqq76pCt0FLvOdlTjaPHexpN7sBLO-pTrKsPv-IgvWdDIGHjZj-ui4L4XWJa3BFmgMuAsF5a80PaWQIDPeoorcC-bgLQ3qiIB-5b_sL_Ftw2qGFOfKQEasJfTcJS8_kpXqzPaCbXJILCb_DdrvMf_MH8qnSZLPJFn"
-          /><a class="flex flex-col min-w-0" data-path="strona-glowna" href="#"
+          /><a class="flex flex-col shrink-0" data-path="strona-glowna" href="#"
             ><span
-              class="font-headline font-bold text-base sm:text-lg leading-tight tracking-tight text-on-surface truncate"
+              class="font-headline font-bold text-lg sm:text-xl leading-tight tracking-tight text-on-surface whitespace-nowrap"
               >HORYZONT</span
             ><span
-              class="font-label text-[10px] sm:text-xs uppercase tracking-wider text-primary font-semibold truncate"
-              >Biuro Geodezyjne Łukasz Kowalczyk</span
+              class="font-label text-xs tracking-normal text-primary font-semibold whitespace-nowrap"
+              >Biuro Geodezyjne<span class="hidden 2xl:inline"> Łukasz Kowalczyk</span></span
             ></a
           >
         </div>
-        <nav class="hidden lg:flex items-center gap-1 xl:gap-2">
+        <nav class="hidden lg:flex items-center gap-0.5 xl:gap-1.5 shrink-0">
           <a
-            class="px-3.5 py-2 text-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded-lg transition-colors font-medium"
+            class="flex items-center gap-1.5 px-2.5 xl:px-3 py-1.5 xl:py-2 text-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded-lg transition-colors font-medium whitespace-nowrap"
             href="#strona-glowna"
-            >Strona Główna</a
+            ><i data-lucide="home" class="w-4 h-4 text-primary/80 shrink-0"></i><span>Strona Główna</span></a
           ><a
-            class="px-3.5 py-2 text-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded-lg transition-colors font-medium"
+            class="flex items-center gap-1.5 px-2.5 xl:px-3 py-1.5 xl:py-2 text-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded-lg transition-colors font-medium whitespace-nowrap"
             href="#uslugi"
-            >Usługi</a
+            ><i data-lucide="layers" class="w-4 h-4 text-primary/80 shrink-0"></i><span>Usługi</span></a
           ><a
-            class="px-3.5 py-2 text-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded-lg transition-colors font-medium"
+            class="flex items-center gap-1.5 px-2.5 xl:px-3 py-1.5 xl:py-2 text-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded-lg transition-colors font-medium whitespace-nowrap"
             href="#o-nas"
-            >O nas</a
+            ><i data-lucide="user-check" class="w-4 h-4 text-primary/80 shrink-0"></i><span>O nas</span></a
           ><a
-            class="px-3.5 py-2 text-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded-lg transition-colors font-medium"
+            class="flex items-center gap-1.5 px-2.5 xl:px-3 py-1.5 xl:py-2 text-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded-lg transition-colors font-medium whitespace-nowrap"
             href="#obszar"
-            >Obszar działania</a
+            ><i data-lucide="map-pin" class="w-4 h-4 text-primary/80 shrink-0"></i><span>Obszar działania</span></a
           ><a
-            class="px-3.5 py-2 text-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded-lg transition-colors font-medium"
+            class="flex items-center gap-1.5 px-2.5 xl:px-3 py-1.5 xl:py-2 text-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded-lg transition-colors font-medium whitespace-nowrap"
             href="#opinie"
-            >Opinie</a
+            ><i data-lucide="message-square-quote" class="w-4 h-4 text-primary/80 shrink-0"></i><span>Opinie</span></a
           ><a
-            class="px-3.5 py-2 text-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded-lg transition-colors font-medium"
+            class="flex items-center gap-1.5 px-2.5 xl:px-3 py-1.5 xl:py-2 text-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded-lg transition-colors font-medium whitespace-nowrap"
             href="#kontakt"
-            >Kontakt</a
+            ><i data-lucide="phone" class="w-4 h-4 text-primary/80 shrink-0"></i><span>Kontakt</span></a
           >
         </nav>
         <div class="flex items-center gap-2 sm:gap-3 shrink-0">
           <a
-            class="hidden sm:flex items-center gap-2 px-3.5 py-2 rounded-xl bg-secondary-container text-on-secondary-container hover:bg-surface-container-high transition-colors font-semibold text-sm"
+            class="hidden sm:flex items-center gap-2 px-3.5 py-2 rounded-xl bg-secondary-container text-on-secondary-container hover:bg-surface-container-high transition-colors font-semibold text-sm whitespace-nowrap"
             href="tel:+48515430240"
-            ><span class="material-symbols-outlined text-[18px] text-primary"
-              >phone_in_talk</span
-            ><span class="hidden xl:inline">+48 515 430 240</span></a
+            ><i data-lucide="phone" class="w-4 h-4 text-primary shrink-0"></i><span class="hidden xl:inline">+48 515 430 240</span></a
           ><a
-            class="flex items-center gap-1.5 px-3 py-2 sm:px-4 sm:py-2.5 rounded-xl bg-primary text-on-primary hover:bg-primary-container hover:text-on-primary-container font-semibold text-xs sm:text-sm shadow-[0_2px_8px_rgba(74,124,89,0.2)] transition-all"
+            class="flex items-center gap-1.5 px-3 py-2 sm:px-4 sm:py-2.5 rounded-xl bg-primary text-on-primary hover:bg-primary-container hover:text-on-primary-container font-semibold text-xs sm:text-sm transition-all whitespace-nowrap active:scale-[0.98]"
             href="#wycena"
-            ><span class="material-symbols-outlined text-[16px] sm:text-[18px]">calculate</span
-            ><span>Wycena</span><span class="hidden sm:inline">&nbsp;online</span></a
+            ><i data-lucide="calculator" class="w-4 h-4 shrink-0"></i><span>Wycena</span><span class="hidden sm:inline">&nbsp;online</span></a
           >
           <button
             id="mobile-menu-btn"
@@ -141,602 +98,625 @@
             aria-expanded="false"
             class="lg:hidden w-10 h-10 rounded-xl bg-surface-container-high text-on-surface flex items-center justify-center shrink-0 hover:bg-surface-variant transition-colors"
           >
-            <span class="material-symbols-outlined text-[24px]">menu</span>
+            <i id="menu-icon-open" data-lucide="menu" class="w-5 h-5"></i>
+            <i id="menu-icon-close" data-lucide="x" class="w-5 h-5 hidden"></i>
           </button>
         </div>
       </div>
       <!-- Mobile Navigation Drawer -->
       <div
         id="mobile-menu"
-        class="hidden lg:hidden border-t border-outline-variant/30 bg-surface/98 backdrop-blur-xl px-4 py-4 sm:px-6 space-y-1 shadow-lg max-h-[calc(100vh-100px)] overflow-y-auto"
+        class="hidden lg:hidden border-t border-outline-variant/30 bg-surface/98 backdrop-blur-xl px-4 py-4 sm:px-6 space-y-1 shadow-lg max-h-[calc(100vh-64px)] sm:max-h-[calc(100vh-80px)] overflow-y-auto"
       >
         <a
-          class="block px-4 py-3 text-base font-semibold text-on-surface rounded-xl hover:bg-surface-container-high transition-colors"
+          class="flex items-center gap-3 px-4 py-3 text-base font-semibold text-on-surface rounded-xl hover:bg-surface-container-high transition-colors"
           href="#strona-glowna"
-          >Strona Główna</a
+          ><i data-lucide="home" class="w-5 h-5 text-primary"></i>Strona Główna</a
         >
         <a
-          class="block px-4 py-3 text-base font-semibold text-on-surface rounded-xl hover:bg-surface-container-high transition-colors"
+          class="flex items-center gap-3 px-4 py-3 text-base font-semibold text-on-surface rounded-xl hover:bg-surface-container-high transition-colors"
           href="#uslugi"
-          >Usługi</a
+          ><i data-lucide="layers" class="w-5 h-5 text-primary"></i>Usługi</a
         >
         <a
-          class="block px-4 py-3 text-base font-semibold text-on-surface rounded-xl hover:bg-surface-container-high transition-colors"
+          class="flex items-center gap-3 px-4 py-3 text-base font-semibold text-on-surface rounded-xl hover:bg-surface-container-high transition-colors"
           href="#o-nas"
-          >O nas</a
+          ><i data-lucide="user-check" class="w-5 h-5 text-primary"></i>O nas</a
         >
         <a
-          class="block px-4 py-3 text-base font-semibold text-on-surface rounded-xl hover:bg-surface-container-high transition-colors"
+          class="flex items-center gap-3 px-4 py-3 text-base font-semibold text-on-surface rounded-xl hover:bg-surface-container-high transition-colors"
           href="#obszar"
-          >Obszar działania</a
+          ><i data-lucide="map-pin" class="w-5 h-5 text-primary"></i>Obszar działania</a
         >
         <a
-          class="block px-4 py-3 text-base font-semibold text-on-surface rounded-xl hover:bg-surface-container-high transition-colors"
+          class="flex items-center gap-3 px-4 py-3 text-base font-semibold text-on-surface rounded-xl hover:bg-surface-container-high transition-colors"
           href="#opinie"
-          >Opinie klientów</a
+          ><i data-lucide="message-square-quote" class="w-5 h-5 text-primary"></i>Opinie klientów</a
         >
         <a
-          class="block px-4 py-3 text-base font-semibold text-on-surface rounded-xl hover:bg-surface-container-high transition-colors"
+          class="flex items-center gap-3 px-4 py-3 text-base font-semibold text-on-surface rounded-xl hover:bg-surface-container-high transition-colors"
           href="#kontakt"
-          >Kontakt &amp; Biuro</a
+          ><i data-lucide="phone" class="w-5 h-5 text-primary"></i>Kontakt &amp; Biuro</a
         >
         <div class="pt-3 mt-2 border-t border-outline-variant/30 flex flex-col gap-2.5">
           <a
             href="tel:+48515430240"
-            class="flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-primary text-on-primary font-bold text-sm shadow-md active:scale-[0.99] transition-transform"
+            class="flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-primary text-on-primary font-bold text-sm active:scale-[0.98] transition-transform"
           >
-            <span class="material-symbols-outlined text-[18px]">call</span>
+            <i data-lucide="phone" class="w-4 h-4"></i>
             <span>Zadzwoń: +48 515 430 240</span>
           </a>
           <a
             href="#wycena"
             class="flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-secondary-container text-on-secondary-container font-semibold text-sm hover:bg-surface-container-high transition-colors"
           >
-            <span class="material-symbols-outlined text-[18px] text-tertiary">calculate</span>
+            <i data-lucide="calculator" class="w-4 h-4 text-tertiary"></i>
             <span>Zamów bezpłatną wycenę</span>
           </a>
-          <div class="pt-2 px-2 text-[11px] text-secondary flex items-center justify-between">
+          <div class="pt-2 px-2 text-xs text-on-surface-variant font-medium flex items-center justify-between">
             <span>Byszyce 167 (Wieliczka)</span>
             <span>Pn–Pt: 07:00–17:00</span>
           </div>
         </div>
       </div>
     </header>
-    <main class="w-full pt-[100px] sm:pt-[116px] bg-surface">
+    <main class="w-full pt-16 sm:pt-20 bg-surface">
       <div class="flex flex-col w-full">
-        <!-- Top Hero Visual Overlap -->
+        <!-- Top Hero Section with Background Photo -->
         <section
           id="strona-glowna"
-          class="relative w-full overflow-hidden bg-surface-container-lowest"
+          class="relative w-full overflow-hidden bg-neutral-950 text-white"
         >
+          <!-- Background Photo & Gradient Overlays -->
+          <div class="absolute inset-0 z-0 select-none pointer-events-none">
+            <img
+              class="w-full h-full object-cover object-[center_35%] filter brightness-[0.88] contrast-[1.05]"
+              alt="HORYZONT Biuro Geodezyjne Łukasz Kowalczyk - sprzęt pomiarowy GNSS i tachimetr"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbskP1UQRtALFOqTME2wMwJKhoQC12aQgfgDafWHI4NJ2mbzpO_gCPkCbKn7jcpUlk2o118yjvpEs6WXPkBxBGoPFIsH9wNuPEVnGNGLSF6MUgslZ2dJ_WEHtkFb6vDXzz63VIfHrv_S-krWbVwhkfsN6pwNzS2jI5XbJgrQzOhAwjw7_9qvSSvvNghEAuWbMjYVeLVU6XjmJ96l-TloZQ7EfwC2QpqIEZI8xxdcJe8xuNEDZfSqHT"
+            />
+            <!-- Directional gradients to protect text readability while keeping the photo crisp -->
+            <div
+              class="absolute inset-0 bg-gradient-to-r from-neutral-950/95 via-neutral-950/85 to-neutral-950/60 lg:to-neutral-950/45"
+            ></div>
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-neutral-950/90 via-transparent to-neutral-950/40"
+            ></div>
+            <div
+              class="absolute inset-0 bg-[#0c2216]/25 mix-blend-multiply"
+            ></div>
+          </div>
+
           <div
-            class="absolute inset-0 opacity-[0.03] pointer-events-none bg-[radial-gradient(#4a7c59_1px,transparent_1px)] [background-size:24px_24px]"
-          ></div>
-          <div
-            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 pt-6 pb-12 sm:pt-10 sm:pb-16 lg:pt-14 lg:pb-24"
+            class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 pt-8 pb-14 sm:pt-12 sm:pb-20 lg:pt-16 lg:pb-24"
           >
             <div
-              class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 items-center"
+              class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center"
             >
               <!-- Hero Text Content -->
-              <div class="lg:col-span-7 flex flex-col items-start">
+              <div class="lg:col-span-7 xl:col-span-7 flex flex-col items-start">
                 <!-- Trust Badge Google Reviews -->
                 <div
-                  class="inline-flex flex-wrap items-center gap-2 sm:gap-2.5 px-3 sm:px-3.5 py-1.5 rounded-full bg-surface-container-high text-on-surface text-xs font-semibold shadow-sm mb-4 sm:mb-6 max-w-full"
+                  class="inline-flex flex-wrap items-center gap-2 sm:gap-2.5 px-3 sm:px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/15 text-white text-xs font-semibold shadow-sm mb-4 sm:mb-6 max-w-full"
                 >
-                  <span class="flex items-center text-[#e89d28]">
-                    <span
-                      class="material-symbols-outlined text-[16px]"
-                      style="font-variation-settings: &quot;FILL&quot; 1"
-                      >star</span
-                    >
-                    <span
-                      class="material-symbols-outlined text-[16px]"
-                      style="font-variation-settings: &quot;FILL&quot; 1"
-                      >star</span
-                    >
-                    <span
-                      class="material-symbols-outlined text-[16px]"
-                      style="font-variation-settings: &quot;FILL&quot; 1"
-                      >star</span
-                    >
-                    <span
-                      class="material-symbols-outlined text-[16px]"
-                      style="font-variation-settings: &quot;FILL&quot; 1"
-                      >star</span
-                    >
-                    <span
-                      class="material-symbols-outlined text-[16px]"
-                      style="font-variation-settings: &quot;FILL&quot; 1"
-                      >star</span
-                    >
+                  <span class="flex items-center text-amber-400 gap-0.5">
+                    <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+                    <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+                    <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+                    <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+                    <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
                   </span>
-                  <span class="font-bold">5.0 / 5.0</span>
-                  <span class="text-secondary">·</span>
-                  <span class="text-on-surface-variant font-normal"
-                    >23 opinie w Google</span
-                  >
-                  <span
-                    class="material-symbols-outlined text-primary text-[15px]"
-                    >verified</span
-                  >
+                  <span class="font-bold">5.0</span>
+                  <span class="text-white/40">·</span>
+                  <span class="text-white/90 font-normal">23 opinie w Google</span>
+                  <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" aria-label="Google" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.17z"/>
+                    <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24z"/>
+                    <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.98 0 12s.45 3.82 1.25 5.42l4.03-3.15z"/>
+                    <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/>
+                  </svg>
                 </div>
+
                 <!-- Headline -->
                 <h1
-                  class="font-headline font-bold text-2xl sm:text-4xl lg:text-5xl tracking-tight text-on-surface leading-[1.2] mb-4 sm:mb-6"
+                  class="font-headline font-bold text-2xl sm:text-4xl lg:text-5xl tracking-tight text-white leading-[1.2] mb-4 sm:mb-6"
                 >
                   Precyzyjne Usługi Geodezyjne w
-                  <span class="text-primary italic font-serif">Wieliczce</span>
+                  <span class="text-emerald-400 font-semibold">Wieliczce</span>
                   i Okolicach
                 </h1>
+
                 <!-- Subheadline -->
                 <p
-                  class="text-sm sm:text-lg text-on-surface-variant leading-relaxed max-w-2xl mb-6 sm:mb-8"
+                  class="text-sm sm:text-lg text-neutral-200 leading-relaxed max-w-prose mb-6 sm:mb-8"
                 >
                   Kompleksowa obsługa geodezyjna inwestycji budowlanych,
                   klientów indywidualnych oraz biur projektowych. Uprawniony
                   geodeta
-                  <strong class="text-on-surface font-semibold"
+                  <strong class="text-white font-semibold"
                     >Łukasz Kowalczyk</strong
                   >
                   zapewnia bezpośredni kontakt, gwarancję terminowości i sprawne
                   przejście przez wszelkie formalności w ośrodkach dokumentacji
                   (ODGiK).
                 </p>
+
                 <!-- CTAs -->
                 <div
                   class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 w-full sm:w-auto mb-8 sm:mb-10"
                 >
                   <a
-                    class="inline-flex items-center justify-center gap-3 px-6 sm:px-7 py-3.5 sm:py-4 rounded-xl bg-primary text-on-primary font-bold text-sm sm:text-base shadow-[0_4px_16px_rgba(74,124,89,0.28)] hover:bg-primary-container hover:text-on-primary-container active:scale-[0.99] transition-all group"
+                    class="inline-flex items-center justify-center gap-3 px-6 sm:px-7 py-3.5 sm:py-4 rounded-xl bg-primary text-on-primary font-bold text-sm sm:text-base hover:bg-primary-container hover:text-on-primary-container active:scale-[0.98] transition-all group"
                     href="tel:+48515430240"
                   >
-                    <span
-                      class="material-symbols-outlined text-[20px] transition-transform group-hover:rotate-12"
-                      >call</span
-                    >
+                    <i data-lucide="phone" class="w-5 h-5 transition-transform group-hover:rotate-12"></i>
                     <span>Zadzwoń: 515 430 240</span>
                   </a>
                   <a
-                    class="inline-flex items-center justify-center gap-2.5 px-5 sm:px-6 py-3.5 sm:py-4 rounded-xl bg-secondary-container text-on-secondary-container hover:bg-surface-container-high active:scale-[0.99] font-semibold text-sm sm:text-base transition-all"
+                    class="inline-flex items-center justify-center gap-2.5 px-5 sm:px-6 py-3.5 sm:py-4 rounded-xl bg-white/10 hover:bg-white/20 active:scale-[0.99] text-white font-semibold text-sm sm:text-base backdrop-blur-md border border-white/20 transition-all"
                     href="#wycena"
                   >
-                    <span
-                      class="material-symbols-outlined text-[20px] text-tertiary"
-                      >request_quote</span
-                    >
+                    <i data-lucide="calculator" class="w-5 h-5 text-amber-300"></i>
                     <span>Zamów bezpłatną wycenę</span>
                   </a>
                 </div>
+
                 <!-- Micro perks -->
                 <div
-                  class="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 pt-5 sm:pt-6 border-t border-outline-variant/30 w-full"
+                  class="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 pt-5 sm:pt-6 border-t border-white/15 w-full"
                 >
                   <div class="flex items-center gap-2.5">
                     <span
-                      class="w-7 h-7 rounded-lg bg-primary-fixed flex items-center justify-center text-primary shrink-0"
+                      class="w-7 h-7 rounded-lg bg-white/10 backdrop-blur border border-white/15 flex items-center justify-center text-emerald-400 shrink-0"
                     >
-                      <span class="material-symbols-outlined text-[17px]"
-                        >timer</span
-                      >
+                      <i data-lucide="clock" class="w-4 h-4"></i>
                     </span>
                     <span
-                      class="text-xs font-semibold text-on-surface leading-tight"
+                      class="text-xs font-semibold text-neutral-200 leading-tight"
                       >Szybkie terminy realizacji</span
                     >
                   </div>
                   <div class="flex items-center gap-2.5">
                     <span
-                      class="w-7 h-7 rounded-lg bg-primary-fixed flex items-center justify-center text-primary shrink-0"
+                      class="w-7 h-7 rounded-lg bg-white/10 backdrop-blur border border-white/15 flex items-center justify-center text-emerald-400 shrink-0"
                     >
-                      <span class="material-symbols-outlined text-[17px]"
-                        >account_balance</span
-                      >
+                      <i data-lucide="landmark" class="w-4 h-4"></i>
                     </span>
                     <span
-                      class="text-xs font-semibold text-on-surface leading-tight"
+                      class="text-xs font-semibold text-neutral-200 leading-tight"
                       >Pełna obsługa urzędowa (ODGiK)</span
                     >
                   </div>
                   <div class="flex items-center gap-2.5">
                     <span
-                      class="w-7 h-7 rounded-lg bg-primary-fixed flex items-center justify-center text-primary shrink-0"
+                      class="w-7 h-7 rounded-lg bg-white/10 backdrop-blur border border-white/15 flex items-center justify-center text-emerald-400 shrink-0"
                     >
-                      <span class="material-symbols-outlined text-[17px]"
-                        >satellite_alt</span
-                      >
+                      <i data-lucide="satellite" class="w-4 h-4"></i>
                     </span>
                     <span
-                      class="text-xs font-semibold text-on-surface leading-tight"
+                      class="text-xs font-semibold text-neutral-200 leading-tight"
                       >Sprzęt pomiarowy GNSS / Tachimetry</span
                     >
                   </div>
                 </div>
               </div>
-              <!-- Hero Visual Graphic & Floating Cards -->
+
+              <!-- Hero Feature Badges (Frosted Glass Trust Cards) -->
               <div
-                class="lg:col-span-5 relative flex items-center justify-center"
+                class="lg:col-span-5 xl:col-span-5 flex flex-col gap-4 max-w-md mx-auto lg:mx-0 w-full"
               >
+                <!-- Card 1: Uprawnienia Zawodowe GGK -->
                 <div
-                  class="relative w-full aspect-[4/3] sm:aspect-square max-w-md mx-auto rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl shadow-on-surface/5 bg-surface-container"
+                  class="p-5 sm:p-6 rounded-2xl bg-neutral-900/70 backdrop-blur-xl border border-white/15 shadow-2xl transition-transform hover:-translate-y-0.5"
                 >
-                  <img
-                    class="w-full h-full object-cover"
-                    data-alt="Modern robotic total station and GNSS rover on a surveying tripod positioned in a green suburban parcel under soft morning sunlight in Małopolska near Wieliczka with historic rolling hills in the background, professional surveying engineering theme in natural earthy tones"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbskP1UQRtALFOqTME2wMwJKhoQC12aQgfgDafWHI4NJ2mbzpO_gCPkCbKn7jcpUlk2o118yjvpEs6WXPkBxBGoPFIsH9wNuPEVnGNGLSF6MUgslZ2dJ_WEHtkFb6vDXzz63VIfHrv_S-krWbVwhkfsN6pwNzS2jI5XbJgrQzOhAwjw7_9qvSSvvNghEAuWbMjYVeLVU6XjmJ96l-TloZQ7EfwC2QpqIEZI8xxdcJe8xuNEDZfSqHT"
-                  />
-                  <div
-                    class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/10"
-                  ></div>
-                  <!-- Bottom badge on hero image -->
-                  <div
-                    class="absolute bottom-3 left-3 right-3 sm:bottom-5 sm:left-5 sm:right-5 p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-surface/95 backdrop-blur-md shadow-lg flex items-center justify-between gap-2"
-                  >
+                  <div class="flex items-start gap-4">
+                    <div
+                      class="w-11 h-11 rounded-xl bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 flex items-center justify-center shrink-0"
+                    >
+                      <i data-lucide="shield-check" class="w-6 h-6"></i>
+                    </div>
                     <div>
-                      <p
-                        class="text-[10px] sm:text-xs uppercase tracking-wider text-tertiary font-bold"
-                      >
+                      <p class="text-xs font-bold uppercase tracking-wider text-amber-300 mb-1">
                         Uprawnienia Zawodowe GGK
                       </p>
-                      <p
-                        class="text-xs sm:text-sm font-headline font-semibold text-on-surface"
-                      >
+                      <h3 class="font-headline font-semibold text-base sm:text-lg text-white mb-1">
                         Nr uprawnień: Zakres 1 i 2
+                      </h3>
+                      <p class="text-xs text-neutral-300 leading-relaxed">
+                        Pomiary sytuacyjno-wysokościowe, realizacyjne i inwentaryzacyjne obiektów budowlanych.
                       </p>
-                    </div>
-                    <div
-                      class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-primary text-on-primary flex items-center justify-center shrink-0"
-                    >
-                      <span class="material-symbols-outlined text-[20px] sm:text-[22px]"
-                        >verified_user</span
-                      >
                     </div>
                   </div>
                 </div>
-                <!-- Floating Stat Badge -->
+
+                <!-- Card 2: 100% Zgodność operatów -->
                 <div
-                  class="absolute -top-4 -left-4 sm:left-2 p-4 rounded-2xl bg-surface-container-lowest shadow-xl hidden sm:flex items-center gap-3 border border-outline-variant/30"
+                  class="p-5 sm:p-6 rounded-2xl bg-neutral-900/70 backdrop-blur-xl border border-white/15 shadow-2xl transition-transform hover:-translate-y-0.5"
                 >
-                  <div
-                    class="w-11 h-11 rounded-xl bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed font-bold"
-                  >
-                    <span class="material-symbols-outlined text-[24px]"
-                      >architecture</span
-                    >
-                  </div>
-                  <div>
+                  <div class="flex items-start gap-4">
                     <div
-                      class="font-headline font-bold text-lg text-on-surface"
+                      class="w-11 h-11 rounded-xl bg-amber-500/20 border border-amber-500/30 text-amber-300 flex items-center justify-center shrink-0"
                     >
-                      100%
+                      <i data-lucide="compass" class="w-6 h-6"></i>
                     </div>
-                    <div class="text-[11px] text-secondary">
-                      Zgodność z normami prawa
+                    <div>
+                      <div class="flex items-baseline gap-2 mb-1">
+                        <span class="font-headline font-bold text-2xl text-white">100%</span>
+                        <span class="text-xs font-semibold text-emerald-400">Bezpieczeństwo prawne</span>
+                      </div>
+                      <p class="text-xs sm:text-sm font-semibold text-white mb-1">
+                        Operaty zgodne z rozporządzeniem MRiT
+                      </p>
+                      <p class="text-xs text-neutral-300 leading-relaxed">
+                        Kompletna dokumentacja bezproblemowo i terminowo zatwierdzana w Powiatowym Ośrodku Dokumentacji (ODGiK).
+                      </p>
                     </div>
                   </div>
+                </div>
+
+                <!-- Card 3: Quick Coverage Badge -->
+                <div
+                  class="p-4 rounded-xl bg-white/5 backdrop-blur-md border border-white/10 flex items-center justify-between gap-3 text-xs text-neutral-300"
+                >
+                  <div class="flex items-center gap-2.5">
+                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                    <span>Wieliczka · Kraków · Niepołomice · Myślenice</span>
+                  </div>
+                  <a
+                    href="#obszar"
+                    class="text-emerald-400 hover:text-emerald-300 font-semibold underline underline-offset-2 shrink-0 transition-colors"
+                  >
+                    Obszar →
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </section>
         <!-- Key Services Grid -->
-        <section id="uslugi" class="w-full py-14 sm:py-20 bg-surface">
+        <!-- Key Services Grid -->
+        <section id="uslugi" class="w-full py-16 sm:py-24 bg-surface">
           <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+            <!-- Section Header -->
             <div
-              class="flex flex-col md:flex-row md:items-end justify-between mb-8 sm:mb-12 gap-4 sm:gap-6"
+              class="flex flex-col lg:flex-row lg:items-end justify-between mb-10 sm:mb-14 gap-6"
             >
-              <div>
+              <div class="max-w-2xl">
                 <div
-                  class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-primary mb-2"
+                  class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider mb-4 border border-primary/15"
                 >
-                  <span class="w-2 h-2 rounded-full bg-primary"></span>
-                  Kluczowe Usługi Geodezyjne
+                  <i data-lucide="layers" class="w-3.5 h-3.5"></i>
+                  <span>Zakres Usług Geodezyjnych</span>
                 </div>
                 <h2
-                  class="font-headline font-bold text-2xl sm:text-3xl lg:text-4xl text-on-surface"
+                  class="font-headline font-bold text-3xl sm:text-4xl lg:text-5xl text-on-surface tracking-tight leading-[1.15]"
                 >
                   Wszystko, czego potrzebujesz na każdym etapie budowy
                 </h2>
               </div>
-              <p class="text-secondary text-sm max-w-md">
-                Od pierwszej koncepcji projektowej, przez wytyczenie fundamentów
-                w terenie, po formalne zgłoszenie budynku do użytkowania.
+              <p
+                class="text-on-surface-variant text-sm sm:text-base max-w-md leading-relaxed"
+              >
+                Prowadzimy formalności od pierwszej mapy do projektu, przez tyczenie w terenie, po formalny odbiór w PINB i regulację granic prawnych.
               </p>
             </div>
-            <!-- 5 Services Grid (Bento style) -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-              <!-- Service 1 -->
+
+            <!-- Lifecycle Stage Divider -->
+            <div class="flex items-center gap-3 mb-6">
+              <span class="text-xs font-bold tracking-wider uppercase text-primary bg-primary/10 px-3 py-1 rounded-md">Proces budowlany krok po kroku</span>
+              <span class="h-px bg-outline-variant/30 flex-1"></span>
+              <span class="text-xs text-on-surface-variant font-medium hidden sm:inline">Od projektu architektonicznego do odbioru budynku</span>
+            </div>
+
+            <!-- Row 1: 3 Building Lifecycle Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8 sm:mb-10">
+              <!-- Service 1: Mapa do celów projektowych -->
               <div
-                class="group p-6 sm:p-8 rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all duration-300 shadow-sm flex flex-col justify-between"
+                class="group p-6 sm:p-7 rounded-2xl bg-surface-container-lowest border border-outline-variant/40 hover:border-primary/40 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
               >
                 <div>
-                  <div
-                    class="w-12 h-12 rounded-xl bg-primary text-on-primary flex items-center justify-center mb-5 sm:mb-6 group-hover:scale-110 transition-transform"
-                  >
-                    <span class="material-symbols-outlined text-[26px]"
-                      >map</span
+                  <div class="flex items-center justify-between mb-5">
+                    <div
+                      class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-on-primary transition-colors"
                     >
+                      <i data-lucide="map" class="w-6 h-6"></i>
+                    </div>
+                    <span class="font-headline font-bold text-2xl text-outline-variant/60 group-hover:text-primary transition-colors">01</span>
                   </div>
-                  <div
-                    class="inline-block px-2.5 py-1 rounded bg-surface-variant text-[11px] font-semibold text-secondary mb-3"
-                  >
-                    Etap 1: Przed pozwoleniem na budowę
+                  <div class="inline-block px-2.5 py-1 rounded-full bg-surface-container text-xs font-semibold text-primary mb-3">
+                    Etap 1 · Przed pozwoleniem
                   </div>
                   <h3
-                    class="font-headline font-bold text-lg sm:text-xl text-on-surface mb-3 group-hover:text-primary transition-colors"
+                    class="font-headline font-bold text-xl text-on-surface mb-3 group-hover:text-primary transition-colors"
                   >
                     Mapa do celów projektowych
                   </h3>
-                  <p
-                    class="text-on-surface-variant text-sm leading-relaxed mb-6"
-                  >
-                    Niezbędny dokument geodezyjny wymagany przez architekta do
-                    stworzenia projektu zagospodarowania terenu oraz uzyskania
-                    pozwolenia na budowę. Sporządzana w wersji cyfrowej
-                    (CAD/DWG) oraz analogowej.
+                  <p class="text-on-surface-variant text-sm leading-relaxed mb-5">
+                    Niezbędny dokument geodezyjny wymagany przez architekta do sporządzenia projektu zagospodarowania terenu oraz uzyskania pozwolenia na budowę.
                   </p>
+                  <!-- Feature pills -->
+                  <div class="flex flex-wrap gap-1.5 mb-6">
+                    <span class="px-2 py-1 rounded-md bg-surface-container-low text-[11px] font-medium text-on-surface-variant">Format CAD / DWG + PDF</span>
+                    <span class="px-2 py-1 rounded-md bg-surface-container-low text-[11px] font-medium text-on-surface-variant">Zgłoszenie w ODGiK</span>
+                    <span class="px-2 py-1 rounded-md bg-surface-container-low text-[11px] font-medium text-on-surface-variant">Skala 1:500 / 1:1000</span>
+                  </div>
                 </div>
                 <div
-                  class="pt-4 border-t border-outline-variant/30 flex items-center justify-between text-xs text-secondary font-semibold"
+                  class="pt-4 border-t border-outline-variant/30 flex items-center justify-between text-xs font-semibold"
                 >
-                  <span class="flex items-center gap-1"
-                    ><span
-                      class="material-symbols-outlined text-[15px] text-primary"
-                      >timelapse</span
-                    >
-                    Czas: 2-3 tyg. (z ODGiK)</span
-                  >
+                  <span class="flex items-center gap-1.5 text-on-surface-variant">
+                    <i data-lucide="clock" class="w-3.5 h-3.5 text-primary"></i>
+                    Czas: ok. 2–3 tyg.
+                  </span>
                   <a
-                    class="inline-flex items-center gap-1 text-primary hover:underline"
+                    class="inline-flex items-center gap-1 text-primary hover:text-primary-container group/link"
                     href="#wycena"
-                    >Zamów mapę
-                    <span class="material-symbols-outlined text-[14px]"
-                      >arrow_forward</span
-                    ></a
                   >
+                    <span>Zamów mapę</span>
+                    <i data-lucide="arrow-right" class="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1"></i>
+                  </a>
                 </div>
               </div>
-              <!-- Service 2 -->
+
+              <!-- Service 2: Tyczenie budynków -->
               <div
-                class="group p-6 sm:p-8 rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all duration-300 shadow-sm flex flex-col justify-between"
+                class="group p-6 sm:p-7 rounded-2xl bg-surface-container-lowest border border-outline-variant/40 hover:border-primary/40 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
               >
                 <div>
-                  <div
-                    class="w-12 h-12 rounded-xl bg-tertiary text-on-tertiary flex items-center justify-center mb-5 sm:mb-6 group-hover:scale-110 transition-transform"
-                  >
-                    <span class="material-symbols-outlined text-[26px]"
-                      >square_foot</span
+                  <div class="flex items-center justify-between mb-5">
+                    <div
+                      class="w-12 h-12 rounded-xl bg-tertiary/10 text-tertiary flex items-center justify-center group-hover:bg-tertiary group-hover:text-on-tertiary transition-colors"
                     >
+                      <i data-lucide="ruler" class="w-6 h-6"></i>
+                    </div>
+                    <span class="font-headline font-bold text-2xl text-outline-variant/60 group-hover:text-primary transition-colors">02</span>
                   </div>
-                  <div
-                    class="inline-block px-2.5 py-1 rounded bg-surface-variant text-[11px] font-semibold text-secondary mb-3"
-                  >
-                    Etap 2: Rozpoczęcie inwestycji
+                  <div class="inline-block px-2.5 py-1 rounded-full bg-surface-container text-xs font-semibold text-primary mb-3">
+                    Etap 2 · Start budowy
                   </div>
                   <h3
-                    class="font-headline font-bold text-lg sm:text-xl text-on-surface mb-3 group-hover:text-primary transition-colors"
+                    class="font-headline font-bold text-xl text-on-surface mb-3 group-hover:text-primary transition-colors"
                   >
                     Tyczenie budynków i sieci uzbrojenia
                   </h3>
-                  <p
-                    class="text-on-surface-variant text-sm leading-relaxed mb-6"
-                  >
-                    Precyzyjne wyznaczenie w terenie głównych osi geometrycznych
-                    obiektu, ław drutowych, poziomu zera budynku oraz przebiegu
-                    przyłączy mediów: prądu, gazu, wodociągu i kanalizacji z
-                    wpisem do dziennika budowy.
+                  <p class="text-on-surface-variant text-sm leading-relaxed mb-5">
+                    Precyzyjne wyznaczenie w terenie głównych osi obiektu, ław drutowych, poziomu zera budynku oraz przebiegu przyłączy mediów z wpisem do dziennika budowy.
                   </p>
+                  <!-- Feature pills -->
+                  <div class="flex flex-wrap gap-1.5 mb-6">
+                    <span class="px-2 py-1 rounded-md bg-surface-container-low text-[11px] font-medium text-on-surface-variant">Główne osie i ławy</span>
+                    <span class="px-2 py-1 rounded-md bg-surface-container-low text-[11px] font-medium text-on-surface-variant">Prąd, woda, gaz, kanalizacja</span>
+                    <span class="px-2 py-1 rounded-md bg-surface-container-low text-[11px] font-medium text-on-surface-variant">Wpis do Dziennika</span>
+                  </div>
                 </div>
                 <div
-                  class="pt-4 border-t border-outline-variant/30 flex items-center justify-between text-xs text-secondary font-semibold"
+                  class="pt-4 border-t border-outline-variant/30 flex items-center justify-between text-xs font-semibold"
                 >
-                  <span class="flex items-center gap-1"
-                    ><span
-                      class="material-symbols-outlined text-[15px] text-primary"
-                      >check_circle</span
-                    >
-                    Wpis do dziennika budowy</span
-                  >
+                  <span class="flex items-center gap-1.5 text-on-surface-variant">
+                    <i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-primary"></i>
+                    Wpis do Dziennika Budowy
+                  </span>
                   <a
-                    class="inline-flex items-center gap-1 text-primary hover:underline"
+                    class="inline-flex items-center gap-1 text-primary hover:text-primary-container group/link"
                     href="#wycena"
-                    >Szczegóły
-                    <span class="material-symbols-outlined text-[14px]"
-                      >arrow_forward</span
-                    ></a
                   >
+                    <span>Zamów tyczenie</span>
+                    <i data-lucide="arrow-right" class="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1"></i>
+                  </a>
                 </div>
               </div>
-              <!-- Service 3 -->
+
+              <!-- Service 3: Inwentaryzacja powykonawcza -->
               <div
-                class="group p-6 sm:p-8 rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all duration-300 shadow-sm flex flex-col justify-between"
+                class="group p-6 sm:p-7 rounded-2xl bg-surface-container-lowest border border-outline-variant/40 hover:border-primary/40 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between md:col-span-2 lg:col-span-1"
               >
                 <div>
-                  <div
-                    class="w-12 h-12 rounded-xl bg-primary text-on-primary flex items-center justify-center mb-5 sm:mb-6 group-hover:scale-110 transition-transform"
-                  >
-                    <span class="material-symbols-outlined text-[26px]"
-                      >domain_verification</span
+                  <div class="flex items-center justify-between mb-5">
+                    <div
+                      class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-on-primary transition-colors"
                     >
+                      <i data-lucide="clipboard-check" class="w-6 h-6"></i>
+                    </div>
+                    <span class="font-headline font-bold text-2xl text-outline-variant/60 group-hover:text-primary transition-colors">03</span>
                   </div>
-                  <div
-                    class="inline-block px-2.5 py-1 rounded bg-surface-variant text-[11px] font-semibold text-secondary mb-3"
-                  >
-                    Etap 3: Zakończenie budowy
+                  <div class="inline-block px-2.5 py-1 rounded-full bg-surface-container text-xs font-semibold text-primary mb-3">
+                    Etap 3 · Zakończenie i odbiór
                   </div>
                   <h3
-                    class="font-headline font-bold text-lg sm:text-xl text-on-surface mb-3 group-hover:text-primary transition-colors"
+                    class="font-headline font-bold text-xl text-on-surface mb-3 group-hover:text-primary transition-colors"
                   >
                     Inwentaryzacja powykonawcza
                   </h3>
-                  <p
-                    class="text-on-surface-variant text-sm leading-relaxed mb-6"
-                  >
-                    Pomiary zrealizowanego budynku oraz wybudowanych przyłączy
-                    technicznych. Przygotowanie kompletu operatów niezbędnych do
-                    odbioru obiektu i zgłoszenia zakończenia robót do
-                    Powiatowego Inspektora Nadzoru Budowlanego (PINB).
+                  <p class="text-on-surface-variant text-sm leading-relaxed mb-5">
+                    Pomiary zrealizowanego budynku oraz wybudowanych przyłączy. Przygotowanie kompletu operatów niezbędnych do odbioru obiektu i zgłoszenia w PINB.
                   </p>
+                  <!-- Feature pills -->
+                  <div class="flex flex-wrap gap-1.5 mb-6">
+                    <span class="px-2 py-1 rounded-md bg-surface-container-low text-[11px] font-medium text-on-surface-variant">Kompletny operat do PINB</span>
+                    <span class="px-2 py-1 rounded-md bg-surface-container-low text-[11px] font-medium text-on-surface-variant">Pomiary budynku i sieci</span>
+                    <span class="px-2 py-1 rounded-md bg-surface-container-low text-[11px] font-medium text-on-surface-variant">Wprowadzenie do PZGiK</span>
+                  </div>
                 </div>
                 <div
-                  class="pt-4 border-t border-outline-variant/30 flex items-center justify-between text-xs text-secondary font-semibold"
+                  class="pt-4 border-t border-outline-variant/30 flex items-center justify-between text-xs font-semibold"
                 >
-                  <span class="flex items-center gap-1"
-                    ><span
-                      class="material-symbols-outlined text-[15px] text-primary"
-                      >inventory_2</span
-                    >
-                    Niezbędne do PINB</span
-                  >
+                  <span class="flex items-center gap-1.5 text-on-surface-variant">
+                    <i data-lucide="building-2" class="w-3.5 h-3.5 text-primary"></i>
+                    Niezbędne do PINB
+                  </span>
                   <a
-                    class="inline-flex items-center gap-1 text-primary hover:underline"
+                    class="inline-flex items-center gap-1 text-primary hover:text-primary-container group/link"
                     href="#wycena"
-                    >Szczegóły
-                    <span class="material-symbols-outlined text-[14px]"
-                      >arrow_forward</span
-                    ></a
                   >
+                    <span>Zgłoś odbiór</span>
+                    <i data-lucide="arrow-right" class="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1"></i>
+                  </a>
                 </div>
               </div>
-              <!-- Service 4 -->
+            </div>
+
+            <!-- Legal & Boundary Services Divider -->
+            <div class="flex items-center gap-3 mb-6">
+              <span class="text-xs font-bold tracking-wider uppercase text-tertiary bg-tertiary/10 px-3 py-1 rounded-md">Geodezja prawna &amp; Własność</span>
+              <span class="h-px bg-outline-variant/30 flex-1"></span>
+              <span class="text-xs text-on-surface-variant font-medium hidden sm:inline">Regulacja granic, podziały nieruchomości i ochrona przed sporami</span>
+            </div>
+
+            <!-- Row 2: 2 Balanced 50/50 Legal & Boundary Cards -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              <!-- Service 4: Podział nieruchomości -->
               <div
-                class="group p-6 sm:p-8 rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all duration-300 shadow-sm flex flex-col justify-between"
+                class="group p-6 sm:p-8 rounded-2xl bg-surface-container-lowest border border-outline-variant/40 hover:border-primary/40 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
               >
                 <div>
-                  <div
-                    class="w-12 h-12 rounded-xl bg-secondary text-on-secondary flex items-center justify-center mb-5 sm:mb-6 group-hover:scale-110 transition-transform"
-                  >
-                    <span class="material-symbols-outlined text-[26px]"
-                      >crop</span
+                  <div class="flex items-center justify-between mb-5">
+                    <div
+                      class="w-12 h-12 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center group-hover:bg-secondary group-hover:text-on-secondary transition-colors"
                     >
+                      <i data-lucide="split" class="w-6 h-6"></i>
+                    </div>
+                    <span class="font-headline font-bold text-2xl text-outline-variant/60 group-hover:text-primary transition-colors">04</span>
                   </div>
-                  <div
-                    class="inline-block px-2.5 py-1 rounded bg-surface-variant text-[11px] font-semibold text-secondary mb-3"
-                  >
+                  <div class="inline-block px-2.5 py-1 rounded-full bg-surface-container text-xs font-semibold text-secondary mb-3">
                     Obsługa prawna nieruchomości
                   </div>
                   <h3
-                    class="font-headline font-bold text-lg sm:text-xl text-on-surface mb-3 group-hover:text-primary transition-colors"
+                    class="font-headline font-bold text-xl sm:text-2xl text-on-surface mb-3 group-hover:text-primary transition-colors"
                   >
-                    Podział nieruchomości
+                    Podział nieruchomości i wydzielanie działek
                   </h3>
-                  <p
-                    class="text-on-surface-variant text-sm leading-relaxed mb-6"
-                  >
-                    Sporządzenie wstępnych projektów podziału oraz map ze stanem
-                    prawnym do celów notarialnych. Wydzielanie działek
-                    budowlanych, drogowych, podziały spadkowe oraz regulacje
-                    granic ewidencyjnych zgodnie z decyzją wójta/burmistrza.
+                  <p class="text-on-surface-variant text-sm sm:text-base leading-relaxed mb-6">
+                    Wydzielanie działek budowlanych, drogowych, podziały spadkowe oraz regulacje granic ewidencyjnych. Przygotowujemy wstępny projekt oraz mapy ze stanem prawnym do aktu notarialnego.
                   </p>
-                </div>
-                <div
-                  class="pt-4 border-t border-outline-variant/30 flex items-center justify-between text-xs text-secondary font-semibold"
-                >
-                  <span class="flex items-center gap-1"
-                    ><span
-                      class="material-symbols-outlined text-[15px] text-primary"
-                      >gavel</span
-                    >
-                    Zgodność z MPZP / WZ</span
-                  >
-                  <a
-                    class="inline-flex items-center gap-1 text-primary hover:underline"
-                    href="#wycena"
-                    >Szczegóły
-                    <span class="material-symbols-outlined text-[14px]"
-                      >arrow_forward</span
-                    ></a
-                  >
-                </div>
-              </div>
-              <!-- Service 5 -->
-              <div
-                class="group p-6 sm:p-8 rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all duration-300 shadow-sm flex flex-col justify-between lg:col-span-2"
-              >
-                <div
-                  class="grid grid-cols-1 sm:grid-cols-12 gap-6 items-center"
-                >
-                  <div class="sm:col-span-8">
-                    <div
-                      class="w-12 h-12 rounded-xl bg-tertiary-container text-on-tertiary-container flex items-center justify-center mb-5 sm:mb-6 group-hover:scale-110 transition-transform"
-                    >
-                      <span class="material-symbols-outlined text-[26px]"
-                        >pin_drop</span
-                      >
-                    </div>
-                    <div
-                      class="inline-block px-2.5 py-1 rounded bg-surface-variant text-[11px] font-semibold text-secondary mb-3"
-                    >
-                      Granice i własność
-                    </div>
-                    <h3
-                      class="font-headline font-bold text-lg sm:text-xl text-on-surface mb-3 group-hover:text-primary transition-colors"
-                    >
-                      Rozgraniczenie i wznowienie znaków granicznych
-                    </h3>
-                    <p
-                      class="text-on-surface-variant text-sm leading-relaxed mb-4"
-                    >
-                      Ustalenie prawidłowego przebiegu spornych granic oraz
-                      odtworzenie uszkodzonych lub zniszczonych słupków
-                      granicznych w oparciu o archiwalne dokumenty Państwowego
-                      Zasobu Geodezyjnego i Kartograficznego. Zabezpieczenie
-                      przed konfliktami sąsiedzkimi.
-                    </p>
-                  </div>
-                  <div
-                    class="sm:col-span-4 bg-surface-container-highest/60 p-4 sm:p-5 rounded-xl flex flex-col justify-center"
-                  >
-                    <span
-                      class="text-xs uppercase font-bold text-secondary mb-2"
-                      >Dlaczego warto?</span
-                    >
-                    <ul class="text-xs space-y-2 text-on-surface-variant">
-                      <li class="flex items-center gap-1.5">
-                        <span
-                          class="material-symbols-outlined text-[15px] text-primary"
-                          >check</span
-                        >
-                        Ochrona przed sporem
+                  <!-- Checklist Box -->
+                  <div class="p-4 sm:p-5 rounded-xl bg-surface-container-low border border-outline-variant/20 mb-6">
+                    <ul class="text-xs sm:text-sm space-y-2.5 text-on-surface-variant font-medium">
+                      <li class="flex items-start gap-2">
+                        <i data-lucide="check" class="w-4 h-4 text-primary shrink-0 mt-0.5"></i>
+                        <span>Zgodność z Miejscowym Planem (MPZP) lub decyzją WZ</span>
                       </li>
-                      <li class="flex items-center gap-1.5">
-                        <span
-                          class="material-symbols-outlined text-[15px] text-primary"
-                          >check</span
-                        >
-                        Legalne protokoły graniczne
+                      <li class="flex items-start gap-2">
+                        <i data-lucide="check" class="w-4 h-4 text-primary shrink-0 mt-0.5"></i>
+                        <span>Prowadzenie procedury podziałowej w Urzędzie Gminy lub Miasta</span>
                       </li>
-                      <li class="flex items-center gap-1.5">
-                        <span
-                          class="material-symbols-outlined text-[15px] text-primary"
-                          >check</span
-                        >
-                        Pewność przed ogrodzeniem
+                      <li class="flex items-start gap-2">
+                        <i data-lucide="check" class="w-4 h-4 text-primary shrink-0 mt-0.5"></i>
+                        <span>Komplet dokumentów do Kancelarii Notarialnej i Ksiąg Wieczystych</span>
                       </li>
                     </ul>
                   </div>
                 </div>
                 <div
-                  class="pt-4 mt-6 border-t border-outline-variant/30 flex items-center justify-between text-xs text-secondary font-semibold"
+                  class="pt-4 border-t border-outline-variant/30 flex items-center justify-between text-xs font-semibold"
                 >
-                  <span class="flex items-center gap-1"
-                    ><span
-                      class="material-symbols-outlined text-[15px] text-primary"
-                      >verified</span
-                    >
-                    Prawnie wiążące ustalenia</span
-                  >
+                  <span class="flex items-center gap-1.5 text-on-surface-variant">
+                    <i data-lucide="scale" class="w-3.5 h-3.5 text-primary"></i>
+                    Decyzja wójta / burmistrza
+                  </span>
                   <a
-                    class="inline-flex items-center gap-1 text-primary hover:underline"
+                    class="inline-flex items-center gap-1 text-primary hover:text-primary-container group/link"
                     href="#wycena"
-                    >Skonsultuj granice
-                    <span class="material-symbols-outlined text-[14px]"
-                      >arrow_forward</span
-                    ></a
                   >
+                    <span>Skonsultuj podział</span>
+                    <i data-lucide="arrow-right" class="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Service 5: Rozgraniczenie i wznowienie znaków -->
+              <div
+                class="group p-6 sm:p-8 rounded-2xl bg-surface-container-lowest border border-outline-variant/40 hover:border-primary/40 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
+              >
+                <div>
+                  <div class="flex items-center justify-between mb-5">
+                    <div
+                      class="w-12 h-12 rounded-xl bg-tertiary-container text-on-tertiary-container flex items-center justify-center group-hover:bg-tertiary group-hover:text-on-tertiary transition-colors"
+                    >
+                      <i data-lucide="map-pinned" class="w-6 h-6"></i>
+                    </div>
+                    <span class="font-headline font-bold text-2xl text-outline-variant/60 group-hover:text-primary transition-colors">05</span>
+                  </div>
+                  <div class="inline-block px-2.5 py-1 rounded-full bg-surface-container text-xs font-semibold text-tertiary mb-3">
+                    Granice i bezpieczeństwo własności
+                  </div>
+                  <h3
+                    class="font-headline font-bold text-xl sm:text-2xl text-on-surface mb-3 group-hover:text-primary transition-colors"
+                  >
+                    Rozgraniczenie i wznowienie znaków granicznych
+                  </h3>
+                  <p class="text-on-surface-variant text-sm sm:text-base leading-relaxed mb-6">
+                    Ustalenie prawidłowego przebiegu spornych granic oraz odtworzenie zniszczonych słupków granicznych na podstawie archiwalnych dokumentów PZGiK. Pewność przed postawieniem ogrodzenia.
+                  </p>
+                  <!-- Checklist Box -->
+                  <div class="p-4 sm:p-5 rounded-xl bg-surface-container-low border border-outline-variant/20 mb-6">
+                    <ul class="text-xs sm:text-sm space-y-2.5 text-on-surface-variant font-medium">
+                      <li class="flex items-start gap-2">
+                        <i data-lucide="check" class="w-4 h-4 text-primary shrink-0 mt-0.5"></i>
+                        <span>Ochrona przed kosztownym sporem sąsiedzkim i rozbiórką płotu</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <i data-lucide="check" class="w-4 h-4 text-primary shrink-0 mt-0.5"></i>
+                        <span>Prawnie wiążący protokół wznowienia znaków spisany na gruncie</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <i data-lucide="check" class="w-4 h-4 text-primary shrink-0 mt-0.5"></i>
+                        <span>Weryfikacja w Państwowym Zasobie Geodezyjnym i Kartograficznym</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  class="pt-4 border-t border-outline-variant/30 flex items-center justify-between text-xs font-semibold"
+                >
+                  <span class="flex items-center gap-1.5 text-on-surface-variant">
+                    <i data-lucide="shield-check" class="w-3.5 h-3.5 text-primary"></i>
+                    Prawnie wiążące ustalenia
+                  </span>
+                  <a
+                    class="inline-flex items-center gap-1 text-primary hover:text-primary-container group/link"
+                    href="#wycena"
+                  >
+                    <span>Skonsultuj granice</span>
+                    <i data-lucide="arrow-right" class="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1"></i>
+                  </a>
                 </div>
               </div>
             </div>
+
+            <!-- Consultation Reassurance Strip -->
+            <div
+              class="mt-8 sm:mt-10 p-5 sm:p-6 rounded-2xl bg-surface-container-low border border-outline-variant/30 flex flex-col md:flex-row items-center justify-between gap-5"
+            >
+              <div class="flex items-center gap-3.5">
+                <div
+                  class="w-11 h-11 rounded-xl bg-primary/10 text-primary flex items-center justify-center shrink-0"
+                >
+                  <i data-lucide="help-circle" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <p class="text-sm sm:text-base font-bold text-on-surface">
+                    Nie masz pewności, jakich czynności geodezyjnych wymaga Twoja działka?
+                  </p>
+                  <p class="text-xs sm:text-sm text-on-surface-variant">
+                    Zadzwoń lub podaj numer działki – bezpłatnie sprawdzimy stan w portalu geodezyjnym i wskażemy właściwą procedurę.
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center gap-3 shrink-0 w-full md:w-auto">
+                <a
+                  href="tel:+48515430240"
+                  class="flex-1 md:flex-initial inline-flex items-center justify-center gap-2 px-4 sm:px-5 py-2.5 sm:py-3 rounded-xl bg-primary text-on-primary text-xs sm:text-sm font-bold hover:bg-primary-container transition-all active:scale-[0.98]"
+                >
+                  <i data-lucide="phone" class="w-4 h-4"></i>
+                  <span>515 430 240</span>
+                </a>
+                <a
+                  href="#wycena"
+                  class="flex-1 md:flex-initial inline-flex items-center justify-center gap-2 px-4 sm:px-5 py-2.5 sm:py-3 rounded-xl bg-secondary-container text-on-secondary-container text-xs sm:text-sm font-semibold hover:bg-surface-container-high transition-all active:scale-[0.98]"
+                >
+                  <i data-lucide="calculator" class="w-4 h-4 text-tertiary"></i>
+                  <span>Wycena online</span>
+                </a>
+              </div>
           </div>
         </section>
         <!-- Why Choose Horyzont -->
@@ -767,7 +747,7 @@
                       >
                         Łukasz Kowalczyk
                       </p>
-                      <p class="text-[11px] text-secondary">
+                      <p class="text-xs text-on-surface-variant font-medium">
                         Uprawniony Geodeta
                       </p>
                     </div>
@@ -781,21 +761,14 @@
                 </div>
               </div>
               <div class="lg:col-span-7">
-                <div
-                  class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-tertiary mb-2"
-                >
-                  <span class="w-2 h-2 rounded-full bg-tertiary"></span>
-                  Dlaczego Warto Wybrać HORYZONT
-                </div>
                 <h2
                   class="font-headline font-bold text-2xl sm:text-3xl lg:text-4xl text-on-surface mb-4 sm:mb-6"
                 >
                   Pewność, doświadczenie i brak zawiłego urzędowego żargonu
                 </h2>
-                <p class="text-secondary text-sm sm:text-base leading-relaxed mb-6 sm:mb-8">
-                  Geodezja to nie tylko pomiary – to przede wszystkim
-                  odpowiedzialność prawna i bezpieczeństwo Twoich nakładów
-                  finansowych. W Horyzont stawiamy na transparentną współpracę i
+                <p class="text-on-surface-variant text-sm sm:text-base leading-relaxed max-w-prose mb-6 sm:mb-8">
+                  Geodezja to odpowiedzialność prawna i bezpieczeństwo Twoich
+                  nakładów finansowych. W Horyzont stawiamy na transparentną współpracę i
                   terminowe zamykanie spraw urzędowych.
                 </p>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
@@ -805,9 +778,7 @@
                     <div
                       class="w-10 h-10 rounded-xl bg-primary-fixed flex items-center justify-center text-primary mb-3"
                     >
-                      <span class="material-symbols-outlined text-[22px]"
-                        >person_check</span
-                      >
+                      <i data-lucide="user-check" class="w-5 h-5 text-primary"></i>
                     </div>
                     <h3
                       class="font-headline font-bold text-base text-on-surface mb-1.5"
@@ -817,9 +788,9 @@
                     <p
                       class="text-xs sm:text-sm text-on-surface-variant leading-relaxed"
                     >
-                      Rozmawiasz i współpracujesz bezpośrednio z osobą, która
-                      osobiście odpowiada za pomiary i dokumentację. Brak
-                      pośredników i bezdusznych infolinii.
+                      Rozmawiasz z geodetą, który osobiście odpowiada za
+                      pomiary i dokumentację. Brak pośredników i bezdusznych
+                      infolinii.
                     </p>
                   </div>
                   <div
@@ -828,9 +799,7 @@
                     <div
                       class="w-10 h-10 rounded-xl bg-primary-fixed flex items-center justify-center text-primary mb-3"
                     >
-                      <span class="material-symbols-outlined text-[22px]"
-                        >support_agent</span
-                      >
+                      <i data-lucide="message-circle" class="w-5 h-5 text-primary"></i>
                     </div>
                     <h3
                       class="font-headline font-bold text-base text-on-surface mb-1.5"
@@ -851,9 +820,7 @@
                     <div
                       class="w-10 h-10 rounded-xl bg-primary-fixed flex items-center justify-center text-primary mb-3"
                     >
-                      <span class="material-symbols-outlined text-[22px]"
-                        >holiday_village</span
-                      >
+                      <i data-lucide="map-pin" class="w-5 h-5 text-primary"></i>
                     </div>
                     <h3
                       class="font-headline font-bold text-base text-on-surface mb-1.5"
@@ -874,9 +841,7 @@
                     <div
                       class="w-10 h-10 rounded-xl bg-primary-fixed flex items-center justify-center text-primary mb-3"
                     >
-                      <span class="material-symbols-outlined text-[22px]"
-                        >payments</span
-                      >
+                      <i data-lucide="banknote" class="w-5 h-5 text-primary"></i>
                     </div>
                     <h3
                       class="font-headline font-bold text-base text-on-surface mb-1.5"
@@ -897,149 +862,210 @@
           </div>
         </section>
         <!-- Area Served (Obszar Działania) -->
-        <section id="obszar" class="w-full py-14 sm:py-20 bg-surface">
+        <section id="obszar" class="w-full py-16 sm:py-24 bg-surface">
           <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
             <div
-              class="rounded-2xl sm:rounded-3xl bg-secondary-container p-5 sm:p-8 lg:p-14 relative overflow-hidden"
+              class="rounded-3xl bg-surface-container-low border border-outline-variant/40 p-6 sm:p-10 lg:p-14 shadow-sm relative overflow-hidden"
             >
-              <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+              <!-- Ambient background decoration -->
+              <div
+                class="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-primary/5 blur-3xl pointer-events-none"
+              ></div>
+
+              <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center relative z-10">
+                <!-- Left: Content & Location Tags -->
                 <div class="lg:col-span-6 flex flex-col items-start">
                   <div
-                    class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-tertiary text-on-tertiary text-xs font-bold uppercase tracking-wider mb-4"
+                    class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider mb-4 border border-primary/15"
                   >
-                    <span class="material-symbols-outlined text-[15px]"
-                      >distance</span
-                    >
-                    Obszar Realizacji Prac
+                    <i data-lucide="map-pin" class="w-3.5 h-3.5"></i>
+                    <span>Zasięg Realizacji Prac</span>
                   </div>
+
                   <h2
-                    class="font-headline font-bold text-2xl sm:text-3xl lg:text-4xl text-on-surface mb-4"
+                    class="font-headline font-bold text-2xl sm:text-3xl lg:text-4xl text-on-surface tracking-tight leading-[1.2] mb-4"
                   >
-                    Gdzie działamy najczęściej?
+                    Gdzie realizujemy pomiary geodezyjne?
                   </h2>
+
                   <p
                     class="text-on-surface-variant text-sm sm:text-base leading-relaxed mb-6"
                   >
-                    Nasza siedziba mieści się w
-                    <strong class="text-on-surface"
-                      >Byszycach (gmina Wieliczka)</strong
-                    >, dzięki czemu szybko docieramy na pomiary na terenie
-                    całego powiatu wielickiego, krakowskiego oraz sąsiednich
-                    powiatów Małopolski.
+                    Siedziba w <strong class="text-on-surface font-semibold">Byszycach (gmina Wieliczka)</strong> stanowi idealny punkt wypadowy. Błyskawicznie docieramy na działki inwestorów w całym powiecie wielickim, Krakowie i gminach ościennych, regularnie współpracując z lokalnymi ośrodkami dokumentacji geodezyjnej (ODGiK).
                   </p>
-                  <div
-                    class="w-full grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-2.5 mb-6 text-xs sm:text-sm"
-                  >
-                    <div
-                      class="flex items-center gap-1.5 sm:gap-2 p-2 sm:p-2.5 rounded-xl bg-surface-container-lowest font-semibold text-on-surface shadow-xs"
-                    >
-                      <span
-                        class="material-symbols-outlined text-[16px] sm:text-[18px] text-primary shrink-0"
-                        >location_pin</span
-                      >
-                      Wieliczka
+
+                  <!-- 3 Trust highlights -->
+                  <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 w-full mb-6 pt-1">
+                    <div class="p-3 rounded-xl bg-surface-container-lowest border border-outline-variant/30 flex items-center gap-2.5">
+                      <div class="w-8 h-8 rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0">
+                        <i data-lucide="car" class="w-4 h-4"></i>
+                      </div>
+                      <div class="text-xs">
+                        <p class="font-bold text-on-surface">Dojazd w cenie</p>
+                        <p class="text-on-surface-variant text-[11px]">W strefie głównej</p>
+                      </div>
                     </div>
-                    <div
-                      class="flex items-center gap-1.5 sm:gap-2 p-2 sm:p-2.5 rounded-xl bg-surface-container-lowest font-semibold text-on-surface shadow-xs"
-                    >
-                      <span
-                        class="material-symbols-outlined text-[16px] sm:text-[18px] text-primary shrink-0"
-                        >location_pin</span
-                      >
-                      Kraków
+                    <div class="p-3 rounded-xl bg-surface-container-lowest border border-outline-variant/30 flex items-center gap-2.5">
+                      <div class="w-8 h-8 rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0">
+                        <i data-lucide="landmark" class="w-4 h-4"></i>
+                      </div>
+                      <div class="text-xs">
+                        <p class="font-bold text-on-surface">Znamy ODGiK</p>
+                        <p class="text-on-surface-variant text-[11px]">Szybkie procedury</p>
+                      </div>
                     </div>
-                    <div
-                      class="flex items-center gap-1.5 sm:gap-2 p-2 sm:p-2.5 rounded-xl bg-surface-container-lowest font-semibold text-on-surface shadow-xs"
-                    >
-                      <span
-                        class="material-symbols-outlined text-[16px] sm:text-[18px] text-primary shrink-0"
-                        >location_pin</span
-                      >
-                      Niepołomice
-                    </div>
-                    <div
-                      class="flex items-center gap-1.5 sm:gap-2 p-2 sm:p-2.5 rounded-xl bg-surface-container-lowest font-semibold text-on-surface shadow-xs"
-                    >
-                      <span
-                        class="material-symbols-outlined text-[16px] sm:text-[18px] text-primary shrink-0"
-                        >location_pin</span
-                      >
-                      Skawina
-                    </div>
-                    <div
-                      class="flex items-center gap-1.5 sm:gap-2 p-2 sm:p-2.5 rounded-xl bg-surface-container-lowest font-semibold text-on-surface shadow-xs"
-                    >
-                      <span
-                        class="material-symbols-outlined text-[16px] sm:text-[18px] text-primary shrink-0"
-                        >location_pin</span
-                      >
-                      Gdów
-                    </div>
-                    <div
-                      class="flex items-center gap-1.5 sm:gap-2 p-2 sm:p-2.5 rounded-xl bg-surface-container-lowest font-semibold text-on-surface shadow-xs"
-                    >
-                      <span
-                        class="material-symbols-outlined text-[16px] sm:text-[18px] text-primary shrink-0"
-                        >location_pin</span
-                      >
-                      Biskupice
-                    </div>
-                    <div
-                      class="flex items-center gap-1.5 sm:gap-2 p-2 sm:p-2.5 rounded-xl bg-surface-container-lowest font-semibold text-on-surface shadow-xs"
-                    >
-                      <span
-                        class="material-symbols-outlined text-[16px] sm:text-[18px] text-primary shrink-0"
-                        >location_pin</span
-                      >
-                      Dobczyce
-                    </div>
-                    <div
-                      class="flex items-center gap-1.5 sm:gap-2 p-2 sm:p-2.5 rounded-xl bg-surface-container-lowest font-semibold text-on-surface shadow-xs"
-                    >
-                      <span
-                        class="material-symbols-outlined text-[16px] sm:text-[18px] text-primary shrink-0"
-                        >location_pin</span
-                      >
-                      Świątniki Górne
-                    </div>
-                    <div
-                      class="flex items-center gap-1.5 sm:gap-2 p-2 sm:p-2.5 rounded-xl bg-surface-container-lowest font-semibold text-on-surface shadow-xs"
-                    >
-                      <span
-                        class="material-symbols-outlined text-[16px] sm:text-[18px] text-primary shrink-0"
-                        >location_pin</span
-                      >
-                      Mogilany
+                    <div class="p-3 rounded-xl bg-surface-container-lowest border border-outline-variant/30 flex items-center gap-2.5">
+                      <div class="w-8 h-8 rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0">
+                        <i data-lucide="zap" class="w-4 h-4"></i>
+                      </div>
+                      <div class="text-xs">
+                        <p class="font-bold text-on-surface">Krótkie terminy</p>
+                        <p class="text-on-surface-variant text-[11px]">Często do 48h</p>
+                      </div>
                     </div>
                   </div>
-                  <p class="text-xs text-secondary italic">
-                    Twoja inwestycja znajduje się w innej gminie? Skontaktuj się
-                    – dojeżdżamy również do Myślenic, Bochni i okolic.
-                  </p>
+
+                  <!-- Location Pills Grid -->
+                  <div class="w-full mb-6">
+                    <p class="text-xs font-bold uppercase tracking-wider text-on-surface-variant mb-3">
+                      Główne miejscowości i gminy:
+                    </p>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-xs font-semibold">
+                      <div
+                        class="flex items-center gap-2 px-3 py-2.5 rounded-xl bg-surface-container-lowest border border-outline-variant/40 text-on-surface hover:border-primary/50 transition-colors"
+                      >
+                        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse shrink-0"></span>
+                        <span class="truncate">Wieliczka (baza)</span>
+                      </div>
+                      <div
+                        class="flex items-center gap-2 px-3 py-2.5 rounded-xl bg-surface-container-lowest border border-outline-variant/40 text-on-surface hover:border-primary/50 transition-colors"
+                      >
+                        <i data-lucide="map-pin" class="w-3.5 h-3.5 text-primary shrink-0"></i>
+                        <span class="truncate">Kraków</span>
+                      </div>
+                      <div
+                        class="flex items-center gap-2 px-3 py-2.5 rounded-xl bg-surface-container-lowest border border-outline-variant/40 text-on-surface hover:border-primary/50 transition-colors"
+                      >
+                        <i data-lucide="map-pin" class="w-3.5 h-3.5 text-primary shrink-0"></i>
+                        <span class="truncate">Niepołomice</span>
+                      </div>
+                      <div
+                        class="flex items-center gap-2 px-3 py-2.5 rounded-xl bg-surface-container-lowest border border-outline-variant/40 text-on-surface hover:border-primary/50 transition-colors"
+                      >
+                        <i data-lucide="map-pin" class="w-3.5 h-3.5 text-primary shrink-0"></i>
+                        <span class="truncate">Skawina</span>
+                      </div>
+                      <div
+                        class="flex items-center gap-2 px-3 py-2.5 rounded-xl bg-surface-container-lowest border border-outline-variant/40 text-on-surface hover:border-primary/50 transition-colors"
+                      >
+                        <i data-lucide="map-pin" class="w-3.5 h-3.5 text-primary shrink-0"></i>
+                        <span class="truncate">Gdów</span>
+                      </div>
+                      <div
+                        class="flex items-center gap-2 px-3 py-2.5 rounded-xl bg-surface-container-lowest border border-outline-variant/40 text-on-surface hover:border-primary/50 transition-colors"
+                      >
+                        <i data-lucide="map-pin" class="w-3.5 h-3.5 text-primary shrink-0"></i>
+                        <span class="truncate">Biskupice</span>
+                      </div>
+                      <div
+                        class="flex items-center gap-2 px-3 py-2.5 rounded-xl bg-surface-container-lowest border border-outline-variant/40 text-on-surface hover:border-primary/50 transition-colors"
+                      >
+                        <i data-lucide="map-pin" class="w-3.5 h-3.5 text-primary shrink-0"></i>
+                        <span class="truncate">Dobczyce</span>
+                      </div>
+                      <div
+                        class="flex items-center gap-2 px-3 py-2.5 rounded-xl bg-surface-container-lowest border border-outline-variant/40 text-on-surface hover:border-primary/50 transition-colors"
+                      >
+                        <i data-lucide="map-pin" class="w-3.5 h-3.5 text-primary shrink-0"></i>
+                        <span class="truncate">Świątniki Górne</span>
+                      </div>
+                      <div
+                        class="flex items-center gap-2 px-3 py-2.5 rounded-xl bg-surface-container-lowest border border-outline-variant/40 text-on-surface hover:border-primary/50 transition-colors"
+                      >
+                        <i data-lucide="map-pin" class="w-3.5 h-3.5 text-primary shrink-0"></i>
+                        <span class="truncate">Mogilany</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Extra Range Callout Box -->
+                  <div
+                    class="p-4 rounded-xl bg-surface-container-lowest border border-outline-variant/30 flex items-start gap-3 w-full text-xs text-on-surface-variant"
+                  >
+                    <i data-lucide="navigation-2" class="w-4 h-4 text-primary shrink-0 mt-0.5"></i>
+                    <div>
+                      <p class="font-bold text-on-surface mb-0.5">Twoja działka leży w innej gminie?</p>
+                      <p class="leading-relaxed">
+                        Dojeżdżamy również do powiatów: <span class="text-on-surface font-semibold">myślenickiego, bocheńskiego, limanowskiego i wadowickiego</span>.
+                        <a href="tel:+48515430240" class="text-primary hover:underline font-semibold ml-1 inline-flex items-center gap-0.5">
+                          Zadzwoń i potwierdź dojazd →
+                        </a>
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <!-- Stylized Map Component -->
+
+                <!-- Right: High-End Map Card -->
                 <div class="lg:col-span-6 relative">
                   <div
-                    class="w-full h-64 sm:h-80 lg:h-96 rounded-2xl overflow-hidden shadow-lg bg-cover bg-center border border-outline-variant/30"
-                    data-location="Wieliczka, Poland"
-                    style="
-                      background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuDRd9nZ791F4IBlpdt9SyCPXspeTKO5BDHzwTCMa_AxTEdpj2grm2sOxxvozbDXa7ptz0_qTyo3RCXK5Sz_S3sb1BSj0EYki83TW9ADtpv7C0P1FbzdCvaClaJgwIbaCb8JyS-MQ1mP-Sh7SwdUnCgG0bCxbdao67h_X3-7rP-S5uRr7tRcmo4XCZR0YcR2sQ4hX16-l8B-q4Tg4tyD105YPMubeNm9buLjz6oqUKqrMa2xg2Dk8eGs&quot;);
-                    "
-                  ></div>
-                  <div
-                    class="absolute bottom-3 left-3 sm:bottom-4 sm:left-4 p-3 sm:p-4 rounded-xl bg-surface/90 backdrop-blur-md shadow-md text-xs max-w-[calc(100%-24px)]"
+                    class="relative w-full aspect-[4/3] sm:h-96 lg:h-[460px] rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg border border-outline-variant/40 group"
                   >
+                    <!-- Map Image -->
                     <div
-                      class="flex items-center gap-2 font-bold text-on-surface mb-1"
+                      class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                      data-location="Wieliczka, Poland"
+                      style="
+                        background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuDRd9nZ791F4IBlpdt9SyCPXspeTKO5BDHzwTCMa_AxTEdpj2grm2sOxxvozbDXa7ptz0_qTyo3RCXK5Sz_S3sb1BSj0EYki83TW9ADtpv7C0P1FbzdCvaClaJgwIbaCb8JyS-MQ1mP-Sh7SwdUnCgG0bCxbdao67h_X3-7rP-S5uRr7tRcmo4XCZR0YcR2sQ4hX16-l8B-q4Tg4tyD105YPMubeNm9buLjz6oqUKqrMa2xg2Dk8eGs&quot;);
+                      "
+                    ></div>
+
+                    <!-- Subtle radial vignette overlay -->
+                    <div
+                      class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/10 pointer-events-none"
+                    ></div>
+
+                    <!-- Top Floating Badge: Strefa Zasięgu -->
+                    <div
+                      class="absolute top-3 left-3 sm:top-4 sm:left-4 px-3 py-1.5 rounded-full bg-surface/90 backdrop-blur-md border border-outline-variant/30 text-xs font-semibold text-on-surface flex items-center gap-2 shadow-sm"
                     >
-                      <span
-                        class="w-2.5 h-2.5 rounded-full bg-primary animate-pulse shrink-0"
-                      ></span>
-                      Główny punkt operacyjny
+                      <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                      <span>Strefa bezpośredniego dojazdu</span>
                     </div>
-                    <p class="text-secondary font-medium truncate">
-                      Byszyce 167, 32-020 Wieliczka
-                    </p>
+
+                    <!-- Bottom Floating Card: Baza Operacyjna -->
+                    <div
+                      class="absolute bottom-3 left-3 right-3 sm:bottom-4 sm:left-4 sm:right-4 p-4 sm:p-5 rounded-2xl bg-surface/95 backdrop-blur-md shadow-xl border border-outline-variant/30 flex flex-col sm:flex-row sm:items-center justify-between gap-3"
+                    >
+                      <div class="flex items-start gap-3">
+                        <div
+                          class="w-10 h-10 rounded-xl bg-primary text-on-primary flex items-center justify-center shrink-0"
+                        >
+                          <i data-lucide="map-pin" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                          <div class="flex items-center gap-2 mb-0.5">
+                            <span class="font-headline font-bold text-sm sm:text-base text-on-surface">Główny punkt operacyjny</span>
+                            <span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-primary/10 text-primary">Baza</span>
+                          </div>
+                          <p class="text-xs text-on-surface-variant font-medium">
+                            Byszyce 167, 32-020 Wieliczka
+                          </p>
+                          <p class="text-[11px] text-on-surface-variant mt-0.5">
+                            10 min od centrum Wieliczki · 20 min od Krakowa
+                          </p>
+                        </div>
+                      </div>
+
+                      <a
+                        href="https://maps.google.com/?q=Byszyce+167,+32-020+Wieliczka"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex items-center justify-center gap-1.5 px-3.5 py-2 rounded-xl bg-primary text-on-primary text-xs font-semibold hover:bg-primary-container transition-all active:scale-[0.98] shrink-0"
+                      >
+                        <i data-lucide="navigation" class="w-3.5 h-3.5"></i>
+                        <span>Nawiguj</span>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1070,7 +1096,7 @@
               >
                 Zaufali nam inwestorzy i właściciele działek
               </h2>
-              <p class="text-secondary text-sm sm:text-base">
+              <p class="text-on-surface-variant text-sm sm:text-base max-w-xl mx-auto">
                 Oto rzeczywiste opinie klientów, dla których realizowaliśmy mapy
                 projektowe, tyczenia i inwentaryzacje w powiecie wielickim i
                 Krakowie.
@@ -1084,34 +1110,14 @@
               >
                 <div>
                   <div class="flex items-center justify-between mb-4">
-                    <div class="flex text-[#e89d28]">
-                      <span
-                        class="material-symbols-outlined text-[18px]"
-                        style="font-variation-settings: &quot;FILL&quot; 1"
-                        >star</span
-                      >
-                      <span
-                        class="material-symbols-outlined text-[18px]"
-                        style="font-variation-settings: &quot;FILL&quot; 1"
-                        >star</span
-                      >
-                      <span
-                        class="material-symbols-outlined text-[18px]"
-                        style="font-variation-settings: &quot;FILL&quot; 1"
-                        >star</span
-                      >
-                      <span
-                        class="material-symbols-outlined text-[18px]"
-                        style="font-variation-settings: &quot;FILL&quot; 1"
-                        >star</span
-                      >
-                      <span
-                        class="material-symbols-outlined text-[18px]"
-                        style="font-variation-settings: &quot;FILL&quot; 1"
-                        >star</span
-                      >
+                    <div class="flex text-amber-500 gap-0.5">
+                      <i data-lucide="star" class="w-4 h-4 fill-amber-500 text-amber-500"></i>
+                      <i data-lucide="star" class="w-4 h-4 fill-amber-500 text-amber-500"></i>
+                      <i data-lucide="star" class="w-4 h-4 fill-amber-500 text-amber-500"></i>
+                      <i data-lucide="star" class="w-4 h-4 fill-amber-500 text-amber-500"></i>
+                      <i data-lucide="star" class="w-4 h-4 fill-amber-500 text-amber-500"></i>
                     </div>
-                    <span class="text-[11px] text-secondary font-medium"
+                    <span class="text-xs text-on-surface-variant font-medium"
                       >Zweryfikowana opinia</span
                     >
                   </div>
@@ -1136,7 +1142,7 @@
                     <p class="font-headline font-bold text-sm text-on-surface">
                       Tomasz M.
                     </p>
-                    <p class="text-xs text-secondary">
+                    <p class="text-xs text-on-surface-variant">
                       Inwestor indywidualny, Wieliczka
                     </p>
                   </div>
@@ -1148,51 +1154,31 @@
               >
                 <div>
                   <div class="flex items-center justify-between mb-4">
-                    <div class="flex text-[#e89d28]">
-                      <span
-                        class="material-symbols-outlined text-[18px]"
-                        style="font-variation-settings: &quot;FILL&quot; 1"
-                        >star</span
-                      >
-                      <span
-                        class="material-symbols-outlined text-[18px]"
-                        style="font-variation-settings: &quot;FILL&quot; 1"
-                        >star</span
-                      >
-                      <span
-                        class="material-symbols-outlined text-[18px]"
-                        style="font-variation-settings: &quot;FILL&quot; 1"
-                        >star</span
-                      >
-                      <span
-                        class="material-symbols-outlined text-[18px]"
-                        style="font-variation-settings: &quot;FILL&quot; 1"
-                        >star</span
-                      >
-                      <span
-                        class="material-symbols-outlined text-[18px]"
-                        style="font-variation-settings: &quot;FILL&quot; 1"
-                        >star</span
-                      >
+                    <div class="flex text-amber-500 gap-0.5">
+                      <i data-lucide="star" class="w-4 h-4 fill-amber-500 text-amber-500"></i>
+                      <i data-lucide="star" class="w-4 h-4 fill-amber-500 text-amber-500"></i>
+                      <i data-lucide="star" class="w-4 h-4 fill-amber-500 text-amber-500"></i>
+                      <i data-lucide="star" class="w-4 h-4 fill-amber-500 text-amber-500"></i>
+                      <i data-lucide="star" class="w-4 h-4 fill-amber-500 text-amber-500"></i>
                     </div>
-                    <span class="text-[11px] text-secondary font-medium"
+                    <span class="text-xs text-on-surface-variant font-medium"
                       >Zweryfikowana opinia</span
                     >
                   </div>
                   <p
                     class="text-sm text-on-surface leading-relaxed mb-6 font-medium"
                   >
-                    "Świetny kontakt, Pan Łukasz cierpliwie wytłumaczył
-                    wszystkie etapy tyczenia i formalności urzędowe. Wytyczenie
-                    budynku odbyło się dokładnie w umówionym dniu. Zdecydowanie
-                    polecam każdemu budującemu dom!"
+                    "Tyczenie budynku jednorodzinnego w Byszycach przebiegło
+                    sprawnie i dokładnie. Kierownik budowy nie miał żadnych uwag,
+                    a wpis do dziennika został dokonany od ręki. Rzetelny
+                    fachowiec z Wieliczki."
                   </p>
                 </div>
                 <div
                   class="pt-4 border-t border-outline-variant/30 flex items-center gap-3"
                 >
                   <div
-                    class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed font-bold text-sm"
+                    class="w-10 h-10 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed font-bold text-sm"
                   >
                     AK
                   </div>
@@ -1200,8 +1186,8 @@
                     <p class="font-headline font-bold text-sm text-on-surface">
                       Anna K.
                     </p>
-                    <p class="text-xs text-secondary">
-                      Budowa domu jednorodzinnego, Niepołomice
+                    <p class="text-xs text-on-surface-variant">
+                      Budowa domu, gm. Wieliczka
                     </p>
                   </div>
                 </div>
@@ -1212,34 +1198,14 @@
               >
                 <div>
                   <div class="flex items-center justify-between mb-4">
-                    <div class="flex text-[#e89d28]">
-                      <span
-                        class="material-symbols-outlined text-[18px]"
-                        style="font-variation-settings: &quot;FILL&quot; 1"
-                        >star</span
-                      >
-                      <span
-                        class="material-symbols-outlined text-[18px]"
-                        style="font-variation-settings: &quot;FILL&quot; 1"
-                        >star</span
-                      >
-                      <span
-                        class="material-symbols-outlined text-[18px]"
-                        style="font-variation-settings: &quot;FILL&quot; 1"
-                        >star</span
-                      >
-                      <span
-                        class="material-symbols-outlined text-[18px]"
-                        style="font-variation-settings: &quot;FILL&quot; 1"
-                        >star</span
-                      >
-                      <span
-                        class="material-symbols-outlined text-[18px]"
-                        style="font-variation-settings: &quot;FILL&quot; 1"
-                        >star</span
-                      >
+                    <div class="flex text-amber-500 gap-0.5">
+                      <i data-lucide="star" class="w-4 h-4 fill-amber-500 text-amber-500"></i>
+                      <i data-lucide="star" class="w-4 h-4 fill-amber-500 text-amber-500"></i>
+                      <i data-lucide="star" class="w-4 h-4 fill-amber-500 text-amber-500"></i>
+                      <i data-lucide="star" class="w-4 h-4 fill-amber-500 text-amber-500"></i>
+                      <i data-lucide="star" class="w-4 h-4 fill-amber-500 text-amber-500"></i>
                     </div>
-                    <span class="text-[11px] text-secondary font-medium"
+                    <span class="text-xs text-on-surface-variant font-medium"
                       >Zweryfikowana opinia</span
                     >
                   </div>
@@ -1264,7 +1230,7 @@
                     <p class="font-headline font-bold text-sm text-on-surface">
                       Grzegorz W.
                     </p>
-                    <p class="text-xs text-secondary">
+                    <p class="text-xs text-on-surface-variant">
                       Inwestycja budowlana, Kraków
                     </p>
                   </div>
@@ -1280,37 +1246,28 @@
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
               <!-- Direct Contact Cards -->
               <div class="lg:col-span-5 flex flex-col">
-                <div
-                  class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-primary mb-2"
-                >
-                  <span class="w-2 h-2 rounded-full bg-primary"></span>
-                  Kontakt &amp; Szybka Wycena
-                </div>
                 <h2
                   class="font-headline font-bold text-2xl sm:text-3xl lg:text-4xl text-on-surface mb-4"
                 >
                   Skonsultuj swoją działkę lub inwestycję
                 </h2>
-                <p class="text-secondary text-sm sm:text-base leading-relaxed mb-6 sm:mb-8">
-                  Wyślij numer działki, obręb i miejscowość lub po prostu
-                  zadzwoń. Wstępną analizę i wycenę przygotujemy bezpłatnie –
+                <p class="text-on-surface-variant text-sm sm:text-base leading-relaxed max-w-prose mb-6 sm:mb-8">
+                  Wyślij numer działki, obręb i miejscowość albo zadzwoń. Wstępną analizę i wycenę przygotujemy bezpłatnie –
                   zazwyczaj jeszcze tego samego dnia.
                 </p>
                 <!-- Direct Phone Card -->
                 <a
-                  class="p-5 sm:p-6 rounded-2xl bg-primary text-on-primary shadow-md hover:bg-primary-container hover:text-on-primary-container transition-all mb-4 flex items-center gap-3.5 sm:gap-4 group"
+                  class="p-5 sm:p-6 rounded-2xl bg-primary text-on-primary hover:bg-primary-container hover:text-on-primary-container transition-all mb-4 flex items-center gap-3.5 sm:gap-4 group active:scale-[0.99]"
                   href="tel:+48515430240"
                 >
                   <div
                     class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-on-primary/10 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform"
                   >
-                    <span class="material-symbols-outlined text-[24px] sm:text-[26px]"
-                      >call</span
-                    >
+                    <i data-lucide="phone" class="w-6 h-6 text-on-primary group-hover:text-on-primary-container"></i>
                   </div>
                   <div>
                     <p
-                      class="text-xs font-medium text-on-primary/80 group-hover:text-on-primary-container/80"
+                      class="text-xs font-medium text-on-primary/90 group-hover:text-on-primary-container"
                     >
                       Telefon bezpośredni do geodety
                     </p>
@@ -1318,7 +1275,7 @@
                       +48 515 430 240
                     </p>
                     <p
-                      class="text-[11px] text-on-primary/75 group-hover:text-on-primary-container/75 mt-0.5"
+                      class="text-xs text-on-primary/90 group-hover:text-on-primary-container mt-0.5"
                     >
                       Odbieramy natychmiast lub oddzwaniamy w ciągu godziny
                     </p>
@@ -1329,10 +1286,7 @@
                   class="p-5 sm:p-6 rounded-2xl bg-surface-container-low space-y-4 text-sm"
                 >
                   <div class="flex items-start gap-3">
-                    <span
-                      class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5"
-                      >home_pin</span
-                    >
+                    <i data-lucide="map-pin" class="w-5 h-5 text-primary shrink-0 mt-0.5"></i>
                     <div>
                       <span class="font-bold text-on-surface block"
                         >Biuro Geodezyjne HORYZONT</span
@@ -1347,10 +1301,7 @@
                     </div>
                   </div>
                   <div class="flex items-start gap-3">
-                    <span
-                      class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5"
-                      >schedule</span
-                    >
+                    <i data-lucide="clock" class="w-5 h-5 text-primary shrink-0 mt-0.5"></i>
                     <div>
                       <span class="font-bold text-on-surface block"
                         >Godziny pracy</span
@@ -1358,16 +1309,13 @@
                       <span class="text-on-surface-variant"
                         >Poniedziałek – Piątek: 07:00 – 17:00</span
                       >
-                      <span class="block text-xs text-secondary"
-                        >Sobota po wcześniejszym umówieniu pomiaru</span
+                      <span class="block text-xs text-on-surface-variant font-medium"
+                        >Wycena telefoniczna również w weekendy</span
                       >
                     </div>
                   </div>
                   <div class="flex items-start gap-3">
-                    <span
-                      class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5"
-                      >mail</span
-                    >
+                    <i data-lucide="mail" class="w-5 h-5 text-primary shrink-0 mt-0.5"></i>
                     <div>
                       <span class="font-bold text-on-surface block"
                         >Adres e-mail</span
@@ -1390,7 +1338,7 @@
                 >
                   Formularz bezpłatnej wyceny
                 </h3>
-                <p class="text-secondary text-xs sm:text-sm mb-6 sm:mb-8">
+                <p class="text-on-surface-variant text-xs sm:text-sm mb-6 sm:mb-8">
                   Podaj parametry zlecenia – oddzwonimy ze szczegółową
                   kalkulacją i terminem.
                 </p>
@@ -1398,13 +1346,13 @@
                   <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
                     <div>
                       <label
-                        class="block text-xs font-bold uppercase tracking-wider text-on-surface mb-1.5 sm:mb-2"
+                        class="block text-sm font-semibold text-on-surface mb-1.5 sm:mb-2"
                         for="client-name"
                       >
                         Imię i Nazwisko *
                       </label>
                       <input
-                        class="w-full px-4 py-3 rounded-xl bg-surface-container-low text-on-surface text-base sm:text-sm border-0 focus:bg-surface focus:outline-none focus:ring-2 focus:ring-primary transition-all placeholder:text-secondary"
+                        class="w-full px-4 py-3 rounded-xl bg-surface-container-low text-on-surface text-base sm:text-sm border-0 focus:bg-surface focus:outline-none focus:ring-2 focus:ring-primary transition-all placeholder:text-on-surface-variant/70"
                         id="client-name"
                         placeholder="Jan Kowalski"
                         required=""
@@ -1413,13 +1361,13 @@
                     </div>
                     <div>
                       <label
-                        class="block text-xs font-bold uppercase tracking-wider text-on-surface mb-1.5 sm:mb-2"
+                        class="block text-sm font-semibold text-on-surface mb-1.5 sm:mb-2"
                         for="client-phone"
                       >
                         Numer Telefonu *
                       </label>
                       <input
-                        class="w-full px-4 py-3 rounded-xl bg-surface-container-low text-on-surface text-base sm:text-sm border-0 focus:bg-surface focus:outline-none focus:ring-2 focus:ring-primary transition-all placeholder:text-secondary"
+                        class="w-full px-4 py-3 rounded-xl bg-surface-container-low text-on-surface text-base sm:text-sm border-0 focus:bg-surface focus:outline-none focus:ring-2 focus:ring-primary transition-all placeholder:text-on-surface-variant/70"
                         id="client-phone"
                         placeholder="np. 500 123 456"
                         required=""
@@ -1430,7 +1378,7 @@
                   <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
                     <div>
                       <label
-                        class="block text-xs font-bold uppercase tracking-wider text-on-surface mb-1.5 sm:mb-2"
+                        class="block text-sm font-semibold text-on-surface mb-1.5 sm:mb-2"
                         for="service-type"
                       >
                         Rodzaj Usługi *
@@ -1459,13 +1407,13 @@
                     </div>
                     <div>
                       <label
-                        class="block text-xs font-bold uppercase tracking-wider text-on-surface mb-1.5 sm:mb-2"
+                        class="block text-sm font-semibold text-on-surface mb-1.5 sm:mb-2"
                         for="parcel-loc"
                       >
                         Miejscowość / Nr Działki
                       </label>
                       <input
-                        class="w-full px-4 py-3 rounded-xl bg-surface-container-low text-on-surface text-base sm:text-sm border-0 focus:bg-surface focus:outline-none focus:ring-2 focus:ring-primary transition-all placeholder:text-secondary"
+                        class="w-full px-4 py-3 rounded-xl bg-surface-container-low text-on-surface text-base sm:text-sm border-0 focus:bg-surface focus:outline-none focus:ring-2 focus:ring-primary transition-all placeholder:text-on-surface-variant/70"
                         id="parcel-loc"
                         placeholder="np. Wieliczka, dz. 142/5"
                         type="text"
@@ -1474,13 +1422,13 @@
                   </div>
                   <div>
                     <label
-                      class="block text-xs font-bold uppercase tracking-wider text-on-surface mb-1.5 sm:mb-2"
+                      class="block text-sm font-semibold text-on-surface mb-1.5 sm:mb-2"
                       for="message"
                     >
                       Opis prac / dodatkowe informacje
                     </label>
                     <textarea
-                      class="w-full px-4 py-3 rounded-xl bg-surface-container-low text-on-surface text-base sm:text-sm border-0 focus:bg-surface focus:outline-none focus:ring-2 focus:ring-primary transition-all placeholder:text-secondary"
+                      class="w-full px-4 py-3 rounded-xl bg-surface-container-low text-on-surface text-base sm:text-sm border-0 focus:bg-surface focus:outline-none focus:ring-2 focus:ring-primary transition-all placeholder:text-on-surface-variant/70"
                       id="message"
                       placeholder="Np. budynek jednorodzinny parterowy z poddaszem, termin rozpoczęcia robót planowany na kolejny miesiąc..."
                       rows="3"
@@ -1494,7 +1442,7 @@
                       type="checkbox"
                     />
                     <label
-                      class="text-xs text-secondary leading-normal cursor-pointer"
+                      class="text-xs text-on-surface-variant leading-normal cursor-pointer"
                       for="rodo"
                     >
                       Wyrażam zgodę na przetwarzanie danych osobowych w celu
@@ -1503,21 +1451,17 @@
                     </label>
                   </div>
                   <button
-                    class="w-full py-3.5 sm:py-4 px-6 rounded-xl bg-primary text-on-primary hover:bg-primary-container hover:text-on-primary-container font-bold text-sm sm:text-base shadow-[0_4px_16px_rgba(74,124,89,0.25)] active:scale-[0.99] transition-all flex items-center justify-center gap-2"
+                    class="w-full py-3.5 sm:py-4 px-6 rounded-xl bg-primary text-on-primary hover:bg-primary-container hover:text-on-primary-container font-bold text-sm sm:text-base active:scale-[0.98] transition-all flex items-center justify-center gap-2"
                     type="submit"
                   >
-                    <span class="material-symbols-outlined text-[20px]"
-                      >send</span
-                    >
+                    <i data-lucide="send" class="w-4 h-4"></i>
                     <span>Wyślij zapytanie o bezpłatną wycenę</span>
                   </button>
                   <div
                     class="hidden p-4 rounded-xl bg-primary-fixed text-on-primary-fixed text-xs font-semibold flex items-center gap-2 animate-fade-in"
                     id="form-feedback"
                   >
-                    <span class="material-symbols-outlined text-[18px]"
-                      >check_circle</span
-                    >
+                    <i data-lucide="check-circle-2" class="w-4 h-4 shrink-0"></i>
                     Dziękujemy! Twoje zapytanie zostało przesłane. Oddzwonimy w
                     możliwie najszybszym czasie.
                   </div>
@@ -1536,24 +1480,29 @@
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12"
         >
           <div class="flex flex-col gap-4">
-            <div class="flex items-center gap-3">
+            <div class="flex items-center gap-3.5">
               <img
                 alt="Horyzont Geodezja Logo"
-                class="h-8 w-auto object-contain"
+                class="h-12 sm:h-14 w-auto object-contain shrink-0"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHlLOI5kK2yw6lHCkk2cLqA6g5tlQJQSG-FPNu7idCm8fst7A4Qv5TBpK2TOD9wbOGGOjZ01g3E_kB5fsUqfFYqq76pCt0FLvOdlTjaPHexpN7sBLO-pTrKsPv-IgvWdDIGHjZj-ui4L4XWJa3BFmgMuAsF5a80PaWQIDPeoorcC-bgLQ3qiIB-5b_sL_Ftw2qGFOfKQEasJfTcJS8_kpXqzPaCbXJILCb_DdrvMf_MH8qnSZLPJFn"
-              /><span class="font-headline font-bold text-lg text-on-surface"
-                >HORYZONT</span
-              >
+              />
+              <div class="flex flex-col">
+                <span class="font-headline font-bold text-xl sm:text-2xl text-on-surface leading-tight tracking-tight"
+                  >HORYZONT</span
+                >
+                <span class="text-xs font-semibold text-primary tracking-wide"
+                  >Biuro Geodezyjne Łukasz Kowalczyk</span
+                >
+              </div>
             </div>
             <p class="text-sm leading-relaxed text-on-surface-variant">
-              Profesjonalne biuro geodezyjne świadczące kompleksowe usługi
-              geodezyjne i kartograficzne na terenie Wieliczki, Krakowa oraz
-              całej Małopolski.
+              Profesjonalne biuro świadczące kompleksowe usługi geodezyjne
+              i kartograficzne na terenie Wieliczki, Krakowa oraz całej
+              Małopolski.
             </p>
             <div class="flex items-center gap-2 pt-2">
-              <span class="material-symbols-outlined text-tertiary"
-                >verified</span
-              ><span class="text-xs font-semibold text-on-surface"
+              <i data-lucide="shield-check" class="w-4 h-4 text-tertiary shrink-0"></i>
+              <span class="text-xs font-semibold text-on-surface"
                 >Uprawnienia państwowe GGK</span
               >
             </div>
@@ -1563,24 +1512,35 @@
               Usługi Geodezyjne
             </h3>
             <ul class="space-y-2.5 text-sm">
-              <li class="hover:text-primary transition-colors">
-                <a href="#uslugi">Mapy do celów projektowych</a>
+              <li>
+                <a href="#uslugi" class="flex items-center gap-2 hover:text-primary transition-colors">
+                  <i data-lucide="map" class="w-4 h-4 text-primary shrink-0"></i>
+                  <span>Mapy do celów projektowych</span>
+                </a>
               </li>
-              <li class="hover:text-primary transition-colors">
-                <a href="#uslugi"
-                  >Tyczenie budynków i sieci uzbrojenia</a
-                >
+              <li>
+                <a href="#uslugi" class="flex items-center gap-2 hover:text-primary transition-colors">
+                  <i data-lucide="ruler" class="w-4 h-4 text-primary shrink-0"></i>
+                  <span>Tyczenie budynków i sieci uzbrojenia</span>
+                </a>
               </li>
-              <li class="hover:text-primary transition-colors">
-                <a href="#uslugi">Inwentaryzacje powykonawcze</a>
+              <li>
+                <a href="#uslugi" class="flex items-center gap-2 hover:text-primary transition-colors">
+                  <i data-lucide="clipboard-check" class="w-4 h-4 text-primary shrink-0"></i>
+                  <span>Inwentaryzacje powykonawcze</span>
+                </a>
               </li>
-              <li class="hover:text-primary transition-colors">
-                <a href="#uslugi"
-                  >Podziały i rozgraniczenia nieruchomości</a
-                >
+              <li>
+                <a href="#uslugi" class="flex items-center gap-2 hover:text-primary transition-colors">
+                  <i data-lucide="split" class="w-4 h-4 text-primary shrink-0"></i>
+                  <span>Podziały i rozgraniczenia nieruchomości</span>
+                </a>
               </li>
-              <li class="hover:text-primary transition-colors">
-                <a href="#uslugi">Wznowienia znaków granicznych</a>
+              <li>
+                <a href="#uslugi" class="flex items-center gap-2 hover:text-primary transition-colors">
+                  <i data-lucide="map-pinned" class="w-4 h-4 text-primary shrink-0"></i>
+                  <span>Wznowienia znaków granicznych</span>
+                </a>
               </li>
             </ul>
           </div>
@@ -1590,10 +1550,8 @@
             </h3>
             <ul class="space-y-3 text-sm">
               <li class="flex items-start gap-2.5">
-                <span
-                  class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5"
-                  >location_on</span
-                ><a
+                <i data-lucide="map-pin" class="w-4 h-4 text-primary shrink-0 mt-0.5"></i>
+                <a
                   href="https://maps.google.com/?q=Byszyce+167,+32-020+Wieliczka"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -1602,33 +1560,26 @@
                 >
               </li>
               <li class="flex items-center gap-2.5">
-                <span
-                  class="material-symbols-outlined text-primary text-[18px] shrink-0"
-                  >phone</span
-                ><a
+                <i data-lucide="phone" class="w-4 h-4 text-primary shrink-0"></i>
+                <a
                   class="hover:text-primary transition-colors font-semibold text-on-surface"
                   href="tel:+48515430240"
                   >+48 515 430 240</a
                 >
               </li>
               <li class="flex items-center gap-2.5">
-                <span
-                  class="material-symbols-outlined text-primary text-[18px] shrink-0"
-                  >mail</span
-                ><a
+                <i data-lucide="mail" class="w-4 h-4 text-primary shrink-0"></i>
+                <a
                   href="mailto:kontakt@geodezja-horyzont.pl"
                   class="hover:text-primary transition-colors"
                   >kontakt@geodezja-horyzont.pl</a
                 >
               </li>
               <li class="flex items-start gap-2.5">
-                <span
-                  class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5"
-                  >schedule</span
-                >
+                <i data-lucide="clock" class="w-4 h-4 text-primary shrink-0 mt-0.5"></i>
                 <div>
                   <span>Poniedziałek – Piątek: 07:00 – 17:00</span><br /><span
-                    class="text-xs text-secondary"
+                    class="text-xs text-on-surface-variant"
                     >Sobota – Niedziela: Zamknięte</span
                   >
                 </div>
@@ -1647,37 +1598,35 @@
               class="p-4 rounded-xl bg-surface-container flex flex-col gap-2"
             >
               <span
-                class="text-xs font-semibold text-tertiary uppercase tracking-wide"
+                class="text-xs font-bold text-tertiary"
                 >Potrzebujesz wyceny?</span
               >
               <p class="text-xs text-on-surface">
                 Bezpłatna konsultacja i szybka analiza dokumentacji działki.
               </p>
               <a
-                class="text-xs font-bold text-primary hover:text-on-surface transition-colors flex items-center gap-1 mt-1"
+                class="text-xs font-bold text-primary hover:text-on-surface transition-colors flex items-center gap-1.5 mt-1"
                 href="tel:+48515430240"
-                >Zadzwoń: 515 430 240
-                <span class="material-symbols-outlined text-[14px]"
-                  >arrow_forward</span
-                ></a
-              >
+                ><span>Zadzwoń: 515 430 240</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </a>
             </div>
           </div>
         </div>
         <div
-          class="mt-12 pt-6 border-t border-outline-variant/30 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-secondary"
+          class="mt-12 pt-6 border-t border-outline-variant/40 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-on-surface-variant"
         >
           <p>
             © 2025 HORYZONT Biuro Geodezyjne Łukasz Kowalczyk. Wszelkie prawa
             zastrzeżone.
           </p>
-          <div class="flex items-center gap-6">
-            <a class="hover:text-on-surface transition-colors" href="#kontakt"
-              >Polityka prywatności</a
-            ><a class="hover:text-on-surface transition-colors" href="#kontakt"
-              >RODO</a
-            ><a class="hover:text-on-surface transition-colors" href="#kontakt"
-              >Kontakt</a
+          <div class="flex flex-wrap items-center gap-4 sm:gap-6 font-semibold">
+            <a class="flex items-center gap-1.5 text-on-surface hover:text-primary transition-colors underline-offset-4 hover:underline" href="#kontakt"
+              ><i data-lucide="shield-check" class="w-3.5 h-3.5 text-primary"></i><span>Polityka prywatności</span></a
+            ><a class="flex items-center gap-1.5 text-on-surface hover:text-primary transition-colors underline-offset-4 hover:underline" href="#kontakt"
+              ><i data-lucide="file-text" class="w-3.5 h-3.5 text-primary"></i><span>RODO</span></a
+            ><a class="flex items-center gap-1.5 text-on-surface hover:text-primary transition-colors underline-offset-4 hover:underline" href="#kontakt"
+              ><i data-lucide="phone" class="w-3.5 h-3.5 text-primary"></i><span>Kontakt</span></a
             >
           </div>
         </div>
@@ -1691,16 +1640,16 @@
       <div class="max-w-md mx-auto flex items-center gap-2 sm:gap-3">
         <a
           href="tel:+48515430240"
-          class="flex-1 flex items-center justify-center gap-2 py-3 px-3 rounded-xl bg-primary text-on-primary font-bold text-sm shadow-md active:scale-[0.98] transition-transform"
+          class="flex-1 flex items-center justify-center gap-2 py-3 px-3 rounded-xl bg-primary text-on-primary font-bold text-sm active:scale-[0.98] transition-transform"
         >
-          <span class="material-symbols-outlined text-[19px]">call</span>
+          <i data-lucide="phone" class="w-4 h-4"></i>
           <span>Zadzwoń</span>
         </a>
         <a
           href="#wycena"
           class="flex-1 flex items-center justify-center gap-2 py-3 px-3 rounded-xl bg-secondary-container text-on-secondary-container font-semibold text-sm hover:bg-surface-container-high active:scale-[0.98] transition-transform"
         >
-          <span class="material-symbols-outlined text-[19px] text-tertiary">calculate</span>
+          <i data-lucide="calculator" class="w-4 h-4 text-tertiary"></i>
           <span>Wycena online</span>
         </a>
       </div>

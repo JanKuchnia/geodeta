@@ -1,8 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // Initialize Lucide icons
+  if (window.lucide && typeof window.lucide.createIcons === "function") {
+    window.lucide.createIcons();
+  }
+
   // Mobile menu drawer toggle
   const mobileBtn = document.getElementById("mobile-menu-btn");
   const mobileMenu = document.getElementById("mobile-menu");
-  const mobileMenuIcon = mobileBtn ? mobileBtn.querySelector(".material-symbols-outlined") : null;
+  const iconOpen = document.getElementById("menu-icon-open");
+  const iconClose = document.getElementById("menu-icon-close");
 
   if (mobileBtn && mobileMenu) {
     const toggleMenu = (open) => {
@@ -10,11 +16,13 @@ document.addEventListener("DOMContentLoaded", () => {
       if (isExpanded) {
         mobileMenu.classList.remove("hidden");
         mobileBtn.setAttribute("aria-expanded", "true");
-        if (mobileMenuIcon) mobileMenuIcon.textContent = "close";
+        if (iconOpen) iconOpen.classList.add("hidden");
+        if (iconClose) iconClose.classList.remove("hidden");
       } else {
         mobileMenu.classList.add("hidden");
         mobileBtn.setAttribute("aria-expanded", "false");
-        if (mobileMenuIcon) mobileMenuIcon.textContent = "menu";
+        if (iconOpen) iconOpen.classList.remove("hidden");
+        if (iconClose) iconClose.classList.add("hidden");
       }
     };
 
