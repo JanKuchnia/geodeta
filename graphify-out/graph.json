@@ -1,0 +1,408 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "settings.local.json",
+      "file_type": "code",
+      "source_file": ".claude/settings.local.json",
+      "source_location": "L1",
+      "id": "claude_settings_local_json",
+      "community": 2,
+      "norm_label": "settings.local.json"
+    },
+    {
+      "label": "hooks",
+      "file_type": "code",
+      "source_file": ".claude/settings.local.json",
+      "source_location": "L2",
+      "id": "claude_settings_local_hooks",
+      "community": 2,
+      "norm_label": "hooks"
+    },
+    {
+      "label": "SessionStart",
+      "file_type": "code",
+      "source_file": ".claude/settings.local.json",
+      "source_location": "L3",
+      "id": "claude_settings_local_hooks_sessionstart",
+      "community": 2,
+      "norm_label": "sessionstart"
+    },
+    {
+      "label": "brief.md",
+      "file_type": "document",
+      "source_file": "DOCS/brief.md",
+      "source_location": "L1",
+      "id": "docs_brief_md",
+      "community": 4,
+      "norm_label": "brief.md"
+    },
+    {
+      "label": "research.md",
+      "file_type": "document",
+      "source_file": "DOCS/research.md",
+      "source_location": "L1",
+      "id": "docs_research_md",
+      "community": 0,
+      "norm_label": "research.md"
+    },
+    {
+      "label": "Research: Biuro Geodezyjne HORYZONT \u0141ukasz Kowalczyk",
+      "file_type": "document",
+      "source_file": "DOCS/research.md",
+      "source_location": "L1",
+      "id": "docs_research_research_biuro_geodezyjne_horyzont_\u0142ukasz_kowalczyk",
+      "community": 0,
+      "norm_label": "research: biuro geodezyjne horyzont \u0142ukasz kowalczyk"
+    },
+    {
+      "label": "Verified facts",
+      "file_type": "document",
+      "source_file": "DOCS/research.md",
+      "source_location": "L3",
+      "id": "docs_research_verified_facts",
+      "community": 0,
+      "norm_label": "verified facts"
+    },
+    {
+      "label": "Client-confirmed",
+      "file_type": "document",
+      "source_file": "DOCS/research.md",
+      "source_location": "L15",
+      "id": "docs_research_client_confirmed",
+      "community": 0,
+      "norm_label": "client-confirmed"
+    },
+    {
+      "label": "Unverified / assumed",
+      "file_type": "document",
+      "source_file": "DOCS/research.md",
+      "source_location": "L19",
+      "id": "docs_research_unverified_assumed",
+      "community": 0,
+      "norm_label": "unverified / assumed"
+    },
+    {
+      "label": "Sources",
+      "file_type": "document",
+      "source_file": "DOCS/research.md",
+      "source_location": "L28",
+      "id": "docs_research_sources",
+      "community": 0,
+      "norm_label": "sources"
+    },
+    {
+      "label": "Review sentiment",
+      "file_type": "document",
+      "source_file": "DOCS/research.md",
+      "source_location": "L39",
+      "id": "docs_research_review_sentiment",
+      "community": 0,
+      "norm_label": "review sentiment"
+    },
+    {
+      "label": "Competitors",
+      "file_type": "document",
+      "source_file": "DOCS/research.md",
+      "source_location": "L49",
+      "id": "docs_research_competitors",
+      "community": 0,
+      "norm_label": "competitors"
+    },
+    {
+      "label": "Tone signals",
+      "file_type": "document",
+      "source_file": "DOCS/research.md",
+      "source_location": "L59",
+      "id": "docs_research_tone_signals",
+      "community": 0,
+      "norm_label": "tone signals"
+    },
+    {
+      "label": "Raw notes",
+      "file_type": "document",
+      "source_file": "DOCS/research.md",
+      "source_location": "L69",
+      "id": "docs_research_raw_notes",
+      "community": 0,
+      "norm_label": "raw notes"
+    },
+    {
+      "label": "SITE-PLAN.md",
+      "file_type": "document",
+      "source_file": "DOCS/SITE-PLAN.md",
+      "source_location": "L1",
+      "id": "docs_site_plan_md",
+      "community": 1,
+      "norm_label": "site-plan.md"
+    },
+    {
+      "label": "Site Plan: Biuro Geodezyjne HORYZONT \u0141ukasz Kowalczyk",
+      "file_type": "document",
+      "source_file": "DOCS/SITE-PLAN.md",
+      "source_location": "L1",
+      "id": "docs_site_plan_site_plan_biuro_geodezyjne_horyzont_\u0142ukasz_kowalczyk",
+      "community": 1,
+      "norm_label": "site plan: biuro geodezyjne horyzont \u0142ukasz kowalczyk"
+    },
+    {
+      "label": "Facts used",
+      "file_type": "document",
+      "source_file": "DOCS/SITE-PLAN.md",
+      "source_location": "L5",
+      "id": "docs_site_plan_facts_used",
+      "community": 1,
+      "norm_label": "facts used"
+    },
+    {
+      "label": "Site architecture (9 pages \u2014 no /locations, no /blog)",
+      "file_type": "document",
+      "source_file": "DOCS/SITE-PLAN.md",
+      "source_location": "L10",
+      "id": "docs_site_plan_site_architecture_9_pages_no_locations_no_blog",
+      "community": 3,
+      "norm_label": "site architecture (9 pages \u2014 no /locations, no /blog)"
+    },
+    {
+      "label": "code:block1 (/                      Home)",
+      "file_type": "document",
+      "source_file": "DOCS/SITE-PLAN.md",
+      "source_location": "L12",
+      "id": "docs_site_plan_codeblock_1",
+      "community": 3,
+      "norm_label": "code:block1 (/                      home)"
+    },
+    {
+      "label": "Per-page content notes",
+      "file_type": "document",
+      "source_file": "DOCS/SITE-PLAN.md",
+      "source_location": "L29",
+      "id": "docs_site_plan_per_page_content_notes",
+      "community": 1,
+      "norm_label": "per-page content notes"
+    },
+    {
+      "label": "Schema (per page)",
+      "file_type": "document",
+      "source_file": "DOCS/SITE-PLAN.md",
+      "source_location": "L40",
+      "id": "docs_site_plan_schema_per_page",
+      "community": 1,
+      "norm_label": "schema (per page)"
+    },
+    {
+      "label": "Phased roadmap (compressed \u2014 solo business, not enterprise)",
+      "file_type": "document",
+      "source_file": "DOCS/SITE-PLAN.md",
+      "source_location": "L47",
+      "id": "docs_site_plan_phased_roadmap_compressed_solo_business_not_enterprise",
+      "community": 1,
+      "norm_label": "phased roadmap (compressed \u2014 solo business, not enterprise)"
+    },
+    {
+      "label": "Open items to confirm with client (blocks final copy)",
+      "file_type": "document",
+      "source_file": "DOCS/SITE-PLAN.md",
+      "source_location": "L64",
+      "id": "docs_site_plan_open_items_to_confirm_with_client_blocks_final_copy",
+      "community": 1,
+      "norm_label": "open items to confirm with client (blocks final copy)"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/settings.local.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "claude_settings_local_json",
+      "target": "claude_settings_local_hooks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/settings.local.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "claude_settings_local_hooks",
+      "target": "claude_settings_local_hooks_sessionstart",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DOCS/research.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "docs_research_md",
+      "target": "docs_research_research_biuro_geodezyjne_horyzont_\u0142ukasz_kowalczyk",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DOCS/research.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "docs_research_research_biuro_geodezyjne_horyzont_\u0142ukasz_kowalczyk",
+      "target": "docs_research_verified_facts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DOCS/research.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "docs_research_research_biuro_geodezyjne_horyzont_\u0142ukasz_kowalczyk",
+      "target": "docs_research_client_confirmed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DOCS/research.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "docs_research_research_biuro_geodezyjne_horyzont_\u0142ukasz_kowalczyk",
+      "target": "docs_research_unverified_assumed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DOCS/research.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "docs_research_research_biuro_geodezyjne_horyzont_\u0142ukasz_kowalczyk",
+      "target": "docs_research_sources",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DOCS/research.md",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "docs_research_research_biuro_geodezyjne_horyzont_\u0142ukasz_kowalczyk",
+      "target": "docs_research_review_sentiment",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DOCS/research.md",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "docs_research_research_biuro_geodezyjne_horyzont_\u0142ukasz_kowalczyk",
+      "target": "docs_research_competitors",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DOCS/research.md",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "docs_research_research_biuro_geodezyjne_horyzont_\u0142ukasz_kowalczyk",
+      "target": "docs_research_tone_signals",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DOCS/research.md",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "docs_research_research_biuro_geodezyjne_horyzont_\u0142ukasz_kowalczyk",
+      "target": "docs_research_raw_notes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DOCS/SITE-PLAN.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "docs_site_plan_md",
+      "target": "docs_site_plan_site_plan_biuro_geodezyjne_horyzont_\u0142ukasz_kowalczyk",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DOCS/SITE-PLAN.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "docs_site_plan_site_plan_biuro_geodezyjne_horyzont_\u0142ukasz_kowalczyk",
+      "target": "docs_site_plan_facts_used",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DOCS/SITE-PLAN.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "docs_site_plan_site_plan_biuro_geodezyjne_horyzont_\u0142ukasz_kowalczyk",
+      "target": "docs_site_plan_site_architecture_9_pages_no_locations_no_blog",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DOCS/SITE-PLAN.md",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "docs_site_plan_site_plan_biuro_geodezyjne_horyzont_\u0142ukasz_kowalczyk",
+      "target": "docs_site_plan_per_page_content_notes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DOCS/SITE-PLAN.md",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "docs_site_plan_site_plan_biuro_geodezyjne_horyzont_\u0142ukasz_kowalczyk",
+      "target": "docs_site_plan_schema_per_page",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DOCS/SITE-PLAN.md",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "docs_site_plan_site_plan_biuro_geodezyjne_horyzont_\u0142ukasz_kowalczyk",
+      "target": "docs_site_plan_phased_roadmap_compressed_solo_business_not_enterprise",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DOCS/SITE-PLAN.md",
+      "source_location": "L64",
+      "weight": 1.0,
+      "source": "docs_site_plan_site_plan_biuro_geodezyjne_horyzont_\u0142ukasz_kowalczyk",
+      "target": "docs_site_plan_open_items_to_confirm_with_client_blocks_final_copy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DOCS/SITE-PLAN.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "docs_site_plan_site_architecture_9_pages_no_locations_no_blog",
+      "target": "docs_site_plan_codeblock_1",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "51642b64f3219134821fa08326540748bab26fad"
+}
