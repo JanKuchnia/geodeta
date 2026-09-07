@@ -1,12 +1,12 @@
 {
   "/home/jankuchnia/Desktop/geodeta/.claude/settings.local.json": {
-    "mtime": 1788786918.6185284,
+    "mtime": 1788789805.48419,
     "ast_hash": "936121165198032f7d9f12308d002bdf",
     "semantic_hash": ""
   },
   "/home/jankuchnia/Desktop/geodeta/index.html": {
-    "mtime": 1788780715.3878615,
-    "ast_hash": "6d716394ea61fd813d82c9b3a54700fd",
+    "mtime": 1788790457.1967554,
+    "ast_hash": "edbe02f6ee24800cb8d65b00ed7f9edd",
     "semantic_hash": ""
   },
   "/home/jankuchnia/Desktop/geodeta/DOCS/brief.md": {
@@ -32,6 +32,26 @@
   "/home/jankuchnia/Desktop/geodeta/.serena/project.yml": {
     "mtime": 1788781004.3215852,
     "ast_hash": "1033f79d4be374dea0d0ce50789ad0d7",
+    "semantic_hash": ""
+  },
+  "/home/jankuchnia/Desktop/geodeta/.agents/rules/graphify.md": {
+    "mtime": 1788787180.984217,
+    "ast_hash": "f1e53ecc9194573d3c28fc116c743a2e",
+    "semantic_hash": ""
+  },
+  "/home/jankuchnia/Desktop/geodeta/.agents/workflows/graphify.md": {
+    "mtime": 1788787180.9844024,
+    "ast_hash": "afa1ffc01aa56ac681c7335686f44767",
+    "semantic_hash": ""
+  },
+  "/home/jankuchnia/Desktop/geodeta/assets/js/tailwind.config.js": {
+    "mtime": 1788790061.906584,
+    "ast_hash": "5d84f3524b1543faae35344c35fe4e43",
+    "semantic_hash": ""
+  },
+  "/home/jankuchnia/Desktop/geodeta/assets/js/main.js": {
+    "mtime": 1788790297.759539,
+    "ast_hash": "308e4782e639fda0007c660a7fdb2542",
     "semantic_hash": ""
   }
 }
