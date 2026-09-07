@@ -5,8 +5,8 @@
     "semantic_hash": ""
   },
   "/home/jankuchnia/Desktop/geodeta/index.html": {
-    "mtime": 1788793195.8806927,
-    "ast_hash": "5bb9f1e162640dd8624285bd273d8b95",
+    "mtime": 1788793847.2890341,
+    "ast_hash": "e8d1e564bcc3a964eb1c3565ad9ab18c",
     "semantic_hash": ""
   },
   "/home/jankuchnia/Desktop/geodeta/DOCS/brief.md": {
@@ -45,8 +45,8 @@
     "semantic_hash": ""
   },
   "/home/jankuchnia/Desktop/geodeta/assets/js/tailwind.config.js": {
-    "mtime": 1788791877.7055793,
-    "ast_hash": "78e0df14fc95584791f1e030919df868",
+    "mtime": 1788793526.0912251,
+    "ast_hash": "f5162e0902381cd9d4c82bdd32ba5682",
     "semantic_hash": ""
   },
   "/home/jankuchnia/Desktop/geodeta/assets/js/main.js": {
@@ -57,6 +57,11 @@
   "/home/jankuchnia/Desktop/geodeta/assets/js/lucide.min.js": {
     "mtime": 1788791068.477404,
     "ast_hash": "3b870ff9df082eb8956800896932f779",
+    "semantic_hash": ""
+  },
+  "/home/jankuchnia/Desktop/geodeta/PRODUCT.md": {
+    "mtime": 1788793515.6822314,
+    "ast_hash": "19366a86a3923b319538062c5e95df62",
     "semantic_hash": ""
   }
 }
