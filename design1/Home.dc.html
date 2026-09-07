@@ -1,339 +1,509 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="./support.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="support.js"></script>
 </head>
+
 <body>
-<x-dc>
-<helmet>
-<link rel="stylesheet" href="_ds/organic-72fb0c18-a863-4744-9f6f-cd11734bd8c6/styles.css">
-<script src="_ds/organic-72fb0c18-a863-4744-9f6f-cd11734bd8c6/_ds_bundle.js"></script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Biuro Geodezyjne HORYZONT Łukasz Kowalczyk","image":"assets/photo.jpg","telephone":"+48515430240","email":"biuro@geodezja-horyzont.pl","address":{"@type":"PostalAddress","streetAddress":"Byszyce 167","postalCode":"32-020","addressLocality":"Wieliczka","addressCountry":"PL"},"geo":{"@type":"GeoCoordinates","latitude":49.9484,"longitude":20.0361},"areaServed":[{"@type":"City","name":"Wieliczka"},{"@type":"City","name":"Niepołomice"},{"@type":"City","name":"Kraków"},{"@type":"City","name":"Skawina"},{"@type":"City","name":"Gdów"}],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"17:00"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"23"},"priceRange":"$$"}</script>
-<style>
-  body { margin: 0; }
-  a { color: var(--color-accent-700); }
-  a:hover { color: var(--color-accent-600); }
-  .h-sec { padding: clamp(40px, 6vw, 88px) clamp(20px, 5vw, 64px); }
-  .h-wrap { max-width: 1120px; margin: 0 auto; }
-  .h-lead { font-size: clamp(16px, 1.4vw, 18px); line-height: 1.65; max-width: 60ch; }
-  .h-h2 { font-size: clamp(27px, 3.4vw, 40px); margin-bottom: var(--space-3); }
-  .h-eyebrow { font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-accent-700); margin-bottom: var(--space-3); }
-</style>
-</helmet>
+  <x-dc>
+    <helmet>
+      <link rel="stylesheet" href="styles.css">
+      <script src="_ds_bundle.js"></script>
+      <script
+        type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Biuro Geodezyjne HORYZONT Łukasz Kowalczyk","image":"assets/photo.jpg","telephone":"+48515430240","email":"biuro@geodezja-horyzont.pl","address":{"@type":"PostalAddress","streetAddress":"Byszyce 167","postalCode":"32-020","addressLocality":"Wieliczka","addressCountry":"PL"},"geo":{"@type":"GeoCoordinates","latitude":49.9484,"longitude":20.0361},"areaServed":[{"@type":"City","name":"Wieliczka"},{"@type":"City","name":"Niepołomice"},{"@type":"City","name":"Kraków"},{"@type":"City","name":"Skawina"},{"@type":"City","name":"Gdów"}],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"17:00"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"23"},"priceRange":"$$"}</script>
+      <style>
+        body {
+          margin: 0;
+        }
 
-<div style="background: var(--color-bg); color: var(--color-text); font-family: var(--font-body); min-height: 100%; overflow-x: hidden;">
+        a {
+          color: var(--color-accent-700);
+        }
 
-  <nav class="nav" style="max-width: 1120px; margin: 0 auto; padding: 18px clamp(20px, 5vw, 64px); flex-wrap: wrap; gap: 20px;">
-    <a href="Home.dc.html" class="nav-brand" style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
-      <span style="width: 34px; height: 34px; border-radius: 999px; background: var(--color-accent); display: grid; place-items: center; flex: none;">
-        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#f5ead8" stroke-width="2.75" stroke-linecap="round"><path d="M3 16h18"></path><path d="M7 16 12 6l5 10"></path></svg>
-      </span>
-      <span style="line-height: 1.05;">HORYZONT<span style="display: block; font-family: var(--font-body); font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; opacity: 0.6;">Biuro geodezyjne</span></span>
-    </a>
-    <div style="display: flex; align-items: center; gap: 22px; flex-wrap: wrap;">
-      <a href="Uslugi.dc.html">Usługi</a>
-      <a href="Kontakt.dc.html">Kontakt</a>
-      <a href="tel:+48515430240" class="btn btn-primary" style="gap: 8px;">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round"><path d="M5 3h3l2 5-2.5 1.5a12 12 0 0 0 6 6L15 13l5 2v3a2 2 0 0 1-2.2 2A17 17 0 0 1 3 5.2 2 2 0 0 1 5 3z"></path></svg>
-        515 430 240
-      </a>
-    </div>
-  </nav>
+        a:hover {
+          color: var(--color-accent-600);
+        }
 
-  <header class="h-sec" style="padding-top: clamp(24px, 3vw, 44px);">
-    <div class="h-wrap" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: clamp(28px, 4vw, 56px); align-items: center;">
-      <div style="min-width: 0;">
-        <div class="h-eyebrow">Wieliczka · Byszyce · powiat krakowski</div>
-        <h1 style="font-size: clamp(36px, 5.4vw, 62px); line-height: 1.05; margin-bottom: var(--space-4);">Pomiary geodezyjne wykonane terminowo i&nbsp;zgodnie z&nbsp;przepisami</h1>
-        <p class="h-lead">Mapy do celów projektowych, tyczenie budynków, inwentaryzacje powykonawcze, podziały i&nbsp;rozgraniczenia nieruchomości. Obsługa inwestorów prywatnych, firm budowlanych i&nbsp;biur projektowych na terenie Wieliczki oraz sąsiednich gmin.</p>
-        <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: var(--space-6);">
-          <a href="tel:+48515430240" class="btn btn-primary" style="font-size: 16px; padding: 14px 26px; gap: 9px;">
-            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round"><path d="M5 3h3l2 5-2.5 1.5a12 12 0 0 0 6 6L15 13l5 2v3a2 2 0 0 1-2.2 2A17 17 0 0 1 3 5.2 2 2 0 0 1 5 3z"></path></svg>
-            Zadzwoń: 515 430 240
+        .h-sec {
+          padding: clamp(40px, 6vw, 88px) clamp(20px, 5vw, 64px);
+        }
+
+        .h-wrap {
+          max-width: 1120px;
+          margin: 0 auto;
+        }
+
+        .h-lead {
+          font-size: clamp(16px, 1.4vw, 18px);
+          line-height: 1.65;
+          max-width: 60ch;
+        }
+
+        .h-h2 {
+          font-size: clamp(27px, 3.4vw, 40px);
+          margin-bottom: var(--space-3);
+        }
+
+        .h-eyebrow {
+          font-size: 12px;
+          letter-spacing: 0.14em;
+          text-transform: uppercase;
+          color: var(--color-accent-700);
+          margin-bottom: var(--space-3);
+        }
+      </style>
+    </helmet>
+
+    <div
+      style="background: var(--color-bg); color: var(--color-text); font-family: var(--font-body); min-height: 100%; overflow-x: hidden;">
+
+      <nav class="nav"
+        style="max-width: 1120px; margin: 0 auto; padding: 18px clamp(20px, 5vw, 64px); flex-wrap: wrap; gap: 20px;">
+        <a href="Home.dc.html" class="nav-brand"
+          style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
+          <span
+            style="width: 34px; height: 34px; border-radius: 999px; background: var(--color-accent); display: grid; place-items: center; flex: none;">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#f5ead8" stroke-width="2.75"
+              stroke-linecap="round">
+              <path d="M3 16h18"></path>
+              <path d="M7 16 12 6l5 10"></path>
+            </svg>
+          </span>
+          <span style="line-height: 1.05;">HORYZONT<span
+              style="display: block; font-family: var(--font-body); font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; opacity: 0.6;">Biuro
+              geodezyjne</span></span>
+        </a>
+        <div style="display: flex; align-items: center; gap: 22px; flex-wrap: wrap;">
+          <a href="Uslugi.dc.html">Usługi</a>
+          <a href="Kontakt.dc.html">Kontakt</a>
+          <a href="tel:+48515430240" class="btn btn-primary" style="gap: 8px;">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75"
+              stroke-linecap="round">
+              <path d="M5 3h3l2 5-2.5 1.5a12 12 0 0 0 6 6L15 13l5 2v3a2 2 0 0 1-2.2 2A17 17 0 0 1 3 5.2 2 2 0 0 1 5 3z">
+              </path>
+            </svg>
+            515 430 240
           </a>
-          <a href="Kontakt.dc.html" class="btn btn-secondary" style="font-size: 16px; padding: 14px 26px;">Formularz wyceny</a>
         </div>
-        <p style="font-size: 13px; margin-top: var(--space-4); color: var(--color-neutral-700);">Telefon czynny pon.–pt. 07:00–17:00 · wycena zwykle tego samego dnia</p>
-      </div>
-      <div style="min-width: 0; position: relative;">
-        <div style="position: absolute; right: -6%; top: -10%; width: 46%; aspect-ratio: 1; border-radius: 999px; background: var(--color-accent-2-200);"></div>
-        <img src="assets/photo.jpg" alt="Prace geodezyjne w terenie" class="washed" style="position: relative; width: 100%; aspect-ratio: 4 / 3.4; object-fit: cover; border-radius: calc(var(--radius-lg) * 1.6); box-shadow: var(--shadow-md);">
-        <div class="elev-md" style="position: relative; margin: -34px 0 0 clamp(0px, 3vw, 28px); display: inline-flex; align-items: center; gap: 14px; background: var(--color-neutral-100); padding: 14px 22px; border-radius: 999px;">
-          <span style="font-family: var(--font-heading); font-size: 26px; line-height: 1;">5,0</span>
-          <span style="display: block; font-size: 12px; line-height: 1.35;">
-            <span style="color: var(--color-accent); letter-spacing: 2px;">★★★★★</span>
-            <span style="display: block; color: var(--color-neutral-700);">23 opinie w Google</span>
+      </nav>
+
+      <header class="h-sec" style="padding-top: clamp(24px, 3vw, 44px);">
+        <div class="h-wrap"
+          style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: clamp(28px, 4vw, 56px); align-items: center;">
+          <div style="min-width: 0;">
+            <div class="h-eyebrow">Wieliczka · Byszyce · powiat krakowski</div>
+            <h1 style="font-size: clamp(36px, 5.4vw, 62px); line-height: 1.05; margin-bottom: var(--space-4);">Pomiary
+              geodezyjne wykonane terminowo i&nbsp;zgodnie z&nbsp;przepisami</h1>
+            <p class="h-lead">Mapy do celów projektowych, tyczenie budynków, inwentaryzacje powykonawcze, podziały
+              i&nbsp;rozgraniczenia nieruchomości. Obsługa inwestorów prywatnych, firm budowlanych i&nbsp;biur
+              projektowych na terenie Wieliczki oraz sąsiednich gmin.</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: var(--space-6);">
+              <a href="tel:+48515430240" class="btn btn-primary" style="font-size: 16px; padding: 14px 26px; gap: 9px;">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75"
+                  stroke-linecap="round">
+                  <path
+                    d="M5 3h3l2 5-2.5 1.5a12 12 0 0 0 6 6L15 13l5 2v3a2 2 0 0 1-2.2 2A17 17 0 0 1 3 5.2 2 2 0 0 1 5 3z">
+                  </path>
+                </svg>
+                Zadzwoń: 515 430 240
+              </a>
+              <a href="Kontakt.dc.html" class="btn btn-secondary" style="font-size: 16px; padding: 14px 26px;">Formularz
+                wyceny</a>
+            </div>
+            <p style="font-size: 13px; margin-top: var(--space-4); color: var(--color-neutral-700);">Telefon czynny
+              pon.–pt. 07:00–17:00 · wycena zwykle tego samego dnia</p>
+          </div>
+          <div style="min-width: 0; position: relative;">
+            <div
+              style="position: absolute; right: -6%; top: -10%; width: 46%; aspect-ratio: 1; border-radius: 999px; background: var(--color-accent-2-200);">
+            </div>
+            <img src="assets/photo.jpg" alt="Prace geodezyjne w terenie" class="washed"
+              style="position: relative; width: 100%; aspect-ratio: 4 / 3.4; object-fit: cover; border-radius: calc(var(--radius-lg) * 1.6); box-shadow: var(--shadow-md);">
+            <div class="elev-md"
+              style="position: relative; margin: -34px 0 0 clamp(0px, 3vw, 28px); display: inline-flex; align-items: center; gap: 14px; background: var(--color-neutral-100); padding: 14px 22px; border-radius: 999px;">
+              <span style="font-family: var(--font-heading); font-size: 26px; line-height: 1;">5,0</span>
+              <span style="display: block; font-size: 12px; line-height: 1.35;">
+                <span style="color: var(--color-accent); letter-spacing: 2px;">★★★★★</span>
+                <span style="display: block; color: var(--color-neutral-700);">23 opinie w Google</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="h-sec" style="padding-top: 0;">
+        <div class="h-wrap"
+          style="display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 2px; background: var(--color-divider); border-radius: calc(var(--radius-lg) * 1.15); overflow: hidden;">
+          <div style="background: var(--color-surface); padding: 22px 26px;">
+            <div style="font-family: var(--font-heading); font-size: 22px;">od 2011</div>
+            <div style="font-size: 13px; color: var(--color-neutral-700);">roku w geodezji</div>
+          </div>
+          <div style="background: var(--color-surface); padding: 22px 26px;">
+            <div style="font-family: var(--font-heading); font-size: 22px;">nr 21458</div>
+            <div style="font-size: 13px; color: var(--color-neutral-700);">uprawnienia zakres 1 i 2</div>
+          </div>
+          <div style="background: var(--color-surface); padding: 22px 26px;">
+            <div style="font-family: var(--font-heading); font-size: 22px;">5 gmin</div>
+            <div style="font-size: 13px; color: var(--color-neutral-700);">stały obszar działania</div>
+          </div>
+          <div style="background: var(--color-surface); padding: 22px 26px;">
+            <div style="font-family: var(--font-heading); font-size: 22px;">3–10 dni</div>
+            <div style="font-size: 13px; color: var(--color-neutral-700);">typowy termin realizacji</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="h-sec">
+        <div class="h-wrap">
+          <div class="h-eyebrow">Zakres usług</div>
+          <h2 class="h-h2">Co wykonujemy</h2>
+          <p class="h-lead" style="margin-bottom: var(--space-8);">Pełna obsługa geodezyjna inwestycji — od mapy pod
+            projekt, przez tyczenie, do inwentaryzacji odbiorowej. Prace wykonywane osobiście, z jednym punktem kontaktu
+            przez cały czas trwania zlecenia.</p>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: var(--space-4);">
+            <a href="Uslugi.dc.html" class="card elev-sm" style="text-decoration: none; color: inherit;"
+              style-hover="box-shadow: var(--shadow-md); transform: translateY(-2px)">
+              <span class="card-kicker">01</span>
+              <span class="card-title">Mapa do celów projektowych</span>
+              <p class="card-body">Aktualna mapa sytuacyjno-wysokościowa z klauzulą, wymagana przez projektanta do
+                uzyskania pozwolenia na budowę.</p>
+              <span class="card-meta">Zwykle 7–10 dni →</span>
+            </a>
+            <a href="Uslugi.dc.html" class="card elev-sm" style="text-decoration: none; color: inherit;"
+              style-hover="box-shadow: var(--shadow-md); transform: translateY(-2px)">
+              <span class="card-kicker">02</span>
+              <span class="card-title">Tyczenie budynków i sieci</span>
+              <p class="card-body">Wyznaczenie obrysu budynku, osi konstrukcyjnych i przebiegu przyłączy w terenie, z
+                wpisem do dziennika budowy.</p>
+              <span class="card-meta">Zwykle 2–4 dni →</span>
+            </a>
+            <a href="Uslugi.dc.html" class="card elev-sm" style="text-decoration: none; color: inherit;"
+              style-hover="box-shadow: var(--shadow-md); transform: translateY(-2px)">
+              <span class="card-kicker">03</span>
+              <span class="card-title">Inwentaryzacja powykonawcza</span>
+              <p class="card-body">Pomiar wykonanego budynku lub przyłączy wraz z operatem — dokument niezbędny do
+                zgłoszenia zakończenia budowy.</p>
+              <span class="card-meta">Zwykle 5–7 dni →</span>
+            </a>
+            <a href="Uslugi.dc.html" class="card elev-sm" style="text-decoration: none; color: inherit;"
+              style-hover="box-shadow: var(--shadow-md); transform: translateY(-2px)">
+              <span class="card-kicker">04</span>
+              <span class="card-title">Podział nieruchomości</span>
+              <p class="card-body">Projekt podziału, uzgodnienia z urzędem gminy i stabilizacja nowych granic — od
+                wstępnego projektu do wpisu w ewidencji.</p>
+              <span class="card-meta">Zwykle 2–4 miesiące →</span>
+            </a>
+            <a href="Uslugi.dc.html" class="card elev-sm" style="text-decoration: none; color: inherit;"
+              style-hover="box-shadow: var(--shadow-md); transform: translateY(-2px)">
+              <span class="card-kicker">05</span>
+              <span class="card-title">Rozgraniczenie i wznowienie granic</span>
+              <p class="card-body">Ustalenie przebiegu spornej granicy lub odtworzenie zatartych punktów granicznych na
+                podstawie dokumentacji źródłowej.</p>
+              <span class="card-meta">Termin po analizie dokumentów →</span>
+            </a>
+            <div
+              style="display: flex; flex-direction: column; justify-content: center; gap: var(--space-3); padding: var(--space-4); border-radius: calc(var(--radius-lg) * 1.15); border: 1px dashed var(--color-neutral-400);">
+              <span style="font-family: var(--font-heading); font-size: 17px;">Nie wiesz, czego potrzebujesz?</span>
+              <p style="font-size: 13px; margin: 0; color: var(--color-neutral-700);">Wystarczy numer działki i opis
+                inwestycji — dobierzemy właściwe opracowanie i podamy cenę.</p>
+              <a href="tel:+48515430240" class="btn btn-primary" style="align-self: flex-start;">Zapytaj
+                telefonicznie</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="h-sec" style="background: var(--color-surface);">
+        <div class="h-wrap">
+          <div class="h-eyebrow">Jak przebiega zlecenie</div>
+          <h2 class="h-h2">Cztery kroki, jeden kontakt</h2>
+          <div
+            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--space-6); margin-top: var(--space-8);">
+            <div>
+              <div
+                style="width: 58px; height: 58px; border-radius: 999px; background: var(--color-bg); display: grid; place-items: center; font-family: var(--font-heading); font-size: 24px; margin-bottom: var(--space-3);">
+                1</div>
+              <h4 style="margin-bottom: 6px;">Kontakt i wycena</h4>
+              <p style="font-size: 14px; margin: 0; color: var(--color-neutral-800);">Podajesz numer działki, obręb i
+                zakres prac. Otrzymujesz konkretną cenę oraz termin — telefonicznie lub mailem.</p>
+            </div>
+            <div>
+              <div
+                style="width: 58px; height: 58px; border-radius: 999px; background: var(--color-bg); display: grid; place-items: center; font-family: var(--font-heading); font-size: 24px; margin-bottom: var(--space-3);">
+                2</div>
+              <h4 style="margin-bottom: 6px;">Zgłoszenie pracy</h4>
+              <p style="font-size: 14px; margin: 0; color: var(--color-neutral-800);">Zgłaszamy pracę geodezyjną w
+                Powiatowym Ośrodku Dokumentacji i pobieramy materiały źródłowe dla Twojej działki.</p>
+            </div>
+            <div>
+              <div
+                style="width: 58px; height: 58px; border-radius: 999px; background: var(--color-bg); display: grid; place-items: center; font-family: var(--font-heading); font-size: 24px; margin-bottom: var(--space-3);">
+                3</div>
+              <h4 style="margin-bottom: 6px;">Pomiar w terenie</h4>
+              <p style="font-size: 14px; margin: 0; color: var(--color-neutral-800);">Pomiar odbiornikiem GNSS RTK i
+                tachimetrem, w terminie ustalonym z Tobą. Obecność właściciela nie jest wymagana.</p>
+            </div>
+            <div>
+              <div
+                style="width: 58px; height: 58px; border-radius: 999px; background: var(--color-accent); color: var(--color-bg); display: grid; place-items: center; font-family: var(--font-heading); font-size: 24px; margin-bottom: var(--space-3);">
+                4</div>
+              <h4 style="margin-bottom: 6px;">Operat i dokumenty</h4>
+              <p style="font-size: 14px; margin: 0; color: var(--color-neutral-800);">Kompletujemy operat, przekazujemy
+                go do weryfikacji, a Ty odbierasz mapy z klauzulą — osobiście lub pocztą.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="h-sec">
+        <div class="h-wrap"
+          style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: clamp(28px, 5vw, 64px); align-items: start;">
+          <div style="min-width: 0;">
+            <div class="h-eyebrow">Obszar działania</div>
+            <h2 class="h-h2">Wieliczka i gminy sąsiednie</h2>
+            <p class="h-lead">Siedziba biura znajduje się w Byszycach, ok. 8 km od centrum Wieliczki. Prace wykonujemy
+              na terenie powiatu wielickiego oraz w gminach ościennych — bez dopłat za dojazd w promieniu 25 km.
+              Zlecenia z dalszych rejonów przyjmujemy po wcześniejszym uzgodnieniu terminu.</p>
+            <a href="Kontakt.dc.html" class="btn btn-secondary" style="margin-top: var(--space-2);">Sprawdź dojazd i
+              godziny</a>
+          </div>
+          <div style="min-width: 0; display: flex; flex-wrap: wrap; gap: 12px; align-content: flex-start;">
+            <span
+              style="display: grid; place-items: center; text-align: center; width: 132px; height: 132px; border-radius: 999px; background: var(--color-accent); color: var(--color-bg); font-family: var(--font-heading); font-size: 18px; padding: 8px;">Wieliczka</span>
+            <span
+              style="display: grid; place-items: center; text-align: center; width: 112px; height: 112px; border-radius: 999px; background: var(--color-accent-2-300); font-family: var(--font-heading); font-size: 15px; padding: 8px;">Niepołomice</span>
+            <span
+              style="display: grid; place-items: center; text-align: center; width: 118px; height: 118px; border-radius: 999px; background: var(--color-accent-2-200); font-family: var(--font-heading); font-size: 16px; padding: 8px;">Kraków</span>
+            <span
+              style="display: grid; place-items: center; text-align: center; width: 104px; height: 104px; border-radius: 999px; background: var(--color-surface); font-family: var(--font-heading); font-size: 15px; padding: 8px;">Skawina</span>
+            <span
+              style="display: grid; place-items: center; text-align: center; width: 98px; height: 98px; border-radius: 999px; background: var(--color-accent-200); font-family: var(--font-heading); font-size: 15px; padding: 8px;">Gdów</span>
+            <span
+              style="display: grid; place-items: center; text-align: center; width: 96px; height: 96px; border-radius: 999px; background: var(--color-neutral-200); font-size: 13px; padding: 8px; line-height: 1.25;">i
+              okolice</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="h-sec" style="background: var(--color-surface);">
+        <div class="h-wrap">
+          <div
+            style="display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--space-4); justify-content: space-between;">
+            <div>
+              <div class="h-eyebrow">Opinie klientów</div>
+              <h2 class="h-h2" style="margin-bottom: 0;">5,0 na 23 opinie w Google</h2>
+            </div>
+            <span class="tag tag-accent" style="padding: 7px 16px; font-size: 12px;">Stan na wrzesień 2026</span>
+          </div>
+          <div
+            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--space-4); margin-top: var(--space-8);">
+            <div class="card" style="background: var(--color-bg);">
+              <span style="color: var(--color-accent); letter-spacing: 3px;">★★★★★</span>
+              <p class="card-body" style="font-size: 14.5px; opacity: 1;">„Mapa do celów projektowych gotowa szybciej,
+                niż obiecany termin. Wszystko wyjaśnione spokojnie, bez branżowego żargonu.”</p>
+              <span class="card-meta">M.K. · Wieliczka</span>
+            </div>
+            <div class="card" style="background: var(--color-bg);">
+              <span style="color: var(--color-accent); letter-spacing: 3px;">★★★★★</span>
+              <p class="card-body" style="font-size: 14.5px; opacity: 1;">„Tyczenie domu jednorodzinnego — punkt
+                umówiony na konkretną godzinę, ekipa budowlana mogła ruszyć tego samego dnia.”</p>
+              <span class="card-meta">P.S. · Niepołomice</span>
+            </div>
+            <div class="card" style="background: var(--color-bg);">
+              <span style="color: var(--color-accent); letter-spacing: 3px;">★★★★★</span>
+              <p class="card-body" style="font-size: 14.5px; opacity: 1;">„Podział działki przeprowadzony od początku do
+                końca, z pilnowaniem terminów w urzędzie. Kontakt na każdym etapie.”</p>
+              <span class="card-meta">A.W. · gmina Gdów</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="h-sec">
+        <div class="h-wrap"
+          style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: clamp(28px, 5vw, 64px); align-items: center;">
+          <div style="min-width: 0; order: 2;">
+            <div class="h-eyebrow">O geodecie</div>
+            <h2 class="h-h2">Łukasz Kowalczyk</h2>
+            <p class="h-lead">Geodeta uprawniony, właściciel biura HORYZONT. Posiadam uprawnienia zawodowe nr 21458 w
+              zakresie 1 (geodezyjne pomiary sytuacyjno-wysokościowe) i 2 (rozgraniczanie i podziały nieruchomości),
+              nadane przez Głównego Geodetę Kraju.</p>
+            <p class="h-lead">W geodezji pracuję od 2011 roku — najpierw w biurach obsługujących inwestycje drogowe i
+              kubaturowe w Krakowie, od 2016 na własny rachunek. Każde zlecenie prowadzę osobiście: od pomiaru w terenie
+              po skompletowanie operatu.</p>
+            <a href="tel:+48515430240" class="btn btn-primary" style="margin-top: var(--space-2);">Porozmawiajmy o
+              zleceniu</a>
+          </div>
+          <div style="min-width: 0; order: 1; position: relative;">
+            <div
+              style="position: absolute; left: -8%; bottom: -8%; width: 40%; aspect-ratio: 1; border-radius: 999px; background: var(--color-accent-200);">
+            </div>
+            <img src="assets/photo.jpg" alt="Łukasz Kowalczyk podczas pomiaru" class="washed"
+              style="position: relative; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 999px; box-shadow: var(--shadow-sm);">
+          </div>
+        </div>
+      </section>
+
+      <sc-if value="{{ showPricing }}" hint-placeholder-val="{{ true }}">
+        <section class="h-sec" style="padding-top: 0;">
+          <div class="h-wrap">
+            <div class="h-eyebrow">Cennik</div>
+            <h2 class="h-h2">Wycena indywidualna, punkt wyjścia jawny</h2>
+            <p class="h-lead" style="margin-bottom: var(--space-6);">Cena zależy od powierzchni działki, liczby punktów,
+              dostępności materiałów w ośrodku dokumentacji i terminu. Poniższe kwoty to typowe widełki dla pojedynczej
+              działki w gminie Wieliczka — ostateczną cenę podajemy przed rozpoczęciem prac i już jej nie zmieniamy.</p>
+            <div
+              style="overflow-x: auto; background: var(--color-surface); border-radius: calc(var(--radius-lg) * 1.15); padding: var(--space-4) var(--space-6);">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Opracowanie</th>
+                    <th>Widełki cenowe</th>
+                    <th>Typowy termin</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Mapa do celów projektowych</td>
+                    <td>od 1 200 zł</td>
+                    <td>7–10 dni</td>
+                  </tr>
+                  <tr>
+                    <td>Tyczenie budynku jednorodzinnego</td>
+                    <td>od 800 zł</td>
+                    <td>2–4 dni</td>
+                  </tr>
+                  <tr>
+                    <td>Inwentaryzacja powykonawcza budynku</td>
+                    <td>od 900 zł</td>
+                    <td>5–7 dni</td>
+                  </tr>
+                  <tr>
+                    <td>Inwentaryzacja przyłączy</td>
+                    <td>od 500 zł</td>
+                    <td>5–7 dni</td>
+                  </tr>
+                  <tr>
+                    <td>Podział nieruchomości</td>
+                    <td>od 2 500 zł</td>
+                    <td>2–4 miesiące</td>
+                  </tr>
+                  <tr>
+                    <td>Wznowienie punktów granicznych</td>
+                    <td>od 1 000 zł</td>
+                    <td>po analizie dokumentów</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p style="font-size: 13px; margin-top: var(--space-3); color: var(--color-neutral-700);">Kwoty netto, bez
+              opłat urzędowych. Faktura VAT do każdego zlecenia.</p>
+          </div>
+        </section>
+      </sc-if>
+
+      <sc-if value="{{ showFaq }}" hint-placeholder-val="{{ true }}">
+        <section class="h-sec" style="padding-top: 0;">
+          <div class="h-wrap"
+            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: clamp(24px, 4vw, 56px); align-items: start;">
+            <div style="min-width: 0;">
+              <div class="h-eyebrow">Pytania</div>
+              <h2 class="h-h2">Najczęściej pytacie o&nbsp;to</h2>
+              <p style="font-size: 14px; color: var(--color-neutral-700);">Nie ma tu Twojego pytania? Zadzwoń —
+                odpowiedź zajmie krócej niż napisanie maila.</p>
+            </div>
+            <div
+              style="min-width: 0; display: flex; flex-direction: column; gap: 2px; background: var(--color-divider); border-radius: calc(var(--radius-lg) * 1.15); overflow: hidden;">
+              <div style="background: var(--color-surface); padding: var(--space-4) var(--space-6);">
+                <h4 style="margin-bottom: 6px;">Jakie dane są potrzebne do wyceny?</h4>
+                <p style="font-size: 14px; margin: 0;">Numer działki i obręb ewidencyjny oraz krótki opis, po co
+                  potrzebna jest mapa. To wystarczy do podania ceny i terminu.</p>
+              </div>
+              <div style="background: var(--color-surface); padding: var(--space-4) var(--space-6);">
+                <h4 style="margin-bottom: 6px;">Ile ważna jest mapa do celów projektowych?</h4>
+                <p style="font-size: 14px; margin: 0;">Przepisy nie podają jednej daty — w praktyce projektanci i urzędy
+                  przyjmują opracowanie z ostatnich 6–12 miesięcy, o ile w terenie nic się nie zmieniło.</p>
+              </div>
+              <div style="background: var(--color-surface); padding: var(--space-4) var(--space-6);">
+                <h4 style="margin-bottom: 6px;">Czy muszę być obecny przy pomiarze?</h4>
+                <p style="font-size: 14px; margin: 0;">Przy większości prac nie. Obecność właścicieli jest konieczna
+                  tylko przy rozgraniczeniu i ustalaniu granic, gdzie wymagany jest protokół.</p>
+              </div>
+              <div style="background: var(--color-surface); padding: var(--space-4) var(--space-6);">
+                <h4 style="margin-bottom: 6px;">Czy wystawiacie fakturę i pracujecie dla firm?</h4>
+                <p style="font-size: 14px; margin: 0;">Tak. Obsługujemy firmy budowlane, biura projektowe i deweloperów,
+                  również w formie stałej współpracy na kilka inwestycji.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </sc-if>
+
+      <section class="h-sec" style="padding-top: 0;">
+        <div class="h-wrap">
+          <div
+            style="background: var(--color-accent-800); color: var(--color-neutral-100); border-radius: calc(var(--radius-lg) * 1.6); padding: clamp(32px, 5vw, 64px); display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: var(--space-6); align-items: center;">
+            <div style="min-width: 0;">
+              <h2 style="font-size: clamp(27px, 3.2vw, 38px); margin-bottom: var(--space-3);">Potrzebujesz mapy albo
+                tyczenia?</h2>
+              <p style="font-size: 16px; margin: 0; opacity: 0.9; max-width: 44ch;">Zadzwoń w godzinach pracy biura —
+                wycenę usłyszysz jeszcze podczas rozmowy.</p>
+            </div>
+            <div style="min-width: 0; display: flex; flex-wrap: wrap; gap: 12px;">
+              <a href="tel:+48515430240" class="btn"
+                style="background: var(--color-accent-300); color: var(--color-accent-900); font-size: 17px; padding: 15px 28px;"
+                style-hover="background: var(--color-accent-200)">515 430 240</a>
+              <a href="Kontakt.dc.html" class="btn"
+                style="border-color: var(--color-accent-400); color: var(--color-neutral-100); font-size: 17px; padding: 15px 28px;"
+                style-hover="background: var(--color-accent-700)">Wyślij zapytanie</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer
+        style="background: var(--color-neutral-900); color: var(--color-neutral-200); padding: clamp(36px, 5vw, 64px) clamp(20px, 5vw, 64px);">
+        <div class="h-wrap"
+          style="display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: var(--space-6);">
+          <div>
+            <div style="font-family: var(--font-heading); font-size: 19px; margin-bottom: var(--space-2);">Biuro
+              Geodezyjne HORYZONT</div>
+            <p style="font-size: 13.5px; margin: 0; opacity: 0.75;">Łukasz Kowalczyk<br>Uprawnienia zawodowe nr 21458
+              (zakres 1, 2)</p>
+          </div>
+          <div>
+            <h6 style="color: var(--color-accent-300); margin-bottom: var(--space-2);">Adres</h6>
+            <p style="font-size: 13.5px; margin: 0; opacity: 0.75;">Byszyce 167<br>32-020 Wieliczka</p>
+          </div>
+          <div>
+            <h6 style="color: var(--color-accent-300); margin-bottom: var(--space-2);">Kontakt</h6>
+            <p style="font-size: 13.5px; margin: 0;">
+              <a href="tel:+48515430240" style="color: var(--color-neutral-100);">515 430 240</a><br>
+              <a href="mailto:biuro@geodezja-horyzont.pl"
+                style="color: var(--color-neutral-100);">biuro@geodezja-horyzont.pl</a>
+            </p>
+          </div>
+          <div>
+            <h6 style="color: var(--color-accent-300); margin-bottom: var(--space-2);">Godziny</h6>
+            <p style="font-size: 13.5px; margin: 0; opacity: 0.75;">pon.–pt. 07:00–17:00<br>sob.–niedz. nieczynne</p>
+          </div>
+        </div>
+        <div class="h-wrap"
+          style="margin-top: var(--space-8); padding-top: var(--space-4); border-top: 1px solid var(--color-neutral-700); display: flex; flex-wrap: wrap; gap: var(--space-4); justify-content: space-between; font-size: 12.5px; opacity: 0.7;">
+          <span>© 2026 Biuro Geodezyjne HORYZONT Łukasz Kowalczyk</span>
+          <span style="display: flex; gap: 18px; flex-wrap: wrap;">
+            <a href="Uslugi.dc.html" style="color: var(--color-neutral-200);">Usługi</a>
+            <a href="Kontakt.dc.html" style="color: var(--color-neutral-200);">Kontakt</a>
           </span>
         </div>
-      </div>
+      </footer>
     </div>
-  </header>
-
-  <section class="h-sec" style="padding-top: 0;">
-    <div class="h-wrap" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 2px; background: var(--color-divider); border-radius: calc(var(--radius-lg) * 1.15); overflow: hidden;">
-      <div style="background: var(--color-surface); padding: 22px 26px;">
-        <div style="font-family: var(--font-heading); font-size: 22px;">od 2011</div>
-        <div style="font-size: 13px; color: var(--color-neutral-700);">roku w geodezji</div>
-      </div>
-      <div style="background: var(--color-surface); padding: 22px 26px;">
-        <div style="font-family: var(--font-heading); font-size: 22px;">nr 21458</div>
-        <div style="font-size: 13px; color: var(--color-neutral-700);">uprawnienia zakres 1 i 2</div>
-      </div>
-      <div style="background: var(--color-surface); padding: 22px 26px;">
-        <div style="font-family: var(--font-heading); font-size: 22px;">5 gmin</div>
-        <div style="font-size: 13px; color: var(--color-neutral-700);">stały obszar działania</div>
-      </div>
-      <div style="background: var(--color-surface); padding: 22px 26px;">
-        <div style="font-family: var(--font-heading); font-size: 22px;">3–10 dni</div>
-        <div style="font-size: 13px; color: var(--color-neutral-700);">typowy termin realizacji</div>
-      </div>
-    </div>
-  </section>
-
-  <section class="h-sec">
-    <div class="h-wrap">
-      <div class="h-eyebrow">Zakres usług</div>
-      <h2 class="h-h2">Co wykonujemy</h2>
-      <p class="h-lead" style="margin-bottom: var(--space-8);">Pełna obsługa geodezyjna inwestycji — od mapy pod projekt, przez tyczenie, do inwentaryzacji odbiorowej. Prace wykonywane osobiście, z jednym punktem kontaktu przez cały czas trwania zlecenia.</p>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: var(--space-4);">
-        <a href="Uslugi.dc.html" class="card elev-sm" style="text-decoration: none; color: inherit;" style-hover="box-shadow: var(--shadow-md); transform: translateY(-2px)">
-          <span class="card-kicker">01</span>
-          <span class="card-title">Mapa do celów projektowych</span>
-          <p class="card-body">Aktualna mapa sytuacyjno-wysokościowa z klauzulą, wymagana przez projektanta do uzyskania pozwolenia na budowę.</p>
-          <span class="card-meta">Zwykle 7–10 dni →</span>
-        </a>
-        <a href="Uslugi.dc.html" class="card elev-sm" style="text-decoration: none; color: inherit;" style-hover="box-shadow: var(--shadow-md); transform: translateY(-2px)">
-          <span class="card-kicker">02</span>
-          <span class="card-title">Tyczenie budynków i sieci</span>
-          <p class="card-body">Wyznaczenie obrysu budynku, osi konstrukcyjnych i przebiegu przyłączy w terenie, z wpisem do dziennika budowy.</p>
-          <span class="card-meta">Zwykle 2–4 dni →</span>
-        </a>
-        <a href="Uslugi.dc.html" class="card elev-sm" style="text-decoration: none; color: inherit;" style-hover="box-shadow: var(--shadow-md); transform: translateY(-2px)">
-          <span class="card-kicker">03</span>
-          <span class="card-title">Inwentaryzacja powykonawcza</span>
-          <p class="card-body">Pomiar wykonanego budynku lub przyłączy wraz z operatem — dokument niezbędny do zgłoszenia zakończenia budowy.</p>
-          <span class="card-meta">Zwykle 5–7 dni →</span>
-        </a>
-        <a href="Uslugi.dc.html" class="card elev-sm" style="text-decoration: none; color: inherit;" style-hover="box-shadow: var(--shadow-md); transform: translateY(-2px)">
-          <span class="card-kicker">04</span>
-          <span class="card-title">Podział nieruchomości</span>
-          <p class="card-body">Projekt podziału, uzgodnienia z urzędem gminy i stabilizacja nowych granic — od wstępnego projektu do wpisu w ewidencji.</p>
-          <span class="card-meta">Zwykle 2–4 miesiące →</span>
-        </a>
-        <a href="Uslugi.dc.html" class="card elev-sm" style="text-decoration: none; color: inherit;" style-hover="box-shadow: var(--shadow-md); transform: translateY(-2px)">
-          <span class="card-kicker">05</span>
-          <span class="card-title">Rozgraniczenie i wznowienie granic</span>
-          <p class="card-body">Ustalenie przebiegu spornej granicy lub odtworzenie zatartych punktów granicznych na podstawie dokumentacji źródłowej.</p>
-          <span class="card-meta">Termin po analizie dokumentów →</span>
-        </a>
-        <div style="display: flex; flex-direction: column; justify-content: center; gap: var(--space-3); padding: var(--space-4); border-radius: calc(var(--radius-lg) * 1.15); border: 1px dashed var(--color-neutral-400);">
-          <span style="font-family: var(--font-heading); font-size: 17px;">Nie wiesz, czego potrzebujesz?</span>
-          <p style="font-size: 13px; margin: 0; color: var(--color-neutral-700);">Wystarczy numer działki i opis inwestycji — dobierzemy właściwe opracowanie i podamy cenę.</p>
-          <a href="tel:+48515430240" class="btn btn-primary" style="align-self: flex-start;">Zapytaj telefonicznie</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="h-sec" style="background: var(--color-surface);">
-    <div class="h-wrap">
-      <div class="h-eyebrow">Jak przebiega zlecenie</div>
-      <h2 class="h-h2">Cztery kroki, jeden kontakt</h2>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--space-6); margin-top: var(--space-8);">
-        <div>
-          <div style="width: 58px; height: 58px; border-radius: 999px; background: var(--color-bg); display: grid; place-items: center; font-family: var(--font-heading); font-size: 24px; margin-bottom: var(--space-3);">1</div>
-          <h4 style="margin-bottom: 6px;">Kontakt i wycena</h4>
-          <p style="font-size: 14px; margin: 0; color: var(--color-neutral-800);">Podajesz numer działki, obręb i zakres prac. Otrzymujesz konkretną cenę oraz termin — telefonicznie lub mailem.</p>
-        </div>
-        <div>
-          <div style="width: 58px; height: 58px; border-radius: 999px; background: var(--color-bg); display: grid; place-items: center; font-family: var(--font-heading); font-size: 24px; margin-bottom: var(--space-3);">2</div>
-          <h4 style="margin-bottom: 6px;">Zgłoszenie pracy</h4>
-          <p style="font-size: 14px; margin: 0; color: var(--color-neutral-800);">Zgłaszamy pracę geodezyjną w Powiatowym Ośrodku Dokumentacji i pobieramy materiały źródłowe dla Twojej działki.</p>
-        </div>
-        <div>
-          <div style="width: 58px; height: 58px; border-radius: 999px; background: var(--color-bg); display: grid; place-items: center; font-family: var(--font-heading); font-size: 24px; margin-bottom: var(--space-3);">3</div>
-          <h4 style="margin-bottom: 6px;">Pomiar w terenie</h4>
-          <p style="font-size: 14px; margin: 0; color: var(--color-neutral-800);">Pomiar odbiornikiem GNSS RTK i tachimetrem, w terminie ustalonym z Tobą. Obecność właściciela nie jest wymagana.</p>
-        </div>
-        <div>
-          <div style="width: 58px; height: 58px; border-radius: 999px; background: var(--color-accent); color: var(--color-bg); display: grid; place-items: center; font-family: var(--font-heading); font-size: 24px; margin-bottom: var(--space-3);">4</div>
-          <h4 style="margin-bottom: 6px;">Operat i dokumenty</h4>
-          <p style="font-size: 14px; margin: 0; color: var(--color-neutral-800);">Kompletujemy operat, przekazujemy go do weryfikacji, a Ty odbierasz mapy z klauzulą — osobiście lub pocztą.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="h-sec">
-    <div class="h-wrap" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: clamp(28px, 5vw, 64px); align-items: start;">
-      <div style="min-width: 0;">
-        <div class="h-eyebrow">Obszar działania</div>
-        <h2 class="h-h2">Wieliczka i gminy sąsiednie</h2>
-        <p class="h-lead">Siedziba biura znajduje się w Byszycach, ok. 8 km od centrum Wieliczki. Prace wykonujemy na terenie powiatu wielickiego oraz w gminach ościennych — bez dopłat za dojazd w promieniu 25 km. Zlecenia z dalszych rejonów przyjmujemy po wcześniejszym uzgodnieniu terminu.</p>
-        <a href="Kontakt.dc.html" class="btn btn-secondary" style="margin-top: var(--space-2);">Sprawdź dojazd i godziny</a>
-      </div>
-      <div style="min-width: 0; display: flex; flex-wrap: wrap; gap: 12px; align-content: flex-start;">
-        <span style="display: grid; place-items: center; text-align: center; width: 132px; height: 132px; border-radius: 999px; background: var(--color-accent); color: var(--color-bg); font-family: var(--font-heading); font-size: 18px; padding: 8px;">Wieliczka</span>
-        <span style="display: grid; place-items: center; text-align: center; width: 112px; height: 112px; border-radius: 999px; background: var(--color-accent-2-300); font-family: var(--font-heading); font-size: 15px; padding: 8px;">Niepołomice</span>
-        <span style="display: grid; place-items: center; text-align: center; width: 118px; height: 118px; border-radius: 999px; background: var(--color-accent-2-200); font-family: var(--font-heading); font-size: 16px; padding: 8px;">Kraków</span>
-        <span style="display: grid; place-items: center; text-align: center; width: 104px; height: 104px; border-radius: 999px; background: var(--color-surface); font-family: var(--font-heading); font-size: 15px; padding: 8px;">Skawina</span>
-        <span style="display: grid; place-items: center; text-align: center; width: 98px; height: 98px; border-radius: 999px; background: var(--color-accent-200); font-family: var(--font-heading); font-size: 15px; padding: 8px;">Gdów</span>
-        <span style="display: grid; place-items: center; text-align: center; width: 96px; height: 96px; border-radius: 999px; background: var(--color-neutral-200); font-size: 13px; padding: 8px; line-height: 1.25;">i okolice</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="h-sec" style="background: var(--color-surface);">
-    <div class="h-wrap">
-      <div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--space-4); justify-content: space-between;">
-        <div>
-          <div class="h-eyebrow">Opinie klientów</div>
-          <h2 class="h-h2" style="margin-bottom: 0;">5,0 na 23 opinie w Google</h2>
-        </div>
-        <span class="tag tag-accent" style="padding: 7px 16px; font-size: 12px;">Stan na wrzesień 2026</span>
-      </div>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--space-4); margin-top: var(--space-8);">
-        <div class="card" style="background: var(--color-bg);">
-          <span style="color: var(--color-accent); letter-spacing: 3px;">★★★★★</span>
-          <p class="card-body" style="font-size: 14.5px; opacity: 1;">„Mapa do celów projektowych gotowa szybciej, niż obiecany termin. Wszystko wyjaśnione spokojnie, bez branżowego żargonu.”</p>
-          <span class="card-meta">M.K. · Wieliczka</span>
-        </div>
-        <div class="card" style="background: var(--color-bg);">
-          <span style="color: var(--color-accent); letter-spacing: 3px;">★★★★★</span>
-          <p class="card-body" style="font-size: 14.5px; opacity: 1;">„Tyczenie domu jednorodzinnego — punkt umówiony na konkretną godzinę, ekipa budowlana mogła ruszyć tego samego dnia.”</p>
-          <span class="card-meta">P.S. · Niepołomice</span>
-        </div>
-        <div class="card" style="background: var(--color-bg);">
-          <span style="color: var(--color-accent); letter-spacing: 3px;">★★★★★</span>
-          <p class="card-body" style="font-size: 14.5px; opacity: 1;">„Podział działki przeprowadzony od początku do końca, z pilnowaniem terminów w urzędzie. Kontakt na każdym etapie.”</p>
-          <span class="card-meta">A.W. · gmina Gdów</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="h-sec">
-    <div class="h-wrap" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: clamp(28px, 5vw, 64px); align-items: center;">
-      <div style="min-width: 0; order: 2;">
-        <div class="h-eyebrow">O geodecie</div>
-        <h2 class="h-h2">Łukasz Kowalczyk</h2>
-        <p class="h-lead">Geodeta uprawniony, właściciel biura HORYZONT. Posiadam uprawnienia zawodowe nr 21458 w zakresie 1 (geodezyjne pomiary sytuacyjno-wysokościowe) i 2 (rozgraniczanie i podziały nieruchomości), nadane przez Głównego Geodetę Kraju.</p>
-        <p class="h-lead">W geodezji pracuję od 2011 roku — najpierw w biurach obsługujących inwestycje drogowe i kubaturowe w Krakowie, od 2016 na własny rachunek. Każde zlecenie prowadzę osobiście: od pomiaru w terenie po skompletowanie operatu.</p>
-        <a href="tel:+48515430240" class="btn btn-primary" style="margin-top: var(--space-2);">Porozmawiajmy o zleceniu</a>
-      </div>
-      <div style="min-width: 0; order: 1; position: relative;">
-        <div style="position: absolute; left: -8%; bottom: -8%; width: 40%; aspect-ratio: 1; border-radius: 999px; background: var(--color-accent-200);"></div>
-        <img src="assets/photo.jpg" alt="Łukasz Kowalczyk podczas pomiaru" class="washed" style="position: relative; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 999px; box-shadow: var(--shadow-sm);">
-      </div>
-    </div>
-  </section>
-
-  <sc-if value="{{ showPricing }}" hint-placeholder-val="{{ true }}">
-  <section class="h-sec" style="padding-top: 0;">
-    <div class="h-wrap">
-      <div class="h-eyebrow">Cennik</div>
-      <h2 class="h-h2">Wycena indywidualna, punkt wyjścia jawny</h2>
-      <p class="h-lead" style="margin-bottom: var(--space-6);">Cena zależy od powierzchni działki, liczby punktów, dostępności materiałów w ośrodku dokumentacji i terminu. Poniższe kwoty to typowe widełki dla pojedynczej działki w gminie Wieliczka — ostateczną cenę podajemy przed rozpoczęciem prac i już jej nie zmieniamy.</p>
-      <div style="overflow-x: auto; background: var(--color-surface); border-radius: calc(var(--radius-lg) * 1.15); padding: var(--space-4) var(--space-6);">
-        <table class="table">
-          <thead>
-            <tr><th>Opracowanie</th><th>Widełki cenowe</th><th>Typowy termin</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>Mapa do celów projektowych</td><td>od 1 200 zł</td><td>7–10 dni</td></tr>
-            <tr><td>Tyczenie budynku jednorodzinnego</td><td>od 800 zł</td><td>2–4 dni</td></tr>
-            <tr><td>Inwentaryzacja powykonawcza budynku</td><td>od 900 zł</td><td>5–7 dni</td></tr>
-            <tr><td>Inwentaryzacja przyłączy</td><td>od 500 zł</td><td>5–7 dni</td></tr>
-            <tr><td>Podział nieruchomości</td><td>od 2 500 zł</td><td>2–4 miesiące</td></tr>
-            <tr><td>Wznowienie punktów granicznych</td><td>od 1 000 zł</td><td>po analizie dokumentów</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <p style="font-size: 13px; margin-top: var(--space-3); color: var(--color-neutral-700);">Kwoty netto, bez opłat urzędowych. Faktura VAT do każdego zlecenia.</p>
-    </div>
-  </section>
-  </sc-if>
-
-  <sc-if value="{{ showFaq }}" hint-placeholder-val="{{ true }}">
-  <section class="h-sec" style="padding-top: 0;">
-    <div class="h-wrap" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: clamp(24px, 4vw, 56px); align-items: start;">
-      <div style="min-width: 0;">
-        <div class="h-eyebrow">Pytania</div>
-        <h2 class="h-h2">Najczęściej pytacie o&nbsp;to</h2>
-        <p style="font-size: 14px; color: var(--color-neutral-700);">Nie ma tu Twojego pytania? Zadzwoń — odpowiedź zajmie krócej niż napisanie maila.</p>
-      </div>
-      <div style="min-width: 0; display: flex; flex-direction: column; gap: 2px; background: var(--color-divider); border-radius: calc(var(--radius-lg) * 1.15); overflow: hidden;">
-        <div style="background: var(--color-surface); padding: var(--space-4) var(--space-6);">
-          <h4 style="margin-bottom: 6px;">Jakie dane są potrzebne do wyceny?</h4>
-          <p style="font-size: 14px; margin: 0;">Numer działki i obręb ewidencyjny oraz krótki opis, po co potrzebna jest mapa. To wystarczy do podania ceny i terminu.</p>
-        </div>
-        <div style="background: var(--color-surface); padding: var(--space-4) var(--space-6);">
-          <h4 style="margin-bottom: 6px;">Ile ważna jest mapa do celów projektowych?</h4>
-          <p style="font-size: 14px; margin: 0;">Przepisy nie podają jednej daty — w praktyce projektanci i urzędy przyjmują opracowanie z ostatnich 6–12 miesięcy, o ile w terenie nic się nie zmieniło.</p>
-        </div>
-        <div style="background: var(--color-surface); padding: var(--space-4) var(--space-6);">
-          <h4 style="margin-bottom: 6px;">Czy muszę być obecny przy pomiarze?</h4>
-          <p style="font-size: 14px; margin: 0;">Przy większości prac nie. Obecność właścicieli jest konieczna tylko przy rozgraniczeniu i ustalaniu granic, gdzie wymagany jest protokół.</p>
-        </div>
-        <div style="background: var(--color-surface); padding: var(--space-4) var(--space-6);">
-          <h4 style="margin-bottom: 6px;">Czy wystawiacie fakturę i pracujecie dla firm?</h4>
-          <p style="font-size: 14px; margin: 0;">Tak. Obsługujemy firmy budowlane, biura projektowe i deweloperów, również w formie stałej współpracy na kilka inwestycji.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  </sc-if>
-
-  <section class="h-sec" style="padding-top: 0;">
-    <div class="h-wrap">
-      <div style="background: var(--color-accent-800); color: var(--color-neutral-100); border-radius: calc(var(--radius-lg) * 1.6); padding: clamp(32px, 5vw, 64px); display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: var(--space-6); align-items: center;">
-        <div style="min-width: 0;">
-          <h2 style="font-size: clamp(27px, 3.2vw, 38px); margin-bottom: var(--space-3);">Potrzebujesz mapy albo tyczenia?</h2>
-          <p style="font-size: 16px; margin: 0; opacity: 0.9; max-width: 44ch;">Zadzwoń w godzinach pracy biura — wycenę usłyszysz jeszcze podczas rozmowy.</p>
-        </div>
-        <div style="min-width: 0; display: flex; flex-wrap: wrap; gap: 12px;">
-          <a href="tel:+48515430240" class="btn" style="background: var(--color-accent-300); color: var(--color-accent-900); font-size: 17px; padding: 15px 28px;" style-hover="background: var(--color-accent-200)">515 430 240</a>
-          <a href="Kontakt.dc.html" class="btn" style="border-color: var(--color-accent-400); color: var(--color-neutral-100); font-size: 17px; padding: 15px 28px;" style-hover="background: var(--color-accent-700)">Wyślij zapytanie</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer style="background: var(--color-neutral-900); color: var(--color-neutral-200); padding: clamp(36px, 5vw, 64px) clamp(20px, 5vw, 64px);">
-    <div class="h-wrap" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: var(--space-6);">
-      <div>
-        <div style="font-family: var(--font-heading); font-size: 19px; margin-bottom: var(--space-2);">Biuro Geodezyjne HORYZONT</div>
-        <p style="font-size: 13.5px; margin: 0; opacity: 0.75;">Łukasz Kowalczyk<br>Uprawnienia zawodowe nr 21458 (zakres 1, 2)</p>
-      </div>
-      <div>
-        <h6 style="color: var(--color-accent-300); margin-bottom: var(--space-2);">Adres</h6>
-        <p style="font-size: 13.5px; margin: 0; opacity: 0.75;">Byszyce 167<br>32-020 Wieliczka</p>
-      </div>
-      <div>
-        <h6 style="color: var(--color-accent-300); margin-bottom: var(--space-2);">Kontakt</h6>
-        <p style="font-size: 13.5px; margin: 0;">
-          <a href="tel:+48515430240" style="color: var(--color-neutral-100);">515 430 240</a><br>
-          <a href="mailto:biuro@geodezja-horyzont.pl" style="color: var(--color-neutral-100);">biuro@geodezja-horyzont.pl</a>
-        </p>
-      </div>
-      <div>
-        <h6 style="color: var(--color-accent-300); margin-bottom: var(--space-2);">Godziny</h6>
-        <p style="font-size: 13.5px; margin: 0; opacity: 0.75;">pon.–pt. 07:00–17:00<br>sob.–niedz. nieczynne</p>
-      </div>
-    </div>
-    <div class="h-wrap" style="margin-top: var(--space-8); padding-top: var(--space-4); border-top: 1px solid var(--color-neutral-700); display: flex; flex-wrap: wrap; gap: var(--space-4); justify-content: space-between; font-size: 12.5px; opacity: 0.7;">
-      <span>© 2026 Biuro Geodezyjne HORYZONT Łukasz Kowalczyk</span>
-      <span style="display: flex; gap: 18px; flex-wrap: wrap;">
-        <a href="Uslugi.dc.html" style="color: var(--color-neutral-200);">Usługi</a>
-        <a href="Kontakt.dc.html" style="color: var(--color-neutral-200);">Kontakt</a>
-      </span>
-    </div>
-  </footer>
-</div>
-</x-dc>
-<script type="text/x-dc" data-dc-script data-props="{&quot;showPricing&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Sekcje&quot;},&quot;showFaq&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Sekcje&quot;}}">
+  </x-dc>
+  <script type="text/x-dc" data-dc-script
+    data-props="{&quot;showPricing&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Sekcje&quot;},&quot;showFaq&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Sekcje&quot;}}">
 class Component extends DCLogic {
   renderVals() {
     return {
@@ -344,4 +514,5 @@ class Component extends DCLogic {
 }
 </script>
 </body>
+
 </html>
