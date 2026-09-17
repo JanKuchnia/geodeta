@@ -92,14 +92,17 @@
         <div class="flex items-center gap-3 sm:gap-3.5 shrink-0">
           <img
             alt="Horyzont Geodezja Logo"
-            class="h-10 sm:h-12 w-auto object-contain shrink-0"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHlLOI5kK2yw6lHCkk2cLqA6g5tlQJQSG-FPNu7idCm8fst7A4Qv5TBpK2TOD9wbOGGOjZ01g3E_kB5fsUqfFYqq76pCt0FLvOdlTjaPHexpN7sBLO-pTrKsPv-IgvWdDIGHjZj-ui4L4XWJa3BFmgMuAsF5a80PaWQIDPeoorcC-bgLQ3qiIB-5b_sL_Ftw2qGFOfKQEasJfTcJS8_kpXqzPaCbXJILCb_DdrvMf_MH8qnSZLPJFn"
+            class="h-12 sm:h-16 w-auto object-contain shrink-0"
+            src="../assets/images/logo.webp"
           />
           <a class="flex flex-col shrink-0" href="../index.html">
-            <span
-              class="font-headline font-bold text-lg sm:text-xl leading-tight tracking-tight text-on-surface whitespace-nowrap"
-              >HORYZONT</span
-            >
+            <span class="flex items-center gap-1.5 sm:gap-2">
+              <span
+                class="font-headline font-bold text-lg sm:text-xl leading-tight tracking-tight text-on-surface whitespace-nowrap"
+                >HORYZONT</span
+              >
+              <span class="w-3.5 h-3.5 sm:w-4 sm:h-4 bg-[#fdd43a] shrink-0 inline-block"></span>
+            </span>
             <span
               class="font-label text-xs tracking-normal text-primary font-semibold whitespace-nowrap"
               >Biuro Geodezyjne<span class="hidden 2xl:inline"> Łukasz Kowalczyk</span></span
@@ -218,7 +221,7 @@
     </header>
 
     <!-- Main Content -->
-    <main class="w-full pt-16 sm:pt-20 bg-neutral-100 border-b border-neutral-300">
+    <main class="w-full pt-16 sm:pt-20 bg-neutral-100">
       <!-- Breadcrumbs -->
       <nav
         class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 pt-6 sm:pt-8 flex items-center gap-1.5 text-xs sm:text-sm text-neutral-500 flex-wrap"
@@ -232,12 +235,12 @@
       <!-- Hero Header Section -->
       <section class="w-full pt-8 pb-10 sm:pb-14">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
-          <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-8 border-b border-neutral-200">
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-8">
             <div class="max-w-3xl">
-              <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-neutral-950 border border-neutral-800 text-white text-xs font-semibold mb-4 shadow-xs">
+              <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-neutral-950 border border-neutral-800 text-white text-xs font-semibold mb-4 shadow-xs">
                 <i data-lucide="crosshair" class="w-3.5 h-3.5 text-yellow-400 shrink-0"></i>
                 <span>Precyzja pomiaru · Realizacje w terenie</span>
-              </div>
+              </span>
               <h1 class="font-headline font-extrabold text-3xl sm:text-4xl lg:text-5xl text-neutral-950 leading-[1.15] tracking-tight">
                 Galeria prac i zaplecze sprzętowe biura <span class="underline decoration-yellow-400 decoration-[3px] sm:decoration-4 underline-offset-[6px] sm:underline-offset-[8px] [text-decoration-skip-ink:none]" style="text-decoration-skip-ink: none;">Horyzont</span>
               </h1>
@@ -248,18 +251,18 @@
             <!-- Trust badges quick stats -->
             <div class="flex flex-wrap sm:flex-nowrap gap-3 shrink-0">
               <div class="bg-white p-3.5 sm:p-4 rounded-2xl border border-neutral-200 shadow-xs flex items-center gap-3">
-                <div class="w-10 h-10 rounded-xl bg-yellow-400/20 text-yellow-700 flex items-center justify-center font-headline font-bold text-sm">
+                <span class="w-10 h-10 rounded-xl bg-yellow-400/20 text-yellow-700 flex items-center justify-center font-headline font-bold text-sm shrink-0">
                   <i data-lucide="check-circle-2" class="w-5 h-5 text-neutral-950"></i>
-                </div>
+                </span>
                 <div>
                   <div class="font-headline font-extrabold text-lg text-neutral-950">850+</div>
                   <div class="text-xs text-neutral-500 font-medium">Pomiarów w terenie</div>
                 </div>
               </div>
               <div class="bg-white p-3.5 sm:p-4 rounded-2xl border border-neutral-200 shadow-xs flex items-center gap-3">
-                <div class="w-10 h-10 rounded-xl bg-neutral-950 text-yellow-400 flex items-center justify-center font-headline font-bold text-sm">
+                <span class="w-10 h-10 rounded-xl bg-neutral-950 text-yellow-400 flex items-center justify-center font-headline font-bold text-sm shrink-0">
                   <i data-lucide="award" class="w-5 h-5 text-yellow-400"></i>
-                </div>
+                </span>
                 <div>
                   <div class="font-headline font-extrabold text-lg text-neutral-950">GGK</div>
                   <div class="text-xs text-neutral-500 font-medium">Zakres 1 i 2</div>
@@ -267,6 +270,7 @@
               </div>
             </div>
           </div>
+          <hr class="border-neutral-200" />
 
           <!-- Category Filter Bar -->
           <div class="mt-8">
@@ -327,13 +331,14 @@
       <!-- Gallery Grid Section -->
       <section class="w-full pb-16 sm:pb-24">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+          <h2 class="sr-only">Dokumentacja fotograficzna realizacji geodezyjnych</h2>
           <div
             id="gallery-grid"
             class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8"
           >
             <!-- Item 1: Tyczenie budynku na ławach drutowych -->
             <article
-              class="gallery-item group bg-white rounded-2xl sm:rounded-3xl border border-neutral-200 overflow-hidden shadow-xs hover:shadow-xl hover:border-yellow-400 transition-all duration-300 flex flex-col cursor-pointer"
+              class="gallery-item group bg-white rounded-2xl sm:rounded-3xl border border-neutral-200 overflow-hidden shadow-xs hover:shadow-md hover:border-yellow-400 transition-all duration-300 flex flex-col cursor-pointer"
               data-category="tyczenia"
               data-index="0"
             >
@@ -341,12 +346,12 @@
                 <img
                   src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80"
                   alt="Tyczenie budynku jednorodzinnego na ławach drutowych w wykopie fundamentowym"
-                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  class="w-full h-full object-cover"
                   loading="lazy"
                 />
                 <div class="absolute inset-0 bg-gradient-to-t from-neutral-950/80 via-neutral-950/20 to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
                 <div class="absolute top-3.5 left-3.5 flex items-center gap-2">
-                  <span class="px-2.5 py-1 rounded-md bg-yellow-400 text-neutral-950 text-xs font-bold shadow-xs">
+                  <span class="px-2.5 py-1 rounded-md bg-yellow-400 text-black text-xs font-bold shadow-xs">
                     Tyczenie budynku
                   </span>
                 </div>
@@ -355,7 +360,7 @@
                     <i data-lucide="map-pin" class="w-3.5 h-3.5 text-yellow-400"></i>
                     Wieliczka – Krzyszkowice
                   </span>
-                  <span class="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center group-hover:bg-yellow-400 group-hover:text-neutral-950 transition-colors">
+                  <span class="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center group-hover:bg-yellow-400 group-hover:text-black transition-colors">
                     <i data-lucide="zoom-in" class="w-4 h-4"></i>
                   </span>
                 </div>
@@ -381,7 +386,7 @@
 
             <!-- Item 2: Mapa do celów projektowych -->
             <article
-              class="gallery-item group bg-white rounded-2xl sm:rounded-3xl border border-neutral-200 overflow-hidden shadow-xs hover:shadow-xl hover:border-yellow-400 transition-all duration-300 flex flex-col cursor-pointer"
+              class="gallery-item group bg-white rounded-2xl sm:rounded-3xl border border-neutral-200 overflow-hidden shadow-xs hover:shadow-md hover:border-yellow-400 transition-all duration-300 flex flex-col cursor-pointer"
               data-category="mapy"
               data-index="1"
             >
@@ -389,12 +394,12 @@
                 <img
                   src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80"
                   alt="Mapa do celów projektowych z rzutem CAD i uzgodnieniami ZUD"
-                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  class="w-full h-full object-cover"
                   loading="lazy"
                 />
                 <div class="absolute inset-0 bg-gradient-to-t from-neutral-950/80 via-neutral-950/20 to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
                 <div class="absolute top-3.5 left-3.5 flex items-center gap-2">
-                  <span class="px-2.5 py-1 rounded-md bg-yellow-400 text-neutral-950 text-xs font-bold shadow-xs">
+                  <span class="px-2.5 py-1 rounded-md bg-yellow-400 text-black text-xs font-bold shadow-xs">
                     Mapa d.c. projektowych
                   </span>
                 </div>
@@ -403,7 +408,7 @@
                     <i data-lucide="map-pin" class="w-3.5 h-3.5 text-yellow-400"></i>
                     Kraków – Swoszowice
                   </span>
-                  <span class="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center group-hover:bg-yellow-400 group-hover:text-neutral-950 transition-colors">
+                  <span class="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center group-hover:bg-yellow-400 group-hover:text-black transition-colors">
                     <i data-lucide="zoom-in" class="w-4 h-4"></i>
                   </span>
                 </div>
@@ -429,7 +434,7 @@
 
             <!-- Item 3: Inwentaryzacja powykonawcza sieci -->
             <article
-              class="gallery-item group bg-white rounded-2xl sm:rounded-3xl border border-neutral-200 overflow-hidden shadow-xs hover:shadow-xl hover:border-yellow-400 transition-all duration-300 flex flex-col cursor-pointer"
+              class="gallery-item group bg-white rounded-2xl sm:rounded-3xl border border-neutral-200 overflow-hidden shadow-xs hover:shadow-md hover:border-yellow-400 transition-all duration-300 flex flex-col cursor-pointer"
               data-category="inwentaryzacje"
               data-index="2"
             >
@@ -437,12 +442,12 @@
                 <img
                   src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1200&q=80"
                   alt="Geodeta wykonujący pomiar inwentaryzacyjny przyłączy w otwartym wykopie"
-                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  class="w-full h-full object-cover"
                   loading="lazy"
                 />
                 <div class="absolute inset-0 bg-gradient-to-t from-neutral-950/80 via-neutral-950/20 to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
                 <div class="absolute top-3.5 left-3.5 flex items-center gap-2">
-                  <span class="px-2.5 py-1 rounded-md bg-yellow-400 text-neutral-950 text-xs font-bold shadow-xs">
+                  <span class="px-2.5 py-1 rounded-md bg-yellow-400 text-black text-xs font-bold shadow-xs">
                     Inwentaryzacja sieci
                   </span>
                 </div>
@@ -451,7 +456,7 @@
                     <i data-lucide="map-pin" class="w-3.5 h-3.5 text-yellow-400"></i>
                     Niepołomice
                   </span>
-                  <span class="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center group-hover:bg-yellow-400 group-hover:text-neutral-950 transition-colors">
+                  <span class="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center group-hover:bg-yellow-400 group-hover:text-black transition-colors">
                     <i data-lucide="zoom-in" class="w-4 h-4"></i>
                   </span>
                 </div>
@@ -477,7 +482,7 @@
 
             <!-- Item 4: Wznowienie znaków granicznych -->
             <article
-              class="gallery-item group bg-white rounded-2xl sm:rounded-3xl border border-neutral-200 overflow-hidden shadow-xs hover:shadow-xl hover:border-yellow-400 transition-all duration-300 flex flex-col cursor-pointer"
+              class="gallery-item group bg-white rounded-2xl sm:rounded-3xl border border-neutral-200 overflow-hidden shadow-xs hover:shadow-md hover:border-yellow-400 transition-all duration-300 flex flex-col cursor-pointer"
               data-category="granice"
               data-index="3"
             >
@@ -485,12 +490,12 @@
                 <img
                   src="https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?auto=format&fit=crop&w=1200&q=80"
                   alt="Wznowienie i odszukanie słupków granicznych działki w terenie otwartym"
-                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  class="w-full h-full object-cover"
                   loading="lazy"
                 />
                 <div class="absolute inset-0 bg-gradient-to-t from-neutral-950/80 via-neutral-950/20 to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
                 <div class="absolute top-3.5 left-3.5 flex items-center gap-2">
-                  <span class="px-2.5 py-1 rounded-md bg-yellow-400 text-neutral-950 text-xs font-bold shadow-xs">
+                  <span class="px-2.5 py-1 rounded-md bg-yellow-400 text-black text-xs font-bold shadow-xs">
                     Granice nieruchomości
                   </span>
                 </div>
@@ -499,7 +504,7 @@
                     <i data-lucide="map-pin" class="w-3.5 h-3.5 text-yellow-400"></i>
                     Byszyce k. Wieliczki
                   </span>
-                  <span class="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center group-hover:bg-yellow-400 group-hover:text-neutral-950 transition-colors">
+                  <span class="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center group-hover:bg-yellow-400 group-hover:text-black transition-colors">
                     <i data-lucide="zoom-in" class="w-4 h-4"></i>
                   </span>
                 </div>
@@ -525,7 +530,7 @@
 
             <!-- Item 5: Tyczenie sieci uzbrojenia -->
             <article
-              class="gallery-item group bg-white rounded-2xl sm:rounded-3xl border border-neutral-200 overflow-hidden shadow-xs hover:shadow-xl hover:border-yellow-400 transition-all duration-300 flex flex-col cursor-pointer"
+              class="gallery-item group bg-white rounded-2xl sm:rounded-3xl border border-neutral-200 overflow-hidden shadow-xs hover:shadow-md hover:border-yellow-400 transition-all duration-300 flex flex-col cursor-pointer"
               data-category="tyczenia"
               data-index="4"
             >
@@ -533,12 +538,12 @@
                 <img
                   src="https://images.unsplash.com/photo-1542621334-a254cf47733d?auto=format&fit=crop&w=1200&q=80"
                   alt="Tyczenie trasy uzbrojenia podziemnego i rurociągów na placu budowy"
-                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  class="w-full h-full object-cover"
                   loading="lazy"
                 />
                 <div class="absolute inset-0 bg-gradient-to-t from-neutral-950/80 via-neutral-950/20 to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
                 <div class="absolute top-3.5 left-3.5 flex items-center gap-2">
-                  <span class="px-2.5 py-1 rounded-md bg-yellow-400 text-neutral-950 text-xs font-bold shadow-xs">
+                  <span class="px-2.5 py-1 rounded-md bg-yellow-400 text-black text-xs font-bold shadow-xs">
                     Tyczenie infrastruktury
                   </span>
                 </div>
@@ -547,7 +552,7 @@
                     <i data-lucide="map-pin" class="w-3.5 h-3.5 text-yellow-400"></i>
                     Skawina
                   </span>
-                  <span class="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center group-hover:bg-yellow-400 group-hover:text-neutral-950 transition-colors">
+                  <span class="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center group-hover:bg-yellow-400 group-hover:text-black transition-colors">
                     <i data-lucide="zoom-in" class="w-4 h-4"></i>
                   </span>
                 </div>
@@ -573,7 +578,7 @@
 
             <!-- Item 6: Podział działki budowlanej -->
             <article
-              class="gallery-item group bg-white rounded-2xl sm:rounded-3xl border border-neutral-200 overflow-hidden shadow-xs hover:shadow-xl hover:border-yellow-400 transition-all duration-300 flex flex-col cursor-pointer"
+              class="gallery-item group bg-white rounded-2xl sm:rounded-3xl border border-neutral-200 overflow-hidden shadow-xs hover:shadow-md hover:border-yellow-400 transition-all duration-300 flex flex-col cursor-pointer"
               data-category="granice"
               data-index="5"
             >
@@ -581,12 +586,12 @@
                 <img
                   src="https://images.unsplash.com/photo-1508873696983-2df5703bc20d?auto=format&fit=crop&w=1200&q=80"
                   alt="Podział działki pod zabudowę jednorodzinną i wyznaczenie drogi dojazdowej"
-                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  class="w-full h-full object-cover"
                   loading="lazy"
                 />
                 <div class="absolute inset-0 bg-gradient-to-t from-neutral-950/80 via-neutral-950/20 to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
                 <div class="absolute top-3.5 left-3.5 flex items-center gap-2">
-                  <span class="px-2.5 py-1 rounded-md bg-yellow-400 text-neutral-950 text-xs font-bold shadow-xs">
+                  <span class="px-2.5 py-1 rounded-md bg-yellow-400 text-black text-xs font-bold shadow-xs">
                     Podział nieruchomości
                   </span>
                 </div>
@@ -595,7 +600,7 @@
                     <i data-lucide="map-pin" class="w-3.5 h-3.5 text-yellow-400"></i>
                     Gdów
                   </span>
-                  <span class="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center group-hover:bg-yellow-400 group-hover:text-neutral-950 transition-colors">
+                  <span class="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center group-hover:bg-yellow-400 group-hover:text-black transition-colors">
                     <i data-lucide="zoom-in" class="w-4 h-4"></i>
                   </span>
                 </div>
@@ -621,7 +626,7 @@
 
             <!-- Item 7: Inwentaryzacja powykonawcza hali -->
             <article
-              class="gallery-item group bg-white rounded-2xl sm:rounded-3xl border border-neutral-200 overflow-hidden shadow-xs hover:shadow-xl hover:border-yellow-400 transition-all duration-300 flex flex-col cursor-pointer"
+              class="gallery-item group bg-white rounded-2xl sm:rounded-3xl border border-neutral-200 overflow-hidden shadow-xs hover:shadow-md hover:border-yellow-400 transition-all duration-300 flex flex-col cursor-pointer"
               data-category="inwentaryzacje"
               data-index="6"
             >
@@ -629,12 +634,12 @@
                 <img
                   src="https://images.unsplash.com/photo-1590486803833-1c5dc8ddd4c8?auto=format&fit=crop&w=1200&q=80"
                   alt="Inwentaryzacja powykonawcza hali magazynowej z placem manewrowym"
-                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  class="w-full h-full object-cover"
                   loading="lazy"
                 />
                 <div class="absolute inset-0 bg-gradient-to-t from-neutral-950/80 via-neutral-950/20 to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
                 <div class="absolute top-3.5 left-3.5 flex items-center gap-2">
-                  <span class="px-2.5 py-1 rounded-md bg-yellow-400 text-neutral-950 text-xs font-bold shadow-xs">
+                  <span class="px-2.5 py-1 rounded-md bg-yellow-400 text-black text-xs font-bold shadow-xs">
                     Inwentaryzacja kubaturowa
                   </span>
                 </div>
@@ -643,7 +648,7 @@
                     <i data-lucide="map-pin" class="w-3.5 h-3.5 text-yellow-400"></i>
                     Wieliczka – Strefa Przemysłowa
                   </span>
-                  <span class="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center group-hover:bg-yellow-400 group-hover:text-neutral-950 transition-colors">
+                  <span class="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center group-hover:bg-yellow-400 group-hover:text-black transition-colors">
                     <i data-lucide="zoom-in" class="w-4 h-4"></i>
                   </span>
                 </div>
@@ -669,7 +674,7 @@
 
             <!-- Item 8: Model terenu DTM -->
             <article
-              class="gallery-item group bg-white rounded-2xl sm:rounded-3xl border border-neutral-200 overflow-hidden shadow-xs hover:shadow-xl hover:border-yellow-400 transition-all duration-300 flex flex-col cursor-pointer"
+              class="gallery-item group bg-white rounded-2xl sm:rounded-3xl border border-neutral-200 overflow-hidden shadow-xs hover:shadow-md hover:border-yellow-400 transition-all duration-300 flex flex-col cursor-pointer"
               data-category="mapy"
               data-index="7"
             >
@@ -677,12 +682,12 @@
                 <img
                   src="https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?auto=format&fit=crop&w=1200&q=80"
                   alt="Pomiary wysokościowe zbocza i modelowanie rzeźby terenu pod projekt architektoniczny"
-                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  class="w-full h-full object-cover"
                   loading="lazy"
                 />
                 <div class="absolute inset-0 bg-gradient-to-t from-neutral-950/80 via-neutral-950/20 to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
                 <div class="absolute top-3.5 left-3.5 flex items-center gap-2">
-                  <span class="px-2.5 py-1 rounded-md bg-yellow-400 text-neutral-950 text-xs font-bold shadow-xs">
+                  <span class="px-2.5 py-1 rounded-md bg-yellow-400 text-black text-xs font-bold shadow-xs">
                     Model rzeźby terenu (DTM)
                   </span>
                 </div>
@@ -691,7 +696,7 @@
                     <i data-lucide="map-pin" class="w-3.5 h-3.5 text-yellow-400"></i>
                     Dobczyce k. Zalewu
                   </span>
-                  <span class="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center group-hover:bg-yellow-400 group-hover:text-neutral-950 transition-colors">
+                  <span class="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center group-hover:bg-yellow-400 group-hover:text-black transition-colors">
                     <i data-lucide="zoom-in" class="w-4 h-4"></i>
                   </span>
                 </div>
@@ -717,7 +722,7 @@
 
             <!-- Item 9: Certyfikowany tachimetr -->
             <article
-              class="gallery-item group bg-white rounded-2xl sm:rounded-3xl border border-neutral-200 overflow-hidden shadow-xs hover:shadow-xl hover:border-yellow-400 transition-all duration-300 flex flex-col cursor-pointer"
+              class="gallery-item group bg-white rounded-2xl sm:rounded-3xl border border-neutral-200 overflow-hidden shadow-xs hover:shadow-md hover:border-yellow-400 transition-all duration-300 flex flex-col cursor-pointer"
               data-category="sprzet"
               data-index="8"
             >
@@ -725,12 +730,12 @@
                 <img
                   src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80"
                   alt="Aparatura pomiarowa biura geodezyjnego – tachimetr elektroniczny"
-                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  class="w-full h-full object-cover"
                   loading="lazy"
                 />
                 <div class="absolute inset-0 bg-gradient-to-t from-neutral-950/80 via-neutral-950/20 to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
                 <div class="absolute top-3.5 left-3.5 flex items-center gap-2">
-                  <span class="px-2.5 py-1 rounded-md bg-yellow-400 text-neutral-950 text-xs font-bold shadow-xs">
+                  <span class="px-2.5 py-1 rounded-md bg-yellow-400 text-black text-xs font-bold shadow-xs">
                     Sprzęt pomiarowy
                   </span>
                 </div>
@@ -739,7 +744,7 @@
                     <i data-lucide="map-pin" class="w-3.5 h-3.5 text-yellow-400"></i>
                     Baza techniczna HORYZONT
                   </span>
-                  <span class="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center group-hover:bg-yellow-400 group-hover:text-neutral-950 transition-colors">
+                  <span class="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center group-hover:bg-yellow-400 group-hover:text-black transition-colors">
                     <i data-lucide="zoom-in" class="w-4 h-4"></i>
                   </span>
                 </div>
@@ -750,7 +755,7 @@
                     Tachimetr z dalmierzem bezlustrowym i kompensatorem
                   </h3>
                   <p class="mt-2 text-xs sm:text-sm text-neutral-600 leading-relaxed">
-                    Szwaycarska optyka pomiarowa o milimetrowej dokładności, gwarantująca bezbłędne odczyty kątów i odległości na placu budowy.
+                    Szwajcarska optyka pomiarowa o milimetrowej dokładności, gwarantująca bezbłędne odczyty kątów i odległości na placu budowy.
                   </p>
                 </div>
                 <div class="mt-4 pt-3 border-t border-neutral-100 flex items-center justify-between text-xs text-neutral-500">
@@ -765,7 +770,7 @@
 
             <!-- Item 10: Niwelacja precyzyjna i repery -->
             <article
-              class="gallery-item group bg-white rounded-2xl sm:rounded-3xl border border-neutral-200 overflow-hidden shadow-xs hover:shadow-xl hover:border-yellow-400 transition-all duration-300 flex flex-col cursor-pointer"
+              class="gallery-item group bg-white rounded-2xl sm:rounded-3xl border border-neutral-200 overflow-hidden shadow-xs hover:shadow-md hover:border-yellow-400 transition-all duration-300 flex flex-col cursor-pointer"
               data-category="sprzet"
               data-index="9"
             >
@@ -773,12 +778,12 @@
                 <img
                   src="https://images.unsplash.com/photo-1584467735815-f778f274e296?auto=format&fit=crop&w=1200&q=80"
                   alt="Niwelacja precyzyjna geometrii konstrukcji i kontrola osiadań"
-                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  class="w-full h-full object-cover"
                   loading="lazy"
                 />
                 <div class="absolute inset-0 bg-gradient-to-t from-neutral-950/80 via-neutral-950/20 to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
                 <div class="absolute top-3.5 left-3.5 flex items-center gap-2">
-                  <span class="px-2.5 py-1 rounded-md bg-yellow-400 text-neutral-950 text-xs font-bold shadow-xs">
+                  <span class="px-2.5 py-1 rounded-md bg-yellow-400 text-black text-xs font-bold shadow-xs">
                     Niwelacja precyzyjna
                   </span>
                 </div>
@@ -787,7 +792,7 @@
                     <i data-lucide="map-pin" class="w-3.5 h-3.5 text-yellow-400"></i>
                     Kraków – Śródmieście
                   </span>
-                  <span class="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center group-hover:bg-yellow-400 group-hover:text-neutral-950 transition-colors">
+                  <span class="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center group-hover:bg-yellow-400 group-hover:text-black transition-colors">
                     <i data-lucide="zoom-in" class="w-4 h-4"></i>
                   </span>
                 </div>
@@ -813,7 +818,7 @@
 
             <!-- Item 11: Opracowanie kameralne CAD -->
             <article
-              class="gallery-item group bg-white rounded-2xl sm:rounded-3xl border border-neutral-200 overflow-hidden shadow-xs hover:shadow-xl hover:border-yellow-400 transition-all duration-300 flex flex-col cursor-pointer"
+              class="gallery-item group bg-white rounded-2xl sm:rounded-3xl border border-neutral-200 overflow-hidden shadow-xs hover:shadow-md hover:border-yellow-400 transition-all duration-300 flex flex-col cursor-pointer"
               data-category="mapy"
               data-index="10"
             >
@@ -821,12 +826,12 @@
                 <img
                   src="https://images.unsplash.com/photo-1535732820275-9ffd998cac22?auto=format&fit=crop&w=1200&q=80"
                   alt="Opracowanie kameralne dokumentacji geodezyjnej i analizy ksiąg wieczystych"
-                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  class="w-full h-full object-cover"
                   loading="lazy"
                 />
                 <div class="absolute inset-0 bg-gradient-to-t from-neutral-950/80 via-neutral-950/20 to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
                 <div class="absolute top-3.5 left-3.5 flex items-center gap-2">
-                  <span class="px-2.5 py-1 rounded-md bg-yellow-400 text-neutral-950 text-xs font-bold shadow-xs">
+                  <span class="px-2.5 py-1 rounded-md bg-yellow-400 text-black text-xs font-bold shadow-xs">
                     Opracowanie CAD & EGiB
                   </span>
                 </div>
@@ -835,7 +840,7 @@
                     <i data-lucide="map-pin" class="w-3.5 h-3.5 text-yellow-400"></i>
                     Pracownia Byszyce 167
                   </span>
-                  <span class="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center group-hover:bg-yellow-400 group-hover:text-neutral-950 transition-colors">
+                  <span class="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center group-hover:bg-yellow-400 group-hover:text-black transition-colors">
                     <i data-lucide="zoom-in" class="w-4 h-4"></i>
                   </span>
                 </div>
@@ -861,7 +866,7 @@
 
             <!-- Item 12: Nadzór geodezyjny -->
             <article
-              class="gallery-item group bg-white rounded-2xl sm:rounded-3xl border border-neutral-200 overflow-hidden shadow-xs hover:shadow-xl hover:border-yellow-400 transition-all duration-300 flex flex-col cursor-pointer"
+              class="gallery-item group bg-white rounded-2xl sm:rounded-3xl border border-neutral-200 overflow-hidden shadow-xs hover:shadow-md hover:border-yellow-400 transition-all duration-300 flex flex-col cursor-pointer"
               data-category="tyczenia"
               data-index="11"
             >
@@ -869,12 +874,12 @@
                 <img
                   src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1200&q=80"
                   alt="Nadzór geodety uprawnionego i bieżąca koordynacja z kierownikiem budowy"
-                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  class="w-full h-full object-cover"
                   loading="lazy"
                 />
                 <div class="absolute inset-0 bg-gradient-to-t from-neutral-950/80 via-neutral-950/20 to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
                 <div class="absolute top-3.5 left-3.5 flex items-center gap-2">
-                  <span class="px-2.5 py-1 rounded-md bg-yellow-400 text-neutral-950 text-xs font-bold shadow-xs">
+                  <span class="px-2.5 py-1 rounded-md bg-yellow-400 text-black text-xs font-bold shadow-xs">
                     Nadzór na budowie
                   </span>
                 </div>
@@ -883,7 +888,7 @@
                     <i data-lucide="map-pin" class="w-3.5 h-3.5 text-yellow-400"></i>
                     Myślenice
                   </span>
-                  <span class="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center group-hover:bg-yellow-400 group-hover:text-neutral-950 transition-colors">
+                  <span class="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center group-hover:bg-yellow-400 group-hover:text-black transition-colors">
                     <i data-lucide="zoom-in" class="w-4 h-4"></i>
                   </span>
                 </div>
@@ -916,7 +921,7 @@
       <section class="w-full py-12 sm:py-16 bg-neutral-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
           <div class="p-8 sm:p-12 rounded-3xl bg-neutral-950 text-white border border-yellow-400/30 shadow-xl flex flex-col md:flex-row items-center justify-between gap-8">
-            <div class="max-w-2xl">
+            <div class="max-w-xl">
               <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-yellow-400/15 text-yellow-300 border border-yellow-400/30 text-xs font-semibold mb-3">
                 <i data-lucide="sparkles" class="w-3.5 h-3.5 text-yellow-400"></i>
                 Bezpłatna wycena geodezyjna
@@ -924,14 +929,14 @@
               <h2 class="text-2xl sm:text-3xl lg:text-4xl font-headline font-bold text-white mb-3 leading-tight">
                 Planujesz budowę, przyłącze lub podział działki?
               </h2>
-              <p class="text-xs sm:text-sm text-neutral-300 leading-relaxed">
+              <p class="text-xs sm:text-sm text-neutral-300 leading-relaxed max-w-lg">
                 Zadzwoń do nas lub podaj numer działki w formularzu. Wstępną analizę księgi wieczystej i wycenę prac terenowych przygotujemy bez opłat.
               </p>
             </div>
             <div class="flex flex-col sm:flex-row items-center gap-3.5 shrink-0 w-full md:w-auto">
               <a
                 href="tel:+48515430240"
-                class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-yellow-400 hover:bg-yellow-300 text-neutral-950 text-sm font-bold transition-all active:scale-[0.98] shadow-md"
+                class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-yellow-400 hover:bg-yellow-300 text-black text-sm font-bold transition-all active:scale-[0.98] shadow-md"
               >
                 <i data-lucide="phone" class="w-4 h-4"></i>
                 <span>Zadzwoń: 515 430 240</span>
@@ -957,11 +962,11 @@
       aria-modal="true"
       aria-label="Podgląd zdjęcia realizacji"
     >
-      <div class="relative w-full max-w-5xl bg-neutral-900 rounded-2xl sm:rounded-3xl border border-neutral-800 overflow-hidden shadow-2xl flex flex-col max-h-[92vh]">
+      <div class="relative w-full max-w-5xl bg-neutral-900 rounded-2xl sm:rounded-3xl border border-neutral-800 overflow-hidden flex flex-col max-h-[92vh]">
         <!-- Top bar -->
         <div class="flex items-center justify-between px-4 sm:px-6 py-3.5 border-b border-neutral-800 bg-neutral-950/60 text-white">
           <div class="flex items-center gap-3">
-            <span id="modal-category" class="px-2.5 py-0.5 rounded-md bg-yellow-400 text-neutral-950 text-xs font-bold">
+            <span id="modal-category" class="px-2.5 py-0.5 rounded-md bg-yellow-400 text-black text-xs font-bold">
               Kategoria
             </span>
             <span id="modal-counter" class="text-xs text-neutral-400 font-medium">
@@ -996,7 +1001,7 @@
             class="group absolute z-10 inset-y-0 left-0 w-14 sm:w-20 flex items-center justify-center"
             aria-label="Poprzednie zdjęcie"
           >
-            <span class="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-neutral-900/80 text-white border border-white/20 group-hover:bg-yellow-400 group-hover:text-neutral-950 flex items-center justify-center transition-all shadow-md group-active:scale-95">
+            <span class="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-neutral-900/80 text-white border border-white/20 group-hover:bg-yellow-400 group-hover:text-black flex items-center justify-center transition-all shadow-md group-active:scale-95">
               <i data-lucide="chevron-left" class="w-6 h-6"></i>
             </span>
           </button>
@@ -1006,7 +1011,7 @@
             class="group absolute z-10 inset-y-0 right-0 w-14 sm:w-20 flex items-center justify-center"
             aria-label="Następne zdjęcie"
           >
-            <span class="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-neutral-900/80 text-white border border-white/20 group-hover:bg-yellow-400 group-hover:text-neutral-950 flex items-center justify-center transition-all shadow-md group-active:scale-95">
+            <span class="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-neutral-900/80 text-white border border-white/20 group-hover:bg-yellow-400 group-hover:text-black flex items-center justify-center transition-all shadow-md group-active:scale-95">
               <i data-lucide="chevron-right" class="w-6 h-6"></i>
             </span>
           </button>
@@ -1015,9 +1020,9 @@
         <!-- Caption bottom -->
         <div class="p-4 sm:p-6 bg-neutral-950 border-t border-neutral-800 text-white">
           <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-1.5">
-            <h4 id="modal-title" class="font-headline font-bold text-base sm:text-lg text-white">
+            <h3 id="modal-title" class="font-headline font-bold text-base sm:text-lg text-white">
               Tytuł realizacji
-            </h4>
+            </h3>
             <div class="flex items-center gap-2 shrink-0">
               <span id="modal-location" class="inline-flex items-center gap-1.5 text-xs text-yellow-400 bg-neutral-900 px-2.5 py-1 rounded-md border border-neutral-800">
                 <i data-lucide="map-pin" class="w-3.5 h-3.5 text-yellow-400"></i>
@@ -1049,13 +1054,16 @@
             <div class="flex items-center gap-3.5">
               <img
                 alt="Horyzont Geodezja Logo"
-                class="h-12 sm:h-14 w-auto object-contain shrink-0 brightness-110"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHlLOI5kK2yw6lHCkk2cLqA6g5tlQJQSG-FPNu7idCm8fst7A4Qv5TBpK2TOD9wbOGGOjZ01g3E_kB5fsUqfFYqq76pCt0FLvOdlTjaPHexpN7sBLO-pTrKsPv-IgvWdDIGHjZj-ui4L4XWJa3BFmgMuAsF5a80PaWQIDPeoorcC-bgLQ3qiIB-5b_sL_Ftw2qGFOfKQEasJfTcJS8_kpXqzPaCbXJILCb_DdrvMf_MH8qnSZLPJFn"
+                class="h-16 sm:h-20 w-auto object-contain shrink-0"
+                src="../assets/images/logo-white.webp"
               />
               <div class="flex flex-col">
-                <span class="font-headline font-bold text-xl sm:text-2xl text-white leading-tight tracking-tight"
-                  >HORYZONT</span
-                >
+                <div class="flex items-center gap-2">
+                  <span class="font-headline font-bold text-xl sm:text-2xl text-white leading-tight tracking-tight"
+                    >HORYZONT</span
+                  >
+                  <span class="w-4 h-4 sm:w-5 sm:h-5 bg-[#fdd43a] shrink-0 inline-block"></span>
+                </div>
                 <span class="text-xs font-semibold text-yellow-400 tracking-wide"
                   >Biuro Geodezyjne Łukasz Kowalczyk</span
                 >

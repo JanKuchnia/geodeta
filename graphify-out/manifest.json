@@ -5,8 +5,8 @@
     "semantic_hash": ""
   },
   "/home/jankuchnia/Desktop/geodeta/index.html": {
-    "mtime": 1789656653.670543,
-    "ast_hash": "23d23a84187c73f1c00caadb60b24ab4",
+    "mtime": 1789661524.3393443,
+    "ast_hash": "557b919bf5af942c66af17fe1f38bc8e",
     "semantic_hash": ""
   },
   "/home/jankuchnia/Desktop/geodeta/DOCS/brief.md": {
@@ -1200,53 +1200,73 @@
     "semantic_hash": ""
   },
   "/home/jankuchnia/Desktop/geodeta/uslugi/index.html": {
-    "mtime": 1789655675.6491652,
-    "ast_hash": "dc7e3bad4f204d613983990318433da6",
+    "mtime": 1789661473.39753,
+    "ast_hash": "7101885fe13e376f10078cf1d2a847ec",
     "semantic_hash": ""
   },
   "/home/jankuchnia/Desktop/geodeta/uslugi/mapa-do-celow-projektowych/index.html": {
-    "mtime": 1789655675.649595,
-    "ast_hash": "ea1aa908192fd348a0f5fbaee7940a9f",
+    "mtime": 1789661473.3990026,
+    "ast_hash": "38f46609310f9aff60dd265cc32238bc",
     "semantic_hash": ""
   },
   "/home/jankuchnia/Desktop/geodeta/uslugi/tyczenie-budynkow/index.html": {
-    "mtime": 1789655675.6512494,
-    "ast_hash": "b80f9bc9171148093fa2543e8d3b0860",
+    "mtime": 1789661473.4009986,
+    "ast_hash": "4589325dfae7cb8975ed5c783f5b1bd2",
     "semantic_hash": ""
   },
   "/home/jankuchnia/Desktop/geodeta/uslugi/inwentaryzacja-powykonawcza/index.html": {
-    "mtime": 1789655675.649595,
-    "ast_hash": "7a47a769db565e08dc457166c809c688",
+    "mtime": 1789661473.398334,
+    "ast_hash": "dcf2325ad8fd2f27f39fc78b828e06aa",
     "semantic_hash": ""
   },
   "/home/jankuchnia/Desktop/geodeta/uslugi/podzial-nieruchomosci/index.html": {
-    "mtime": 1789655675.649595,
-    "ast_hash": "34d61bb923e088f23f3c94a73d6ca339",
+    "mtime": 1789661473.3996742,
+    "ast_hash": "0d0e3149b4992a5848051e7454321bce",
     "semantic_hash": ""
   },
   "/home/jankuchnia/Desktop/geodeta/uslugi/rozgraniczenie-nieruchomosci/index.html": {
-    "mtime": 1789655675.6508331,
-    "ast_hash": "074405747b5d82675af904d81d362350",
+    "mtime": 1789661473.400339,
+    "ast_hash": "6466ce79e3a657ede1dfa68ab1430fc7",
     "semantic_hash": ""
   },
   "/home/jankuchnia/Desktop/geodeta/o-nas/index.html": {
-    "mtime": 1789655675.6481564,
-    "ast_hash": "7ace9c32b602d8a1895a5e7fda2ef911",
+    "mtime": 1789661473.3958814,
+    "ast_hash": "693c7e7d76f1b083eed966e112e2ad9b",
     "semantic_hash": ""
   },
   "/home/jankuchnia/Desktop/geodeta/opinie/index.html": {
-    "mtime": 1789655675.6486697,
-    "ast_hash": "c70e3afd63a7918368edf8f72bb9048c",
+    "mtime": 1789661473.3966546,
+    "ast_hash": "1f7046f586e86080cbcc9e11e3c53ae2",
     "semantic_hash": ""
   },
   "/home/jankuchnia/Desktop/geodeta/kontakt/index.html": {
-    "mtime": 1789655675.6478102,
-    "ast_hash": "bdfba61e742313e19832178778ad33d2",
+    "mtime": 1789661473.3949726,
+    "ast_hash": "deabb1394ced90ecbe54f93381957cde",
     "semantic_hash": ""
   },
   "/home/jankuchnia/Desktop/geodeta/galeria/index.html": {
-    "mtime": 1789659548.7968707,
-    "ast_hash": "dfba642bc04f45853ff3cbaa0a67d42e",
+    "mtime": 1789661551.3955417,
+    "ast_hash": "59bf44c6e594d1d1c339b5688a750e56",
+    "semantic_hash": ""
+  },
+  "/home/jankuchnia/Desktop/geodeta/assets/images/wizyt\u00f3wka.jpg": {
+    "mtime": 1789660787.8939707,
+    "ast_hash": "3f2658297246942b22acc46909cd9198",
+    "semantic_hash": ""
+  },
+  "/home/jankuchnia/Desktop/geodeta/assets/images/logo.jpg": {
+    "mtime": 1789661263.6024425,
+    "ast_hash": "66ccf6685f3d84263b654c468e2bc9b1",
+    "semantic_hash": ""
+  },
+  "/home/jankuchnia/Desktop/geodeta/assets/images/logo.webp": {
+    "mtime": 1789661263.5965738,
+    "ast_hash": "14d01987ec23495580f8d6dd672be2b0",
+    "semantic_hash": ""
+  },
+  "/home/jankuchnia/Desktop/geodeta/assets/images/logo-white.webp": {
+    "mtime": 1789661263.600171,
+    "ast_hash": "ec2f83f2b8f21ee6f8de481f14dc3918",
     "semantic_hash": ""
   }
 }
