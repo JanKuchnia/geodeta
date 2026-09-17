@@ -4,6 +4,69 @@
   "graph": {},
   "nodes": [
     {
+      "label": ".headroom_wrap_marker.json",
+      "file_type": "code",
+      "source_file": ".claude/.headroom_wrap_marker.json",
+      "source_location": "L1",
+      "id": "claude_headroom_wrap_marker_json",
+      "community": 13,
+      "norm_label": ".headroom_wrap_marker.json"
+    },
+    {
+      "label": "pid",
+      "file_type": "code",
+      "source_file": ".claude/.headroom_wrap_marker.json",
+      "source_location": "L1",
+      "id": "claude_headroom_wrap_marker_pid",
+      "community": 13,
+      "norm_label": "pid"
+    },
+    {
+      "label": "start_src",
+      "file_type": "code",
+      "source_file": ".claude/.headroom_wrap_marker.json",
+      "source_location": "L1",
+      "id": "claude_headroom_wrap_marker_start_src",
+      "community": 13,
+      "norm_label": "start_src"
+    },
+    {
+      "label": "start_time",
+      "file_type": "code",
+      "source_file": ".claude/.headroom_wrap_marker.json",
+      "source_location": "L1",
+      "id": "claude_headroom_wrap_marker_start_time",
+      "community": 13,
+      "norm_label": "start_time"
+    },
+    {
+      "label": "port",
+      "file_type": "code",
+      "source_file": ".claude/.headroom_wrap_marker.json",
+      "source_location": "L1",
+      "id": "claude_headroom_wrap_marker_port",
+      "community": 13,
+      "norm_label": "port"
+    },
+    {
+      "label": "key",
+      "file_type": "code",
+      "source_file": ".claude/.headroom_wrap_marker.json",
+      "source_location": "L1",
+      "id": "claude_headroom_wrap_marker_key",
+      "community": 13,
+      "norm_label": "key"
+    },
+    {
+      "label": "previous",
+      "file_type": "code",
+      "source_file": ".claude/.headroom_wrap_marker.json",
+      "source_location": "L1",
+      "id": "claude_headroom_wrap_marker_previous",
+      "community": 13,
+      "norm_label": "previous"
+    },
+    {
       "label": "settings.local.json",
       "file_type": "code",
       "source_file": ".claude/settings.local.json",
@@ -29,6 +92,33 @@
       "id": "claude_settings_local_hooks_sessionstart",
       "community": 2,
       "norm_label": "sessionstart"
+    },
+    {
+      "label": "env",
+      "file_type": "code",
+      "source_file": ".claude/settings.local.json",
+      "source_location": "L16",
+      "id": "claude_settings_local_env",
+      "community": 2,
+      "norm_label": "env"
+    },
+    {
+      "label": "ANTHROPIC_BASE_URL",
+      "file_type": "code",
+      "source_file": ".claude/settings.local.json",
+      "source_location": "L17",
+      "id": "claude_settings_local_env_anthropic_base_url",
+      "community": 2,
+      "norm_label": "anthropic_base_url"
+    },
+    {
+      "label": "ENABLE_TOOL_SEARCH",
+      "file_type": "code",
+      "source_file": ".claude/settings.local.json",
+      "source_location": "L18",
+      "id": "claude_settings_local_env_enable_tool_search",
+      "community": 2,
+      "norm_label": "enable_tool_search"
     },
     {
       "label": "tailwind.config.js",
@@ -7267,6 +7357,141 @@
       "norm_label": "open items to confirm with client (blocks final copy)"
     },
     {
+      "label": "MAPS-ANALYSIS-horyzont.md",
+      "file_type": "document",
+      "source_file": "DOCS/MAPS-ANALYSIS-horyzont.md",
+      "source_location": "L1",
+      "id": "docs_maps_analysis_horyzont_md",
+      "community": 12,
+      "norm_label": "maps-analysis-horyzont.md"
+    },
+    {
+      "label": "Maps Intelligence Report \u2014 Biuro Geodezyjne HORYZONT \u0141ukasz Kowalczyk",
+      "file_type": "document",
+      "source_file": "DOCS/MAPS-ANALYSIS-horyzont.md",
+      "source_location": "L1",
+      "id": "docs_maps_analysis_horyzont_maps_intelligence_report_biuro_geodezyjne_horyzont_\u0142ukasz_kowalczyk",
+      "community": 12,
+      "norm_label": "maps intelligence report \u2014 biuro geodezyjne horyzont \u0142ukasz kowalczyk"
+    },
+    {
+      "label": "1. Maps Health Score: Unscored (insufficient live data)",
+      "file_type": "document",
+      "source_file": "DOCS/MAPS-ANALYSIS-horyzont.md",
+      "source_location": "L9",
+      "id": "docs_maps_analysis_horyzont_1_maps_health_score_unscored_insufficient_live_data",
+      "community": 12,
+      "norm_label": "1. maps health score: unscored (insufficient live data)"
+    },
+    {
+      "label": "2. Data Available (from `DOCS/brief.md`)",
+      "file_type": "document",
+      "source_file": "DOCS/MAPS-ANALYSIS-horyzont.md",
+      "source_location": "L15",
+      "id": "docs_maps_analysis_horyzont_2_data_available_from_docs_brief_md",
+      "community": 12,
+      "norm_label": "2. data available (from `docs/brief.md`)"
+    },
+    {
+      "label": "3. GBP Profile Audit (Tier 0 \u2014 manual checklist)",
+      "file_type": "document",
+      "source_file": "DOCS/MAPS-ANALYSIS-horyzont.md",
+      "source_location": "L27",
+      "id": "docs_maps_analysis_horyzont_3_gbp_profile_audit_tier_0_manual_checklist",
+      "community": 12,
+      "norm_label": "3. gbp profile audit (tier 0 \u2014 manual checklist)"
+    },
+    {
+      "label": "Critical Fields (16 pts possible)",
+      "file_type": "document",
+      "source_file": "DOCS/MAPS-ANALYSIS-horyzont.md",
+      "source_location": "L31",
+      "id": "docs_maps_analysis_horyzont_critical_fields_16_pts_possible",
+      "community": 12,
+      "norm_label": "critical fields (16 pts possible)"
+    },
+    {
+      "label": "Important Fields (16 pts possible)",
+      "file_type": "document",
+      "source_file": "DOCS/MAPS-ANALYSIS-horyzont.md",
+      "source_location": "L44",
+      "id": "docs_maps_analysis_horyzont_important_fields_16_pts_possible",
+      "community": 12,
+      "norm_label": "important fields (16 pts possible)"
+    },
+    {
+      "label": "Supplementary Fields (18 pts possible)",
+      "file_type": "document",
+      "source_file": "DOCS/MAPS-ANALYSIS-horyzont.md",
+      "source_location": "L57",
+      "id": "docs_maps_analysis_horyzont_supplementary_fields_18_pts_possible",
+      "community": 12,
+      "norm_label": "supplementary fields (18 pts possible)"
+    },
+    {
+      "label": "4. Review Intelligence (partial)",
+      "file_type": "document",
+      "source_file": "DOCS/MAPS-ANALYSIS-horyzont.md",
+      "source_location": "L74",
+      "id": "docs_maps_analysis_horyzont_4_review_intelligence_partial",
+      "community": 12,
+      "norm_label": "4. review intelligence (partial)"
+    },
+    {
+      "label": "5. Competitor Landscape (Tier 0 \u2014 Geoapify/OSM, 15km radius)",
+      "file_type": "document",
+      "source_file": "DOCS/MAPS-ANALYSIS-horyzont.md",
+      "source_location": "L84",
+      "id": "docs_maps_analysis_horyzont_5_competitor_landscape_tier_0_geoapify_osm_15km_radius",
+      "community": 12,
+      "norm_label": "5. competitor landscape (tier 0 \u2014 geoapify/osm, 15km radius)"
+    },
+    {
+      "label": "6. Cross-Platform NAP Verification",
+      "file_type": "document",
+      "source_file": "DOCS/MAPS-ANALYSIS-horyzont.md",
+      "source_location": "L97",
+      "id": "docs_maps_analysis_horyzont_6_cross_platform_nap_verification",
+      "community": 12,
+      "norm_label": "6. cross-platform nap verification"
+    },
+    {
+      "label": "7. Schema Recommendation",
+      "file_type": "document",
+      "source_file": "DOCS/MAPS-ANALYSIS-horyzont.md",
+      "source_location": "L108",
+      "id": "docs_maps_analysis_horyzont_7_schema_recommendation",
+      "community": 12,
+      "norm_label": "7. schema recommendation"
+    },
+    {
+      "label": "code:json ({)",
+      "file_type": "document",
+      "source_file": "DOCS/MAPS-ANALYSIS-horyzont.md",
+      "source_location": "L112",
+      "id": "docs_maps_analysis_horyzont_codeblock_1",
+      "community": 12,
+      "norm_label": "code:json ({)"
+    },
+    {
+      "label": "8. Prioritized Actions",
+      "file_type": "document",
+      "source_file": "DOCS/MAPS-ANALYSIS-horyzont.md",
+      "source_location": "L146",
+      "id": "docs_maps_analysis_horyzont_8_prioritized_actions",
+      "community": 12,
+      "norm_label": "8. prioritized actions"
+    },
+    {
+      "label": "9. Limitations Disclaimer",
+      "file_type": "document",
+      "source_file": "DOCS/MAPS-ANALYSIS-horyzont.md",
+      "source_location": "L168",
+      "id": "docs_maps_analysis_horyzont_9_limitations_disclaimer",
+      "community": 12,
+      "norm_label": "9. limitations disclaimer"
+    },
+    {
       "label": "graphify.md",
       "file_type": "document",
       "source_file": ".agents/rules/graphify.md",
@@ -7325,6 +7550,66 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": ".claude/.headroom_wrap_marker.json",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "claude_headroom_wrap_marker_json",
+      "target": "claude_headroom_wrap_marker_pid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/.headroom_wrap_marker.json",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "claude_headroom_wrap_marker_json",
+      "target": "claude_headroom_wrap_marker_start_src",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/.headroom_wrap_marker.json",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "claude_headroom_wrap_marker_json",
+      "target": "claude_headroom_wrap_marker_start_time",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/.headroom_wrap_marker.json",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "claude_headroom_wrap_marker_json",
+      "target": "claude_headroom_wrap_marker_port",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/.headroom_wrap_marker.json",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "claude_headroom_wrap_marker_json",
+      "target": "claude_headroom_wrap_marker_key",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/.headroom_wrap_marker.json",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "claude_headroom_wrap_marker_json",
+      "target": "claude_headroom_wrap_marker_previous",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": ".claude/settings.local.json",
       "source_location": "L2",
       "weight": 1.0,
@@ -7336,11 +7621,41 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".claude/settings.local.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "claude_settings_local_json",
+      "target": "claude_settings_local_env",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/settings.local.json",
       "source_location": "L3",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "claude_settings_local_hooks",
       "target": "claude_settings_local_hooks_sessionstart"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/settings.local.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "claude_settings_local_env",
+      "target": "claude_settings_local_env_anthropic_base_url",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/settings.local.json",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "claude_settings_local_env",
+      "target": "claude_settings_local_env_enable_tool_search",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15196,9 +15511,9 @@
       "source_file": "PRODUCT.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "product_md",
-      "target": "geodeta_product_product",
-      "confidence_score": 1.0
+      "target": "geodeta_product_product"
     },
     {
       "relation": "contains",
@@ -15206,9 +15521,9 @@
       "source_file": "PRODUCT.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "geodeta_product_product",
-      "target": "geodeta_product_register",
-      "confidence_score": 1.0
+      "target": "geodeta_product_register"
     },
     {
       "relation": "contains",
@@ -15216,9 +15531,9 @@
       "source_file": "PRODUCT.md",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "geodeta_product_product",
-      "target": "geodeta_product_users",
-      "confidence_score": 1.0
+      "target": "geodeta_product_users"
     },
     {
       "relation": "contains",
@@ -15226,9 +15541,9 @@
       "source_file": "PRODUCT.md",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "geodeta_product_product",
-      "target": "geodeta_product_product_purpose",
-      "confidence_score": 1.0
+      "target": "geodeta_product_product_purpose"
     },
     {
       "relation": "contains",
@@ -15236,9 +15551,9 @@
       "source_file": "PRODUCT.md",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "geodeta_product_product",
-      "target": "geodeta_product_brand_personality",
-      "confidence_score": 1.0
+      "target": "geodeta_product_brand_personality"
     },
     {
       "relation": "contains",
@@ -15246,9 +15561,9 @@
       "source_file": "PRODUCT.md",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "geodeta_product_product",
-      "target": "geodeta_product_anti_references",
-      "confidence_score": 1.0
+      "target": "geodeta_product_anti_references"
     },
     {
       "relation": "contains",
@@ -15256,9 +15571,9 @@
       "source_file": "PRODUCT.md",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "geodeta_product_product",
-      "target": "geodeta_product_design_principles",
-      "confidence_score": 1.0
+      "target": "geodeta_product_design_principles"
     },
     {
       "relation": "contains",
@@ -15266,9 +15581,9 @@
       "source_file": "PRODUCT.md",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "geodeta_product_product",
-      "target": "geodeta_product_accessibility_inclusion",
-      "confidence_score": 1.0
+      "target": "geodeta_product_accessibility_inclusion"
     },
     {
       "relation": "contains",
@@ -15443,6 +15758,146 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "DOCS/MAPS-ANALYSIS-horyzont.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "docs_maps_analysis_horyzont_md",
+      "target": "docs_maps_analysis_horyzont_maps_intelligence_report_biuro_geodezyjne_horyzont_\u0142ukasz_kowalczyk",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DOCS/MAPS-ANALYSIS-horyzont.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "docs_maps_analysis_horyzont_maps_intelligence_report_biuro_geodezyjne_horyzont_\u0142ukasz_kowalczyk",
+      "target": "docs_maps_analysis_horyzont_1_maps_health_score_unscored_insufficient_live_data",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DOCS/MAPS-ANALYSIS-horyzont.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "docs_maps_analysis_horyzont_maps_intelligence_report_biuro_geodezyjne_horyzont_\u0142ukasz_kowalczyk",
+      "target": "docs_maps_analysis_horyzont_2_data_available_from_docs_brief_md",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DOCS/MAPS-ANALYSIS-horyzont.md",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "docs_maps_analysis_horyzont_maps_intelligence_report_biuro_geodezyjne_horyzont_\u0142ukasz_kowalczyk",
+      "target": "docs_maps_analysis_horyzont_3_gbp_profile_audit_tier_0_manual_checklist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DOCS/MAPS-ANALYSIS-horyzont.md",
+      "source_location": "L74",
+      "weight": 1.0,
+      "source": "docs_maps_analysis_horyzont_maps_intelligence_report_biuro_geodezyjne_horyzont_\u0142ukasz_kowalczyk",
+      "target": "docs_maps_analysis_horyzont_4_review_intelligence_partial",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DOCS/MAPS-ANALYSIS-horyzont.md",
+      "source_location": "L84",
+      "weight": 1.0,
+      "source": "docs_maps_analysis_horyzont_maps_intelligence_report_biuro_geodezyjne_horyzont_\u0142ukasz_kowalczyk",
+      "target": "docs_maps_analysis_horyzont_5_competitor_landscape_tier_0_geoapify_osm_15km_radius",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DOCS/MAPS-ANALYSIS-horyzont.md",
+      "source_location": "L97",
+      "weight": 1.0,
+      "source": "docs_maps_analysis_horyzont_maps_intelligence_report_biuro_geodezyjne_horyzont_\u0142ukasz_kowalczyk",
+      "target": "docs_maps_analysis_horyzont_6_cross_platform_nap_verification",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DOCS/MAPS-ANALYSIS-horyzont.md",
+      "source_location": "L108",
+      "weight": 1.0,
+      "source": "docs_maps_analysis_horyzont_maps_intelligence_report_biuro_geodezyjne_horyzont_\u0142ukasz_kowalczyk",
+      "target": "docs_maps_analysis_horyzont_7_schema_recommendation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DOCS/MAPS-ANALYSIS-horyzont.md",
+      "source_location": "L146",
+      "weight": 1.0,
+      "source": "docs_maps_analysis_horyzont_maps_intelligence_report_biuro_geodezyjne_horyzont_\u0142ukasz_kowalczyk",
+      "target": "docs_maps_analysis_horyzont_8_prioritized_actions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DOCS/MAPS-ANALYSIS-horyzont.md",
+      "source_location": "L168",
+      "weight": 1.0,
+      "source": "docs_maps_analysis_horyzont_maps_intelligence_report_biuro_geodezyjne_horyzont_\u0142ukasz_kowalczyk",
+      "target": "docs_maps_analysis_horyzont_9_limitations_disclaimer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DOCS/MAPS-ANALYSIS-horyzont.md",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "docs_maps_analysis_horyzont_3_gbp_profile_audit_tier_0_manual_checklist",
+      "target": "docs_maps_analysis_horyzont_critical_fields_16_pts_possible",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DOCS/MAPS-ANALYSIS-horyzont.md",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "docs_maps_analysis_horyzont_3_gbp_profile_audit_tier_0_manual_checklist",
+      "target": "docs_maps_analysis_horyzont_important_fields_16_pts_possible",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DOCS/MAPS-ANALYSIS-horyzont.md",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "docs_maps_analysis_horyzont_3_gbp_profile_audit_tier_0_manual_checklist",
+      "target": "docs_maps_analysis_horyzont_supplementary_fields_18_pts_possible",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DOCS/MAPS-ANALYSIS-horyzont.md",
+      "source_location": "L112",
+      "weight": 1.0,
+      "source": "docs_maps_analysis_horyzont_7_schema_recommendation",
+      "target": "docs_maps_analysis_horyzont_codeblock_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": ".agents/rules/graphify.md",
       "source_location": "L6",
       "weight": 1.0,
@@ -15462,5 +15917,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "f9cfc46aefdbebbdbe73eb1a00ed0aeb4dff5cf0"
+  "built_at_commit": "7a8e2a19e5a389d673552ad479d861298cb31e1c"
 }

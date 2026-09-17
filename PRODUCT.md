@@ -20,7 +20,7 @@ Precise, grounded, professional, approachable, and transparent. The voice of an 
 
 ## Design Principles
 - **Engineering precision**: Clean layouts, crisp geometric type hierarchy, and disciplined spacing reflecting exact surveying standards.
-- **Natural, regional grounding**: Earthy, credible forest green and slate tones representing land, topography, and solid craftsmanship.
+- **Engineering precision & high contrast**: Crisp white backgrounds, deep black typography, and high-visibility surveying yellow accents reflecting professional geodetic equipment (Leica, GNSS receivers, optical prisms) and field clarity.
 - **Zero legal jargon barriers**: Clear, transparent explanations of procedures, realistic turnaround timelines, and upfront price ranges.
 - **Immediate actionability**: Direct one-tap phone calls and quick inquiry forms with minimal friction.
 
