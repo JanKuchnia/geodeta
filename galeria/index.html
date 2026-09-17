@@ -239,7 +239,7 @@
                 <span>Precyzja pomiaru · Realizacje w terenie</span>
               </div>
               <h1 class="font-headline font-extrabold text-3xl sm:text-4xl lg:text-5xl text-neutral-950 leading-[1.15] tracking-tight">
-                Galeria prac i zaplecze sprzętowe biura <span class="underline decoration-yellow-400 decoration-[3px] sm:decoration-4 underline-offset-[6px]">Horyzont</span>
+                Galeria prac i zaplecze sprzętowe biura <span class="underline decoration-yellow-400 decoration-[3px] sm:decoration-4 underline-offset-[6px] sm:underline-offset-[8px] [text-decoration-skip-ink:none]" style="text-decoration-skip-ink: none;">Horyzont</span>
               </h1>
               <p class="mt-4 text-sm sm:text-base text-neutral-600 leading-relaxed max-w-2xl">
                 Zobacz udokumentowane prace geodezyjne w Wieliczce, Krakowie i Małopolsce. Tyczenia osi konstrukcyjnych na budowach, opracowania map numerycznych do projektów, inwentaryzacje oraz certyfikowaną aparaturę pomiarową.
@@ -984,25 +984,31 @@
             id="modal-image"
             src=""
             alt=""
-            class="max-h-full max-w-full object-contain transition-opacity duration-200 select-none"
+            class="max-h-full max-w-full object-contain transition-opacity duration-200 select-none pointer-events-none"
           />
 
-          <!-- Prev/Next buttons -->
+          <!-- Prev/Next buttons: full-height edge strips so the clickable area
+               never depends on the (variable-size) photo underneath. The circle
+               is purely decorative, centered inside the strip. -->
           <button
             id="modal-prev-btn"
             type="button"
-            class="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-neutral-900/80 text-white border border-white/20 hover:bg-yellow-400 hover:text-neutral-950 flex items-center justify-center transition-all shadow-md active:scale-95"
+            class="group absolute z-10 inset-y-0 left-0 w-14 sm:w-20 flex items-center justify-center"
             aria-label="Poprzednie zdjęcie"
           >
-            <i data-lucide="chevron-left" class="w-6 h-6"></i>
+            <span class="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-neutral-900/80 text-white border border-white/20 group-hover:bg-yellow-400 group-hover:text-neutral-950 flex items-center justify-center transition-all shadow-md group-active:scale-95">
+              <i data-lucide="chevron-left" class="w-6 h-6"></i>
+            </span>
           </button>
           <button
             id="modal-next-btn"
             type="button"
-            class="absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-neutral-900/80 text-white border border-white/20 hover:bg-yellow-400 hover:text-neutral-950 flex items-center justify-center transition-all shadow-md active:scale-95"
+            class="group absolute z-10 inset-y-0 right-0 w-14 sm:w-20 flex items-center justify-center"
             aria-label="Następne zdjęcie"
           >
-            <i data-lucide="chevron-right" class="w-6 h-6"></i>
+            <span class="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-neutral-900/80 text-white border border-white/20 group-hover:bg-yellow-400 group-hover:text-neutral-950 flex items-center justify-center transition-all shadow-md group-active:scale-95">
+              <i data-lucide="chevron-right" class="w-6 h-6"></i>
+            </span>
           </button>
         </div>
 
@@ -1419,8 +1425,17 @@
           currentIndex = index;
 
           const item = galleryItems[currentIndex];
-          modalImg.src = item.src;
-          modalImg.alt = item.alt;
+          modalImg.style.transition = "opacity 160ms cubic-bezier(0.23, 1, 0.32, 1), filter 160ms ease";
+          modalImg.style.opacity = "0.3";
+          modalImg.style.filter = "blur(3px)";
+
+          setTimeout(() => {
+            modalImg.src = item.src;
+            modalImg.alt = item.alt;
+            modalImg.style.opacity = "1";
+            modalImg.style.filter = "none";
+          }, 120);
+
           modalCategory.textContent = item.categoryName;
           modalCounter.textContent = `${currentIndex + 1} / ${galleryItems.length}`;
           modalTitle.textContent = item.title;
@@ -1437,14 +1452,22 @@
         const openModal = (index) => {
           updateModalContent(index);
           modal.classList.remove("hidden");
-          modal.classList.add("flex");
+          modal.classList.add("flex", "modal-closed");
           document.body.style.overflow = "hidden";
+          requestAnimationFrame(() => {
+            modal.classList.remove("modal-closed");
+            modal.classList.add("modal-open");
+          });
         };
 
         const closeModal = () => {
-          modal.classList.add("hidden");
-          modal.classList.remove("flex");
+          modal.classList.remove("modal-open");
+          modal.classList.add("modal-closed");
           document.body.style.overflow = "";
+          setTimeout(() => {
+            modal.classList.add("hidden");
+            modal.classList.remove("flex", "modal-closed");
+          }, 220);
         };
 
         galleryCards.forEach((card) => {

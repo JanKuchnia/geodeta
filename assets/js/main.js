@@ -11,18 +11,41 @@ document.addEventListener("DOMContentLoaded", () => {
   const iconClose = document.getElementById("menu-icon-close");
 
   if (mobileBtn && mobileMenu) {
+    let isMenuAnimating = false;
     const toggleMenu = (open) => {
-      const isExpanded = open !== undefined ? open : mobileMenu.classList.contains("hidden");
-      if (isExpanded) {
-        mobileMenu.classList.remove("hidden");
+      const isCurrentlyOpen = mobileBtn.getAttribute("aria-expanded") === "true";
+      const shouldOpen = open !== undefined ? open : !isCurrentlyOpen;
+      if (shouldOpen === isCurrentlyOpen || isMenuAnimating) return;
+
+      isMenuAnimating = true;
+
+      if (shouldOpen) {
         mobileBtn.setAttribute("aria-expanded", "true");
         if (iconOpen) iconOpen.classList.add("hidden");
         if (iconClose) iconClose.classList.remove("hidden");
+
+        mobileMenu.classList.remove("hidden");
+        mobileMenu.classList.add("menu-entering");
+        requestAnimationFrame(() => {
+          mobileMenu.classList.remove("menu-entering");
+          mobileMenu.classList.add("menu-open");
+          setTimeout(() => {
+            isMenuAnimating = false;
+          }, 220);
+        });
       } else {
-        mobileMenu.classList.add("hidden");
         mobileBtn.setAttribute("aria-expanded", "false");
         if (iconOpen) iconOpen.classList.remove("hidden");
         if (iconClose) iconClose.classList.add("hidden");
+
+        mobileMenu.classList.remove("menu-open");
+        mobileMenu.classList.add("menu-closing");
+
+        setTimeout(() => {
+          mobileMenu.classList.add("hidden");
+          mobileMenu.classList.remove("menu-closing");
+          isMenuAnimating = false;
+        }, 220);
       }
     };
 

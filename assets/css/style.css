@@ -40,3 +40,118 @@
 .pb-safe {
   padding-bottom: calc(0.75rem + env(safe-area-inset-bottom, 0px));
 }
+
+/* ==========================================================================
+   Design Engineering & Motion Tokens (Emil Kowalski Philosophy)
+   ========================================================================== */
+:root {
+  --ease-out-cubic: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-drawer: cubic-bezier(0.32, 0.72, 0, 1);
+  --ease-in-out-cubic: cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+/* Button & interactive press responsiveness */
+button,
+.btn,
+a[class*="rounded-xl"],
+a[class*="rounded-full"],
+button[class*="rounded-xl"],
+button[class*="rounded-full"] {
+  transition-property: transform, background-color, border-color, color, box-shadow, opacity;
+  transition-duration: 160ms;
+  transition-timing-function: var(--ease-out-cubic);
+}
+
+button:active:not(:disabled),
+.btn:active,
+a[class*="rounded-xl"]:active,
+a[class*="rounded-full"]:active,
+button[class*="rounded-xl"]:active,
+button[class*="rounded-full"]:active {
+  transform: scale(0.97) !important;
+}
+
+/* Restrict hover effects to devices with fine pointers to avoid sticky hover on mobile */
+@media (hover: hover) and (pointer: fine) {
+  .group:hover .group-hover\:scale-105 {
+    transform: scale(1.025) !important;
+    transition-duration: 250ms !important;
+    transition-timing-function: var(--ease-out-cubic) !important;
+  }
+}
+
+/* Mobile Menu smooth drawer transition */
+#mobile-menu {
+  transition: opacity 220ms var(--ease-drawer), transform 220ms var(--ease-drawer);
+  transform-origin: top center;
+}
+
+#mobile-menu.menu-entering,
+#mobile-menu.menu-closing {
+  opacity: 0;
+  transform: translateY(-8px) scale(0.99);
+}
+
+#mobile-menu.menu-open {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Form feedback enter animation - starting from scale(0.98), never scale(0) */
+@keyframes emilFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-fade-in {
+  animation: emilFadeIn 220ms var(--ease-out-cubic) forwards !important;
+}
+
+/* Lightbox Modal transitions */
+#lightbox-modal {
+  transition: opacity 220ms var(--ease-out-cubic);
+}
+
+#lightbox-modal > div {
+  transition: transform 220ms var(--ease-out-cubic), opacity 220ms var(--ease-out-cubic);
+  transform-origin: center center;
+}
+
+#lightbox-modal.modal-closed {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#lightbox-modal.modal-closed > div {
+  transform: scale(0.95);
+  opacity: 0;
+}
+
+#lightbox-modal.modal-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#lightbox-modal.modal-open > div {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* Respect user preference for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
