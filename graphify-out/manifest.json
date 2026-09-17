@@ -5,8 +5,8 @@
     "semantic_hash": ""
   },
   "/home/jankuchnia/Desktop/geodeta/index.html": {
-    "mtime": 1789649794.819064,
-    "ast_hash": "9bfc600ff9c9c7e233e59ccd42feda98",
+    "mtime": 1789655132.573067,
+    "ast_hash": "d9bdbbd4b6fb32cc025da366db3fef61",
     "semantic_hash": ""
   },
   "/home/jankuchnia/Desktop/geodeta/DOCS/brief.md": {
@@ -45,8 +45,8 @@
     "semantic_hash": ""
   },
   "/home/jankuchnia/Desktop/geodeta/assets/js/tailwind.config.js": {
-    "mtime": 1789649441.8420827,
-    "ast_hash": "fd89152314246f0458059ab78fb8ad42",
+    "mtime": 1789651765.8060238,
+    "ast_hash": "3c07e6dd0c52c5b99575a871157beaae",
     "semantic_hash": ""
   },
   "/home/jankuchnia/Desktop/geodeta/assets/js/main.js": {
@@ -1197,6 +1197,56 @@
   "/home/jankuchnia/Desktop/geodeta/.ag-kit-backups/20260917-125446-489/.agents/workflows/graphify.md": {
     "mtime": 1789649686.5596693,
     "ast_hash": "afa1ffc01aa56ac681c7335686f44767",
+    "semantic_hash": ""
+  },
+  "/home/jankuchnia/Desktop/geodeta/uslugi/index.html": {
+    "mtime": 1789655558.6703987,
+    "ast_hash": "dc7e3bad4f204d613983990318433da6",
+    "semantic_hash": ""
+  },
+  "/home/jankuchnia/Desktop/geodeta/uslugi/mapa-do-celow-projektowych/index.html": {
+    "mtime": 1789655271.590154,
+    "ast_hash": "ea1aa908192fd348a0f5fbaee7940a9f",
+    "semantic_hash": ""
+  },
+  "/home/jankuchnia/Desktop/geodeta/uslugi/tyczenie-budynkow/index.html": {
+    "mtime": 1789655302.2173934,
+    "ast_hash": "b80f9bc9171148093fa2543e8d3b0860",
+    "semantic_hash": ""
+  },
+  "/home/jankuchnia/Desktop/geodeta/uslugi/inwentaryzacja-powykonawcza/index.html": {
+    "mtime": 1789655330.7956169,
+    "ast_hash": "7a47a769db565e08dc457166c809c688",
+    "semantic_hash": ""
+  },
+  "/home/jankuchnia/Desktop/geodeta/uslugi/podzial-nieruchomosci/index.html": {
+    "mtime": 1789655373.5449512,
+    "ast_hash": "34d61bb923e088f23f3c94a73d6ca339",
+    "semantic_hash": ""
+  },
+  "/home/jankuchnia/Desktop/geodeta/uslugi/rozgraniczenie-nieruchomosci/index.html": {
+    "mtime": 1789655398.8971493,
+    "ast_hash": "074405747b5d82675af904d81d362350",
+    "semantic_hash": ""
+  },
+  "/home/jankuchnia/Desktop/geodeta/o-nas/index.html": {
+    "mtime": 1789655159.6572788,
+    "ast_hash": "7ace9c32b602d8a1895a5e7fda2ef911",
+    "semantic_hash": ""
+  },
+  "/home/jankuchnia/Desktop/geodeta/opinie/index.html": {
+    "mtime": 1789655186.8424914,
+    "ast_hash": "c70e3afd63a7918368edf8f72bb9048c",
+    "semantic_hash": ""
+  },
+  "/home/jankuchnia/Desktop/geodeta/kontakt/index.html": {
+    "mtime": 1789655211.4156835,
+    "ast_hash": "bdfba61e742313e19832178778ad33d2",
+    "semantic_hash": ""
+  },
+  "/home/jankuchnia/Desktop/geodeta/galeria/index.html": {
+    "mtime": 1789655485.3638256,
+    "ast_hash": "af1e2b114e6f5e6614e45baf718109d4",
     "semantic_hash": ""
   }
 }
