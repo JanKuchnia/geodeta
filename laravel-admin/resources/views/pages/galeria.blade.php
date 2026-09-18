@@ -1,0 +1,341 @@
+@extends('layouts.app')
+
+@section('title', 'Galeria realizacji geodezyjnych | HORYZONT Biuro Geodezyjne')
+@section('description', 'Zobacz udokumentowane prace geodezyjne w Wieliczce, Krakowie i Małopolsce: tyczenia, mapy do celów projektowych, inwentaryzacje oraz sprzęt pomiarowy.')
+@section('main-class', 'bg-neutral-100')
+
+@php
+    $categories = [
+        'tyczenia' => ['icon' => 'ruler', 'label' => 'Tyczenia budynków'],
+        'mapy' => ['icon' => 'map', 'label' => 'Mapy do celów projektowych'],
+        'inwentaryzacje' => ['icon' => 'clipboard-check', 'label' => 'Inwentaryzacje powykonawcze'],
+        'granice' => ['icon' => 'split', 'label' => 'Podziały i granice'],
+        'sprzet' => ['icon' => 'cpu', 'label' => 'Sprzęt i aparatura'],
+    ];
+@endphp
+
+@section('content')
+  <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 pt-6 sm:pt-8 flex items-center gap-1.5 text-xs sm:text-sm text-neutral-500 flex-wrap" aria-label="Okruszki">
+    <a href="{{ route('home') }}" class="hover:text-neutral-900 transition-colors">Strona główna</a>
+    <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-neutral-400"></i>
+    <span class="text-neutral-900 font-semibold">Galeria</span>
+  </nav>
+
+  <section class="w-full pt-8 pb-10 sm:pb-14">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-8">
+        <div class="max-w-3xl">
+          <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-neutral-950 border border-neutral-800 text-white text-xs font-semibold mb-4 shadow-xs">
+            <i data-lucide="crosshair" class="w-3.5 h-3.5 text-yellow-400 shrink-0"></i>
+            <span>Precyzja pomiaru · Realizacje w terenie</span>
+          </span>
+          <h1 class="font-headline font-extrabold text-3xl sm:text-4xl lg:text-5xl text-neutral-950 leading-[1.15] tracking-tight">
+            Galeria prac i zaplecze sprzętowe biura <span class="underline decoration-yellow-400 decoration-[3px] sm:decoration-4 underline-offset-[6px] sm:underline-offset-[8px]">Horyzont</span>
+          </h1>
+          <p class="mt-4 text-sm sm:text-base text-neutral-600 leading-relaxed max-w-2xl">
+            Zobacz udokumentowane prace geodezyjne w Wieliczce, Krakowie i Małopolsce. Tyczenia osi konstrukcyjnych na budowach, opracowania map numerycznych do projektów, inwentaryzacje oraz certyfikowaną aparaturę pomiarową.
+          </p>
+        </div>
+        <div class="flex flex-wrap sm:flex-nowrap gap-3 shrink-0">
+          <div class="bg-white p-3.5 sm:p-4 rounded-2xl border border-neutral-200 shadow-xs flex items-center gap-3">
+            <span class="w-10 h-10 rounded-xl bg-yellow-400/20 text-yellow-700 flex items-center justify-center font-headline font-bold text-sm shrink-0">
+              <i data-lucide="check-circle-2" class="w-5 h-5 text-neutral-950"></i>
+            </span>
+            <div>
+              <div class="font-headline font-extrabold text-lg text-neutral-950">850+</div>
+              <div class="text-xs text-neutral-500 font-medium">Pomiarów w terenie</div>
+            </div>
+          </div>
+          <div class="bg-white p-3.5 sm:p-4 rounded-2xl border border-neutral-200 shadow-xs flex items-center gap-3">
+            <span class="w-10 h-10 rounded-xl bg-neutral-950 text-yellow-400 flex items-center justify-center font-headline font-bold text-sm shrink-0">
+              <i data-lucide="award" class="w-5 h-5 text-yellow-400"></i>
+            </span>
+            <div>
+              <div class="font-headline font-extrabold text-lg text-neutral-950">GGK</div>
+              <div class="text-xs text-neutral-500 font-medium">Zakres 1 i 2</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="border-neutral-200" />
+
+      <div class="mt-8">
+        <div class="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none" id="gallery-filters" role="tablist" aria-label="Filtry galerii">
+          <button type="button" data-filter="all" class="filter-btn active inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all bg-neutral-950 text-white shadow-xs">
+            <i data-lucide="layout-grid" class="w-4 h-4 text-yellow-400"></i>
+            <span>Wszystkie ({{ $photos->count() }})</span>
+          </button>
+          @foreach ($categories as $slug => $meta)
+            <button type="button" data-filter="{{ $slug }}" class="filter-btn inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-white text-neutral-700 border border-neutral-200 hover:bg-neutral-50 hover:text-neutral-950">
+              <i data-lucide="{{ $meta['icon'] }}" class="w-4 h-4 text-neutral-500"></i>
+              <span>{{ $meta['label'] }} ({{ $photos->where('category', $slug)->count() }})</span>
+            </button>
+          @endforeach
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="w-full pb-16 sm:pb-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+      <h2 class="sr-only">Dokumentacja fotograficzna realizacji geodezyjnych</h2>
+      <div id="gallery-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        @foreach ($photos as $index => $photo)
+          <article class="gallery-item group bg-white rounded-2xl sm:rounded-3xl border border-neutral-200 overflow-hidden shadow-xs hover:shadow-md hover:border-yellow-400 transition-all duration-300 flex flex-col cursor-pointer" data-category="{{ $photo->category }}" data-index="{{ $index }}">
+            <div class="relative overflow-hidden aspect-[4/3] bg-neutral-900">
+              <img src="{{ $photo->image_path }}" alt="{{ $photo->alt_text }}" class="w-full h-full object-cover" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-neutral-950/80 via-neutral-950/20 to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
+              <div class="absolute top-3.5 left-3.5 flex items-center gap-2">
+                <span class="px-2.5 py-1 rounded-md bg-yellow-400 text-black text-xs font-bold shadow-xs">{{ $photo->badge }}</span>
+              </div>
+              <div class="absolute bottom-3.5 left-3.5 right-3.5 flex items-center justify-between text-white text-xs">
+                <span class="inline-flex items-center gap-1.5 bg-neutral-950/70 backdrop-blur-md px-2.5 py-1 rounded-md">
+                  <i data-lucide="map-pin" class="w-3.5 h-3.5 text-yellow-400"></i>
+                  {{ $photo->location }}
+                </span>
+                <span class="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center group-hover:bg-yellow-400 group-hover:text-black transition-colors">
+                  <i data-lucide="zoom-in" class="w-4 h-4"></i>
+                </span>
+              </div>
+            </div>
+            <div class="p-5 sm:p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="font-headline font-bold text-base sm:text-lg text-neutral-950 leading-snug group-hover:text-yellow-600 transition-colors">{{ $photo->title }}</h3>
+                <p class="mt-2 text-xs sm:text-sm text-neutral-600 leading-relaxed">{{ $photo->description }}</p>
+              </div>
+              <div class="mt-4 pt-3 border-t border-neutral-100 flex items-center justify-between text-xs text-neutral-500">
+                <span class="flex items-center gap-1 font-medium">
+                  <i data-lucide="crosshair" class="w-3.5 h-3.5 text-neutral-700"></i>
+                  {{ $photo->equipment }}
+                </span>
+                <span class="font-semibold text-neutral-800">{{ $photo->result_badge }}</span>
+              </div>
+            </div>
+          </article>
+        @endforeach
+      </div>
+    </div>
+  </section>
+
+  <section class="w-full py-12 sm:py-16 bg-neutral-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+      <div class="p-8 sm:p-12 rounded-3xl bg-neutral-950 text-white border border-yellow-400/30 shadow-xl flex flex-col md:flex-row items-center justify-between gap-8">
+        <div class="max-w-xl">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-yellow-400/15 text-yellow-300 border border-yellow-400/30 text-xs font-semibold mb-3">
+            <i data-lucide="sparkles" class="w-3.5 h-3.5 text-yellow-400"></i>
+            Bezpłatna wycena geodezyjna
+          </span>
+          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-headline font-bold text-white mb-3 leading-tight">Planujesz budowę, przyłącze lub podział działki?</h2>
+          <p class="text-xs sm:text-sm text-neutral-300 leading-relaxed max-w-lg">Zadzwoń do nas lub podaj numer działki w formularzu. Wstępną analizę księgi wieczystej i wycenę prac terenowych przygotujemy bez opłat.</p>
+        </div>
+        <div class="flex flex-col sm:flex-row items-center gap-3.5 shrink-0 w-full md:w-auto">
+          <a href="tel:+48515430240" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-yellow-400 hover:bg-yellow-300 text-black text-sm font-bold transition-all active:scale-[0.98] shadow-md">
+            <i data-lucide="phone" class="w-4 h-4"></i>
+            <span>Zadzwoń: 515 430 240</span>
+          </a>
+          <a href="{{ route('kontakt') }}" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-white/10 hover:bg-white/20 text-white border border-white/20 text-sm font-semibold transition-all active:scale-[0.98]">
+            <i data-lucide="calculator" class="w-4 h-4 text-yellow-400"></i>
+            <span>Formularz wyceny</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="lightbox-modal" class="fixed inset-0 z-50 bg-neutral-950/90 backdrop-blur-md hidden items-center justify-center p-3 sm:p-6" role="dialog" aria-modal="true" aria-label="Podgląd zdjęcia realizacji">
+    <div class="relative w-full max-w-5xl bg-neutral-900 rounded-2xl sm:rounded-3xl border border-neutral-800 overflow-hidden flex flex-col max-h-[92vh]">
+      <div class="flex items-center justify-between px-4 sm:px-6 py-3.5 border-b border-neutral-800 bg-neutral-950/60 text-white">
+        <div class="flex items-center gap-3">
+          <span id="modal-category" class="px-2.5 py-0.5 rounded-md bg-yellow-400 text-black text-xs font-bold">Kategoria</span>
+          <span id="modal-counter" class="text-xs text-neutral-400 font-medium">1 / {{ $photos->count() }}</span>
+        </div>
+        <button id="modal-close-btn" type="button" class="w-9 h-9 rounded-xl bg-neutral-800 text-neutral-300 hover:text-white hover:bg-neutral-700 flex items-center justify-center transition-colors" aria-label="Zamknij podgląd">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+      <div class="relative flex-1 bg-black flex items-center justify-center min-h-[260px] sm:min-h-[420px] max-h-[60vh] overflow-hidden">
+        <img id="modal-image" src="" alt="" class="max-h-full max-w-full object-contain transition-opacity duration-200 select-none pointer-events-none" />
+        <button id="modal-prev-btn" type="button" class="group absolute z-10 inset-y-0 left-0 w-14 sm:w-20 flex items-center justify-center" aria-label="Poprzednie zdjęcie">
+          <span class="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-neutral-900/80 text-white border border-white/20 group-hover:bg-yellow-400 group-hover:text-black flex items-center justify-center transition-all shadow-md group-active:scale-95">
+            <i data-lucide="chevron-left" class="w-6 h-6"></i>
+          </span>
+        </button>
+        <button id="modal-next-btn" type="button" class="group absolute z-10 inset-y-0 right-0 w-14 sm:w-20 flex items-center justify-center" aria-label="Następne zdjęcie">
+          <span class="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-neutral-900/80 text-white border border-white/20 group-hover:bg-yellow-400 group-hover:text-black flex items-center justify-center transition-all shadow-md group-active:scale-95">
+            <i data-lucide="chevron-right" class="w-6 h-6"></i>
+          </span>
+        </button>
+      </div>
+      <div class="p-4 sm:p-6 bg-neutral-950 border-t border-neutral-800 text-white">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-1.5">
+          <h3 id="modal-title" class="font-headline font-bold text-base sm:text-lg text-white">Tytuł realizacji</h3>
+          <div class="flex items-center gap-2 shrink-0">
+            <span id="modal-location" class="inline-flex items-center gap-1.5 text-xs text-yellow-400 bg-neutral-900 px-2.5 py-1 rounded-md border border-neutral-800">
+              <i data-lucide="map-pin" class="w-3.5 h-3.5 text-yellow-400"></i>
+              Lokalizacja
+            </span>
+          </div>
+        </div>
+        <p id="modal-description" class="text-xs sm:text-sm text-neutral-400 leading-relaxed">Opis techniczny prac pomiarowych i specyfikacji wykonania.</p>
+        <div class="mt-3 flex items-center gap-4 text-xs text-neutral-500 pt-2 border-t border-neutral-900">
+          <span id="modal-equipment" class="flex items-center gap-1.5">
+            <i data-lucide="crosshair" class="w-3.5 h-3.5 text-yellow-400"></i>
+            Sprzęt: Tachimetr Leica
+          </span>
+          <span id="modal-status" class="hidden sm:inline text-neutral-400">Dokumentacja zatwierdzona w PODGiK</span>
+        </div>
+      </div>
+    </div>
+  </div>
+@endsection
+
+@php
+    $galleryItemsJson = $photos->map(function ($photo) {
+        return [
+            'category' => $photo->category,
+            'categoryName' => $photo->badge,
+            'src' => $photo->image_path,
+            'alt' => $photo->alt_text,
+            'title' => $photo->title,
+            'description' => $photo->description,
+            'location' => $photo->location,
+            'equipment' => $photo->equipment,
+            'status' => $photo->result_badge,
+        ];
+    })->values();
+@endphp
+
+@push('scripts')
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const galleryItems = @json($galleryItemsJson);
+
+    const filterBtns = document.querySelectorAll(".filter-btn");
+    const galleryCards = document.querySelectorAll(".gallery-item");
+
+    filterBtns.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const filter = btn.getAttribute("data-filter");
+
+        filterBtns.forEach((b) => {
+          b.classList.remove("active", "bg-neutral-950", "text-white");
+          b.classList.add("bg-white", "text-neutral-700", "border-neutral-200");
+          const icon = b.querySelector("[data-lucide]");
+          if (icon) icon.classList.remove("text-yellow-400");
+          if (icon) icon.classList.add("text-neutral-500");
+        });
+
+        btn.classList.add("active", "bg-neutral-950", "text-white");
+        btn.classList.remove("bg-white", "text-neutral-700", "border-neutral-200");
+        const activeIcon = btn.querySelector("[data-lucide]");
+        if (activeIcon) {
+          activeIcon.classList.remove("text-neutral-500");
+          activeIcon.classList.add("text-yellow-400");
+        }
+
+        galleryCards.forEach((card) => {
+          const cardCat = card.getAttribute("data-category");
+          if (filter === "all" || cardCat === filter) {
+            card.classList.remove("hidden-filter");
+          } else {
+            card.classList.add("hidden-filter");
+          }
+        });
+      });
+    });
+
+    const modal = document.getElementById("lightbox-modal");
+    const modalImg = document.getElementById("modal-image");
+    const modalCategory = document.getElementById("modal-category");
+    const modalCounter = document.getElementById("modal-counter");
+    const modalTitle = document.getElementById("modal-title");
+    const modalDesc = document.getElementById("modal-description");
+    const modalLocation = document.getElementById("modal-location");
+    const modalEquipment = document.getElementById("modal-equipment");
+    const modalStatus = document.getElementById("modal-status");
+
+    const btnClose = document.getElementById("modal-close-btn");
+    const btnPrev = document.getElementById("modal-prev-btn");
+    const btnNext = document.getElementById("modal-next-btn");
+
+    let currentIndex = 0;
+
+    const updateModalContent = (index) => {
+      if (index < 0) index = galleryItems.length - 1;
+      if (index >= galleryItems.length) index = 0;
+      currentIndex = index;
+
+      const item = galleryItems[currentIndex];
+      modalImg.style.transition = "opacity 160ms cubic-bezier(0.23, 1, 0.32, 1), filter 160ms ease";
+      modalImg.style.opacity = "0.3";
+      modalImg.style.filter = "blur(3px)";
+
+      setTimeout(() => {
+        modalImg.src = item.src;
+        modalImg.alt = item.alt;
+        modalImg.style.opacity = "1";
+        modalImg.style.filter = "none";
+      }, 120);
+
+      modalCategory.textContent = item.categoryName;
+      modalCounter.textContent = `${currentIndex + 1} / ${galleryItems.length}`;
+      modalTitle.textContent = item.title;
+      modalDesc.textContent = item.description;
+      modalLocation.innerHTML = `<i data-lucide="map-pin" class="w-3.5 h-3.5 text-yellow-400"></i> ${item.location}`;
+      modalEquipment.innerHTML = `<i data-lucide="crosshair" class="w-3.5 h-3.5 text-yellow-400"></i> ${item.equipment}`;
+      modalStatus.textContent = item.status;
+
+      if (window.lucide && typeof window.lucide.createIcons === "function") {
+        window.lucide.createIcons();
+      }
+    };
+
+    const openModal = (index) => {
+      updateModalContent(index);
+      modal.classList.remove("hidden");
+      modal.classList.add("flex", "modal-open");
+      document.body.style.overflow = "hidden";
+    };
+
+    const closeModal = () => {
+      modal.classList.remove("modal-open");
+      document.body.style.overflow = "";
+      modal.classList.add("hidden");
+      modal.classList.remove("flex");
+    };
+
+    galleryCards.forEach((card) => {
+      card.addEventListener("click", () => {
+        const index = parseInt(card.getAttribute("data-index"), 10);
+        openModal(index);
+      });
+    });
+
+    if (btnClose) btnClose.addEventListener("click", closeModal);
+    if (btnPrev) {
+      btnPrev.addEventListener("click", (e) => {
+        e.stopPropagation();
+        updateModalContent(currentIndex - 1);
+      });
+    }
+    if (btnNext) {
+      btnNext.addEventListener("click", (e) => {
+        e.stopPropagation();
+        updateModalContent(currentIndex + 1);
+      });
+    }
+
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) closeModal();
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (!modal.classList.contains("hidden")) {
+        if (e.key === "Escape") closeModal();
+        if (e.key === "ArrowLeft") updateModalContent(currentIndex - 1);
+        if (e.key === "ArrowRight") updateModalContent(currentIndex + 1);
+      }
+    });
+  });
+</script>
+@endpush
